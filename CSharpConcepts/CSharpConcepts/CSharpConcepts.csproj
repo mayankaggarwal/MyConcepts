@@ -42,18 +42,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IConceptSelections.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThreadingConcepts\Concept1.cs" />
+    <Compile Include="ThreadingConcepts\Concept10.cs" />
+    <Compile Include="ThreadingConcepts\Concept11.cs" />
     <Compile Include="ThreadingConcepts\Concept2.cs" />
     <Compile Include="ThreadingConcepts\Concept3.cs" />
     <Compile Include="ThreadingConcepts\Concept4.cs" />
     <Compile Include="ThreadingConcepts\Concept5.cs" />
-    <Compile Include="ThreadingConcepts\IMainMethod.cs" />
+    <Compile Include="ThreadingConcepts\Concept6.cs" />
+    <Compile Include="ThreadingConcepts\Concept7.cs" />
+    <Compile Include="ThreadingConcepts\Concept8.cs" />
+    <Compile Include="ThreadingConcepts\Concept9.cs" />
+    <Compile Include="ThreadingConcepts\ConceptSelectionClass.cs" />
+    <Compile Include="Interfaces\IMainMethod.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

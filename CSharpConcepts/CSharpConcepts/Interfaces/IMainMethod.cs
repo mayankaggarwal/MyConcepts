@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpConcepts.ThreadingConcepts
+namespace CSharpConcepts.ThreadingConcepts.Interfaces
 {
     interface IMainMethod
     {
-       void MainMethod();
+        void SummaryMethod();
+        void MainMethod();
     }
 }

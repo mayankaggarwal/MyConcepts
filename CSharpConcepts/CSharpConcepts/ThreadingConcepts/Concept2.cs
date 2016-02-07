@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpConcepts.ThreadingConcepts.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,13 @@ namespace CSharpConcepts.ThreadingConcepts
     /// </summary>
     public class Concept2 : IMainMethod
     {
+        public void SummaryMethod()
+        {
+            Console.WriteLine("If IsBackgraound property set to true the application exits immediately\n"
+                        + "if IsBackground is set to false the application prints everything\n"
+                        + "Application should not have Console.ReadLine()");
+        }
+
         public void MainMethod()
         {
             Thread thread = new Thread(new ThreadStart(ThreadMethod));

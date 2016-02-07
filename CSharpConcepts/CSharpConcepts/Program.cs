@@ -10,8 +10,9 @@ namespace CSharpConcepts
     {
         static void Main(string[] args)
         {
-            ThreadingConcepts.IMainMethod concepts = new ThreadingConcepts.Concept4();
-            concepts.MainMethod();
+
+            ThreadingConcepts.ConceptSelectionClass conceptSelection = new ThreadingConcepts.ConceptSelectionClass();
+            conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.WaitAllAndAnyTasks);
             Console.ReadLine();
         }
     }

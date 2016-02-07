@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpConcepts.ThreadingConcepts.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,10 @@ namespace CSharpConcepts.ThreadingConcepts
     /// </summary>
     public class Concept3 : IMainMethod
     {
+        public void SummaryMethod()
+        {
+            Console.WriteLine("Basic Thread initialization");
+        }
         public void MainMethod()
         {
             Thread t = new Thread(new ParameterizedThreadStart(ThreadMethod));

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpConcepts.ThreadingConcepts.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,10 @@ namespace CSharpConcepts.ThreadingConcepts
     /// </summary>
     public class Concept4 : IMainMethod
     {
+        public void SummaryMethod()
+        {
+            Console.WriteLine("Thread.Abort can create exceptions for stopping the thread \n Using Shared variables to stop the threads");
+        }
         public void MainMethod()
         {
             bool stopped = false;
