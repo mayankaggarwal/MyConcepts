@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="WCFTest" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Inspiron\\documents\\visual\ studio\ 2015\\Projects\\WcfService1\\WcfService1\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Inspiron\\documents\\visual\ studio\ 2015\\Projects\\WcfService1\\WcfService1\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>
