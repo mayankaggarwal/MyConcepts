@@ -7,6 +7,9 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using WingtipToys.Models;
+using WingtipToys.Logic;
+using System.Linq;
 
 namespace WingtipToys
 {
@@ -72,9 +75,38 @@ namespace WingtipToys
 
         }
 
+        protected void Page_PreRender(object sender,EventArgs e)
+        {
+            using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+            {
+                string cartStr = String.Format("Cart ({0})", usersShoppingCart.GetCount());
+                cartCount.InnerText = cartStr;
+            }
+        }
+
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+        }
+
+        // The return type can be changed to IEnumerable, however to support
+        // paging and sorting, the following parameters must be added:
+        //     int maximumRows
+        //     int startRowIndex
+        //     out int totalRowCount
+        //     string sortByExpression
+        public IQueryable<Category> GetCategories()
+        {
+            try
+            {
+                var _db = new WingtipToys.Models.ProductContext();
+                IQueryable<Category> query = _db.Categories;
+                return query;
+            }
+            catch(Exception exp)
+            {
+                throw;
+            }
         }
     }
 

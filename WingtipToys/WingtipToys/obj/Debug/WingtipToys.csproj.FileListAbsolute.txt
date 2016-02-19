@@ -74,6 +74,5 @@ D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\bin\Microsoft.Owin.Sec
 D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\bin\Microsoft.Owin.Security.OAuth.xml
-D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\obj\Debug\WingtipToys.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\obj\Debug\WingtipToys.dll
 D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\obj\Debug\WingtipToys.pdb

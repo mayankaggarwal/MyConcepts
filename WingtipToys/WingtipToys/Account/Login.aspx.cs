@@ -38,6 +38,7 @@ namespace WingtipToys.Account
                 switch (result)
                 {
                     case SignInStatus.Success:
+                        MigrateCart();
                         IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
                         break;
                     case SignInStatus.LockedOut:
@@ -56,6 +57,13 @@ namespace WingtipToys.Account
                         break;
                 }
             }
+        }
+
+        private void MigrateCart()
+        {
+            WingtipToys.Logic.ShoppingCartActions usersShoppingCart = new Logic.ShoppingCartActions();
+            String cartId = usersShoppingCart.GetCartId();
+            usersShoppingCart.MigrateCart(cartId, Email.Text.ToString().Substring(0, Email.Text.ToString().IndexOf('@') - 1));
         }
     }
 }
