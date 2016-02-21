@@ -9,4 +9,3 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharp
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.pdb
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\CSharpConcepts.exe
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\CSharpConcepts.pdb
-D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.csprojResolveAssemblyReference.cache

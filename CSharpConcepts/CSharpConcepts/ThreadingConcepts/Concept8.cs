@@ -6,7 +6,7 @@ namespace CSharpConcepts.ThreadingConcepts
 {
     /// <summary>
     /// We add Continuation task to the Task Object
-    /// The continuation task can hasve configurations which lead to there execution
+    /// The continuation task can have configurations which lead to there execution
     /// </summary>
     internal class Concept8 : IMainMethod
     {

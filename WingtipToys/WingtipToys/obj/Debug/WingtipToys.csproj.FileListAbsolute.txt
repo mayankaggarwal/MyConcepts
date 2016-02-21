@@ -76,3 +76,4 @@ D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\bin\Microsoft.Owin.Sec
 D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\obj\Debug\WingtipToys.dll
 D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\obj\Debug\WingtipToys.pdb
+D:\Learning\Repository\MyConcepts\WingtipToys\WingtipToys\obj\Debug\WingtipToys.csprojResolveAssemblyReference.cache

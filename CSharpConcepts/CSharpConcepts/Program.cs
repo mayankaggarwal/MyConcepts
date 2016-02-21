@@ -12,7 +12,7 @@ namespace CSharpConcepts
         {
 
             ThreadingConcepts.ConceptSelectionClass conceptSelection = new ThreadingConcepts.ConceptSelectionClass();
-            conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.WaitAllAndAnyTasks);
+            conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.PLinqConcepts);
             Console.ReadLine();
         }
     }

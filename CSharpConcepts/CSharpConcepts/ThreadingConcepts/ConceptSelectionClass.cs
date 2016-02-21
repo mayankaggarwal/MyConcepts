@@ -48,6 +48,18 @@ namespace CSharpConcepts.ThreadingConcepts
                 case ThreadingConceptsList.WaitAllAndAnyTasks:
                     mainMethod = new Concept11();
                     break;
+                case ThreadingConceptsList.ParallelClassExamples:
+                    mainMethod = new Concept12();
+                    break;
+                case ThreadingConceptsList.AsyncBasic:
+                    mainMethod = new Concept13();
+                    break;
+                case ThreadingConceptsList.ScalabilityVsResponsiveness:
+                    mainMethod = new Concept14();
+                    break;
+                case ThreadingConceptsList.PLinqConcepts:
+                    mainMethod = new Concept15();
+                    break;
             }
             if (mainMethod != null)
             {
@@ -71,6 +83,10 @@ namespace CSharpConcepts.ThreadingConcepts
         ContinuationTask,
         ParentChildTask,
         TaskFactoryExample,
-        WaitAllAndAnyTasks
+        WaitAllAndAnyTasks,
+        ParallelClassExamples,
+        AsyncBasic,
+        ScalabilityVsResponsiveness,
+        PLinqConcepts
     }
 }

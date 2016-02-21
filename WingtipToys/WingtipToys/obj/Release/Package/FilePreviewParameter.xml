@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="WingtipToys" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Learning\\Repository\\MyConcepts\\WingtipToys\\WingtipToys\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Learning\\Repository\\MyConcepts\\WingtipToys\\WingtipToys\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." value="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-WingtipToys.mdf;Initial Catalog=aspnet-WingtipToys;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Learning\\Repository\\MyConcepts\\WingtipToys\\WingtipToys\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="WingtipToys-Web.config Connection String" description="WingtipToys Connection String used in web.config by the application to access the database." value="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\wingtiptoys.mdf;Integrated Security=TRUE" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Learning\\Repository\\MyConcepts\\WingtipToys\\WingtipToys\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WingtipToys']/@connectionString" />
+  </parameter>
+</parameters>
