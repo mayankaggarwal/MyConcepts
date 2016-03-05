@@ -1,5 +1,5 @@
 ﻿using System;
-using CSharpConcepts.ThreadingConcepts.Interfaces;
+using CSharpConcepts.Interfaces;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Linq;

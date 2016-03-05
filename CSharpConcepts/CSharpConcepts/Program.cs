@@ -10,10 +10,15 @@ namespace CSharpConcepts
     {
         static void Main(string[] args)
         {
-
-            ThreadingConcepts.ConceptSelectionClass conceptSelection = new ThreadingConcepts.ConceptSelectionClass();
-            conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.PLinqConcepts);
+            Interfaces.IConceptSelections concepts = null;
+            //concepts = new ThreadingConcepts.ConceptSelectionClass();
+            //concepts.RunConcept(ThreadingConcepts.ThreadingConceptsList.ThreadCancellationExamples);
+            //concepts = new ImplementingProgramFlow.ConceptSelectionClass();
+            //concepts.RunConcept(ImplementingProgramFlow.ProgramFlowConceptList.ForeachImplementation);
+            concepts = new EventsAndCallbacks.ConceptSelectionClass();
+            concepts.RunConcept(EventsAndCallbacks.EventsAndCallbacksConceptsList.BasicDelegateExample);
             Console.ReadLine();
         }
+
     }
 }

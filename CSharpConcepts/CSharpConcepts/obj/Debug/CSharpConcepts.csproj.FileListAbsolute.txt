@@ -5,7 +5,8 @@ c:\users\inspiron\documents\visual studio 2015\Projects\CSharpConcepts\CSharpCon
 c:\users\inspiron\documents\visual studio 2015\Projects\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.exe
 c:\users\inspiron\documents\visual studio 2015\Projects\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.pdb
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\CSharpConcepts.exe.config
-D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.exe
-D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.pdb
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\CSharpConcepts.exe
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\CSharpConcepts.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.exe
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.pdb

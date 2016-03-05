@@ -43,8 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventsAndCallbacks\ConceptSelectionClass.cs" />
+    <Compile Include="EventsAndCallbacks\DelegatesExamples.cs" />
+    <Compile Include="ImplementingProgramFlow\ConceptSelectionClass.cs" />
+    <Compile Include="ImplementingProgramFlow\ForeachImpConcept.cs" />
     <Compile Include="Interfaces\IConceptSelections.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgrammingTests\ConceptSelectionClass.cs" />
+    <Compile Include="ProgrammingTests\HackerRankTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThreadingConcepts\Concept1.cs" />
     <Compile Include="ThreadingConcepts\Concept10.cs" />
@@ -53,7 +59,14 @@
     <Compile Include="ThreadingConcepts\Concept13.cs" />
     <Compile Include="ThreadingConcepts\Concept14.cs" />
     <Compile Include="ThreadingConcepts\Concept15.cs" />
+    <Compile Include="ThreadingConcepts\Concept16.cs" />
+    <Compile Include="ThreadingConcepts\Concept17.cs" />
+    <Compile Include="ThreadingConcepts\Concept18.cs" />
+    <Compile Include="ThreadingConcepts\Concept19.cs" />
     <Compile Include="ThreadingConcepts\Concept2.cs" />
+    <Compile Include="ThreadingConcepts\Concept20.cs" />
+    <Compile Include="ThreadingConcepts\Concept21.cs" />
+    <Compile Include="ThreadingConcepts\Concept22.cs" />
     <Compile Include="ThreadingConcepts\Concept3.cs" />
     <Compile Include="ThreadingConcepts\Concept4.cs" />
     <Compile Include="ThreadingConcepts\Concept5.cs" />

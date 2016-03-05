@@ -1,5 +1,4 @@
 ﻿using CSharpConcepts.Interfaces;
-using CSharpConcepts.ThreadingConcepts.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.ThreadingConcepts
 {
-    public class ConceptSelectionClass:IConceptSelections
+    public class ConceptSelectionClass: IConceptSelections
     {
         public void RunConcept(Enum concept)
         {
             IMainMethod mainMethod = null;
+            
             switch((ThreadingConceptsList)concept)
             {
                 case ThreadingConceptsList.BasicThread:
@@ -60,6 +60,27 @@ namespace CSharpConcepts.ThreadingConcepts
                 case ThreadingConceptsList.PLinqConcepts:
                     mainMethod = new Concept15();
                     break;
+                case ThreadingConceptsList.BlockingCollectionExample:
+                    mainMethod = new Concept16();
+                    break;
+                case ThreadingConceptsList.ConcurrentBagExample:
+                    mainMethod = new Concept17();
+                    break;
+                case ThreadingConceptsList.ConcurrentStackAndQueueEg:
+                    mainMethod = new Concept19();
+                    break;
+                case ThreadingConceptsList.ConcurrentDictionaryEg:
+                    mainMethod = new Concept18();
+                    break;
+                case ThreadingConceptsList.SynchronizationExamples:
+                    mainMethod = new Concept20();
+                    break;
+                case ThreadingConceptsList.VolatileClassExample:
+                    mainMethod = new Concept21();
+                    break;
+                case ThreadingConceptsList.ThreadCancellationExamples:
+                    mainMethod = new Concept22();
+                    break;
             }
             if (mainMethod != null)
             {
@@ -87,6 +108,13 @@ namespace CSharpConcepts.ThreadingConcepts
         ParallelClassExamples,
         AsyncBasic,
         ScalabilityVsResponsiveness,
-        PLinqConcepts
+        PLinqConcepts,
+        BlockingCollectionExample,
+        ConcurrentBagExample,
+        ConcurrentStackAndQueueEg,
+        ConcurrentDictionaryEg,
+        SynchronizationExamples,
+        VolatileClassExample,
+        ThreadCancellationExamples
     }
 }

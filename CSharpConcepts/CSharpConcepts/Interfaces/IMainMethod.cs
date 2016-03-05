@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpConcepts.ThreadingConcepts.Interfaces
+namespace CSharpConcepts.Interfaces
 {
     interface IMainMethod
     {
