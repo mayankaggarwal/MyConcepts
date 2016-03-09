@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="EventsAndCallbacks\ConceptSelectionClass.cs" />
     <Compile Include="EventsAndCallbacks\DelegatesExamples.cs" />
+    <Compile Include="EventsAndCallbacks\EventUsingAction.cs" />
+    <Compile Include="ImplementExceptionHandling\BasicExceptionExample1.cs" />
+    <Compile Include="ImplementExceptionHandling\ConceptSelectionClass.cs" />
     <Compile Include="ImplementingProgramFlow\ConceptSelectionClass.cs" />
     <Compile Include="ImplementingProgramFlow\ForeachImpConcept.cs" />
     <Compile Include="Interfaces\IConceptSelections.cs" />

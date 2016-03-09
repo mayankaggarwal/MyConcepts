@@ -17,6 +17,9 @@ namespace CSharpConcepts.EventsAndCallbacks
                 case EventsAndCallbacksConceptsList.BasicDelegateExample:
                     mainMethod = new DelegatesExamples();
                     break;
+                case EventsAndCallbacksConceptsList.EventUsingAction:
+                    mainMethod = new EventUsingAction();
+                    break;
             }
 
             if(mainMethod!=null)
@@ -33,6 +36,7 @@ namespace CSharpConcepts.EventsAndCallbacks
 
     public enum EventsAndCallbacksConceptsList
     {
-        BasicDelegateExample
+        BasicDelegateExample,
+        EventUsingAction
     }
 }
