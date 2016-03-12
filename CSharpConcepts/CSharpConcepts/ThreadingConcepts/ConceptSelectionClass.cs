@@ -7,88 +7,81 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.ThreadingConcepts
 {
-    public class ConceptSelectionClass: IConceptSelections
+    public class ConceptSelectionClass: ConceptSelections
     {
-        public void RunConcept(Enum concept)
+        public override void SelectConcept(Enum concept)
         {
-            IMainMethod mainMethod = null;
-            
-            switch((ThreadingConceptsList)concept)
+            base.SelectConcept(concept);
+            switch ((ThreadingConceptsList)concept)
             {
                 case ThreadingConceptsList.BasicThread:
-                    mainMethod = new Concept1();
+                    conceptExecutionClass = new Concept1();
                     break;
                 case ThreadingConceptsList.IsBackgraoundProperty:
-                    mainMethod = new Concept2();
+                    conceptExecutionClass = new Concept2();
                     break;
                 case ThreadingConceptsList.ParameterizedThreads:
-                    mainMethod = new Concept3();
+                    conceptExecutionClass = new Concept3();
                     break;
                 case ThreadingConceptsList.AbortingThreads:
-                    mainMethod = new Concept4();
+                    conceptExecutionClass = new Concept4();
                     break;
                 case ThreadingConceptsList.VariableSharing:
-                    mainMethod = new Concept5();
+                    conceptExecutionClass = new Concept5();
                     break;
                 case ThreadingConceptsList.BasicThreadPool:
-                    mainMethod = new Concept6();
+                    conceptExecutionClass = new Concept6();
                     break;
                 case ThreadingConceptsList.BasicTaskExample:
-                    mainMethod = new Concept7();
+                    conceptExecutionClass = new Concept7();
                     break;
                 case ThreadingConceptsList.ContinuationTask:
-                    mainMethod = new Concept8();
+                    conceptExecutionClass = new Concept8();
                     break;
                 case ThreadingConceptsList.ParentChildTask:
-                    mainMethod = new Concept9();
+                    conceptExecutionClass = new Concept9();
                     break;
                 case ThreadingConceptsList.TaskFactoryExample:
-                    mainMethod = new Concept10();
+                    conceptExecutionClass = new Concept10();
                     break;
                 case ThreadingConceptsList.WaitAllAndAnyTasks:
-                    mainMethod = new Concept11();
+                    conceptExecutionClass = new Concept11();
                     break;
                 case ThreadingConceptsList.ParallelClassExamples:
-                    mainMethod = new Concept12();
+                    conceptExecutionClass = new Concept12();
                     break;
                 case ThreadingConceptsList.AsyncBasic:
-                    mainMethod = new Concept13();
+                    conceptExecutionClass = new Concept13();
                     break;
                 case ThreadingConceptsList.ScalabilityVsResponsiveness:
-                    mainMethod = new Concept14();
+                    conceptExecutionClass = new Concept14();
                     break;
                 case ThreadingConceptsList.PLinqConcepts:
-                    mainMethod = new Concept15();
+                    conceptExecutionClass = new Concept15();
                     break;
                 case ThreadingConceptsList.BlockingCollectionExample:
-                    mainMethod = new Concept16();
+                    conceptExecutionClass = new Concept16();
                     break;
                 case ThreadingConceptsList.ConcurrentBagExample:
-                    mainMethod = new Concept17();
+                    conceptExecutionClass = new Concept17();
                     break;
                 case ThreadingConceptsList.ConcurrentStackAndQueueEg:
-                    mainMethod = new Concept19();
+                    conceptExecutionClass = new Concept19();
                     break;
                 case ThreadingConceptsList.ConcurrentDictionaryEg:
-                    mainMethod = new Concept18();
+                    conceptExecutionClass = new Concept18();
                     break;
                 case ThreadingConceptsList.SynchronizationExamples:
-                    mainMethod = new Concept20();
+                    conceptExecutionClass = new Concept20();
                     break;
                 case ThreadingConceptsList.VolatileClassExample:
-                    mainMethod = new Concept21();
+                    conceptExecutionClass = new Concept21();
                     break;
                 case ThreadingConceptsList.ThreadCancellationExamples:
-                    mainMethod = new Concept22();
+                    conceptExecutionClass = new Concept22();
                     break;
             }
-            if (mainMethod != null)
-            {
-                mainMethod.SummaryMethod();
-                mainMethod.MainMethod();
-            }
-            else
-                Console.WriteLine("Invalid Concept");
+
         }
     }
 

@@ -5,9 +5,46 @@
         <link rel="stylesheet" href="style.css" />
         <script src="script.js"></script>
     </head>
-    <body ng-app="myapp">
+    <body ng-app="githubViewer">
         <div ng-controller="MainController">
             <h1>{{message}}</h1>
+            <div>{{error}}</div>
+            
+            {{username}}
+            <form name="searchUser" ng-submit="search(username)">
+                <input type="search" required placeholder="UserName to find" ng-model="username"/>
+                <!--<input type="submit" value="Search" ng-click="search(username)"/>-->
+                <input type="submit" value="Search"/>
+            </form>
+            
+            <div>
+                <h2>{{user.name}}</h2>
+                <!--<img src="http://www.gravatar.com/avatar/{{user.gravatar_id}}" title="{{user.name}}">-->
+                <img src="{{user.avatar_url}}" title="{{user.name}}">
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Stars</th>
+                        <th>Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="repo in repos | orderBy:'stargazers_count'">
+                        <td>{{repo.name}}</td>
+                        <td>{{repo.stargazers_count | number}}</td>
+                        <td>{{repo.language}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!--<div>
+                <div>Name : {{user.name}}</div>
+                <div>Location: {{user.location}}</div>
+                <img src="{{user.avatar_url}}" title="{{user.name}}">
+            </div> -->
         </div>
     </body>
 </html>

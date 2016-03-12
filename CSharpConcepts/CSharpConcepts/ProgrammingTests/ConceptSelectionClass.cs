@@ -7,24 +7,17 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.ProgrammingTests
 {
-    class ConceptSelectionClass : IConceptSelections
+    class ConceptSelectionClass : ConceptSelections
     {
-        public void RunConcept(Enum concept)
+        public override void SelectConcept(Enum concept)
         {
-            IMainMethod mainMethod = null;
+            base.SelectConcept(concept);
             switch ((ProgrammingTestConceptList)concept)
             {
                 case ProgrammingTestConceptList.HankerRankTest1:
-                    mainMethod = new HackerRankTest1();
+                    conceptExecutionClass = new HackerRankTest1();
                     break;
             }
-            if (mainMethod != null)
-            {
-                mainMethod.SummaryMethod();
-                mainMethod.MainMethod();
-            }
-            else
-                Console.WriteLine("Invalid Concept");
         }
     }
 

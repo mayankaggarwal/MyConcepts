@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSharpTypesConcepts\ConceptSelectionClass.cs" />
+    <Compile Include="CSharpTypesConcepts\StandardInterfacesImplementation.cs" />
     <Compile Include="EventsAndCallbacks\ConceptSelectionClass.cs" />
     <Compile Include="EventsAndCallbacks\DelegatesExamples.cs" />
     <Compile Include="EventsAndCallbacks\EventUsingAction.cs" />
@@ -50,7 +52,7 @@
     <Compile Include="ImplementExceptionHandling\ConceptSelectionClass.cs" />
     <Compile Include="ImplementingProgramFlow\ConceptSelectionClass.cs" />
     <Compile Include="ImplementingProgramFlow\ForeachImpConcept.cs" />
-    <Compile Include="Interfaces\IConceptSelections.cs" />
+    <Compile Include="Interfaces\ConceptSelections.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgrammingTests\ConceptSelectionClass.cs" />
     <Compile Include="ProgrammingTests\HackerRankTest1.cs" />

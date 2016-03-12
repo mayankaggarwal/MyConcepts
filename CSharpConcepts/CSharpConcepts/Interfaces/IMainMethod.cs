@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.Interfaces
 {
-    interface IMainMethod
+    public interface IMainMethod
     {
         void SummaryMethod();
         void MainMethod();

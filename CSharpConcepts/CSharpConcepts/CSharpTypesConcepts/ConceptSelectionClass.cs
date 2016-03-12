@@ -5,24 +5,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpConcepts.ImplementExceptionHandling
+namespace CSharpConcepts.CSharpTypesConcepts
 {
     public class ConceptSelectionClass : ConceptSelections
     {
         public override void SelectConcept(Enum concept)
         {
             base.SelectConcept(concept);
-            switch ((ExceptionsConceptList)concept)
+            switch ((CSharpTypeConceptsList)concept)
             {
-                case ExceptionsConceptList.ParsingInvalidNumberExceptionEg:
-                    conceptExecutionClass = new BasicExceptionExample1();
+                case CSharpTypeConceptsList.StandardInterfacesImplementation:
+                    conceptExecutionClass = new StandardInterfacesImplementation();
                     break;
             }
         }
     }
 
-    public enum ExceptionsConceptList
+    public enum CSharpTypeConceptsList
     {
-        ParsingInvalidNumberExceptionEg
+        StandardInterfacesImplementation
     }
 }

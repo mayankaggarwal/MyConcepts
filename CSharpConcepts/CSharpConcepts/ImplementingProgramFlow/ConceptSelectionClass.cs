@@ -7,24 +7,17 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.ImplementingProgramFlow
 {
-    public class ConceptSelectionClass : IConceptSelections
+    public class ConceptSelectionClass : ConceptSelections
     {
-        public void RunConcept(Enum concept)
+        public override void SelectConcept(Enum concept)
         {
-            IMainMethod mainMethod = null;
+            base.SelectConcept(concept);
             switch ((ProgramFlowConceptList)concept)
             {
                 case ProgramFlowConceptList.ForeachImplementation:
-                    mainMethod = new ForeachImpConcept();
+                    conceptExecutionClass = new ForeachImpConcept();
                     break;
             }
-            if (mainMethod != null)
-            {
-                mainMethod.SummaryMethod();
-                mainMethod.MainMethod();
-            }
-            else
-                Console.WriteLine("Invalid Concept");
         }
     }
 

@@ -7,29 +7,19 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.EventsAndCallbacks
 {
-    class ConceptSelectionClass : IConceptSelections
+    class ConceptSelectionClass : ConceptSelections
     {
-        public void RunConcept(Enum concept)
+        public override void SelectConcept(Enum concept)
         {
-            IMainMethod mainMethod = null;
+            base.SelectConcept(concept);
             switch ((EventsAndCallbacksConceptsList)concept)
             {
                 case EventsAndCallbacksConceptsList.BasicDelegateExample:
-                    mainMethod = new DelegatesExamples();
+                    conceptExecutionClass = new DelegatesExamples();
                     break;
                 case EventsAndCallbacksConceptsList.EventUsingAction:
-                    mainMethod = new EventUsingAction();
+                    conceptExecutionClass = new EventUsingAction();
                     break;
-            }
-
-            if(mainMethod!=null)
-            {
-                mainMethod.SummaryMethod();
-                mainMethod.MainMethod();
-            }
-            else
-            {
-                Console.WriteLine("Invalid Concept Selected");
             }
         }
     }
