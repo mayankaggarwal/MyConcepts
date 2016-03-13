@@ -1,0 +1,17 @@
+[Header]\r\n2016-03-13 11:57:56,482 [8] ERROR Test Started logging
+[Header]\r\n2016-03-13 14:48:24,811 [10] ERROR Test Started logging
+2016-03-13 14:48:24,819 [10] ERROR Test Started logging
+2016-03-13 14:48:24,820 [10] ERROR Test Started logging
+2016-03-13 14:48:24,820 [10] ERROR Test Started logging
+[Footer]\r\n[Header]\r\n2016-03-13 14:49:50,221 [8] ERROR Test Started logging Error
+2016-03-13 14:49:50,232 [8] ERROR Test Started logging Fatal
+2016-03-13 14:49:50,232 [8] ERROR Test Started logging Info
+2016-03-13 14:49:50,233 [8] ERROR Test Started logging Warn
+[Header]\r\n2016-03-13 14:50:48,649 [7] ERROR Test Started logging Error
+2016-03-13 14:50:48,661 [7] ERROR Test Started logging Fatal
+2016-03-13 14:50:48,662 [7] ERROR Test Started logging Warn
+[Header]\r\n2016-03-13 14:51:12,074 [7] ERROR Test Started logging Error
+2016-03-13 14:51:12,083 [7] ERROR Test Started logging Fatal
+2016-03-13 14:51:12,083 [7] ERROR Test Started logging Info
+2016-03-13 14:51:12,083 [7] ERROR Test Started logging Verbose
+2016-03-13 14:51:12,083 [7] ERROR Test Started logging Warn

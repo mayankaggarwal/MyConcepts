@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Libraries\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -85,7 +88,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Concepts.LoggingLayer\Concepts.LoggingLayer.csproj">
+      <Project>{4f5ba154-cfcb-45ad-8980-7fdce5a01f86}</Project>
+      <Name>Concepts.LoggingLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Concepts.Logging\Concepts.Logging.csproj">
+      <Project>{26323f32-0241-4c09-a903-c1e31ce2a27d}</Project>
+      <Name>Concepts.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

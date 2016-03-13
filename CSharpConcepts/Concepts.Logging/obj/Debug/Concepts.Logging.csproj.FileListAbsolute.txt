@@ -1,0 +1,7 @@
+D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Debug\Concepts.Logging.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Debug\Concepts.Logging.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Debug\Concepts.LoggingLayer.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Debug\Concepts.LoggingLayer.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Debug\Concepts.Logging.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Debug\Concepts.Logging.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Debug\Concepts.Logging.pdb
