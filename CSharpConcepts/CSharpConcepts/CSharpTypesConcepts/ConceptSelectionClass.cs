@@ -17,12 +17,20 @@ namespace CSharpConcepts.CSharpTypesConcepts
                 case CSharpTypeConceptsList.StandardInterfacesImplementation:
                     conceptExecutionClass = new StandardInterfacesImplementation();
                     break;
+                case CSharpTypeConceptsList.ReflectionExamples:
+                    conceptExecutionClass = new ReflectionExamples();
+                    break;
+                case CSharpTypeConceptsList.ApplyingAttributesExamples:
+                    conceptExecutionClass = new ApplyingAttributesExamples();
+                    break;
             }
         }
     }
 
     public enum CSharpTypeConceptsList
     {
-        StandardInterfacesImplementation
+        StandardInterfacesImplementation,
+        ApplyingAttributesExamples,
+        ReflectionExamples
     }
 }

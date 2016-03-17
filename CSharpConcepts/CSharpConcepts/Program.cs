@@ -20,7 +20,7 @@ namespace CSharpConcepts
             //conceptSelection = new ImplementExceptionHandling.ConceptSelectionClass();
             //conceptSelection.RunConcept(ImplementExceptionHandling.ExceptionsConceptList.ParsingInvalidNumberExceptionEg);
             conceptSelection = new CSharpTypesConcepts.ConceptSelectionClass();
-            conceptSelection.RunConcept(CSharpTypesConcepts.CSharpTypeConceptsList.StandardInterfacesImplementation);
+            conceptSelection.RunConcept(CSharpTypesConcepts.CSharpTypeConceptsList.ApplyingAttributesExamples);
             Console.ReadLine();
         }
 

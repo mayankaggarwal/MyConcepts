@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSharpTypesConcepts\ApplyingAttributesExamples.cs" />
     <Compile Include="CSharpTypesConcepts\ConceptSelectionClass.cs" />
+    <Compile Include="CSharpTypesConcepts\ReflectionExamples.cs" />
     <Compile Include="CSharpTypesConcepts\StandardInterfacesImplementation.cs" />
     <Compile Include="EventsAndCallbacks\ConceptSelectionClass.cs" />
     <Compile Include="EventsAndCallbacks\DelegatesExamples.cs" />
