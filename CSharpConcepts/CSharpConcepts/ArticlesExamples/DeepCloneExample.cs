@@ -9,6 +9,9 @@ using System.Text;
 
 namespace CSharpConcepts.ArticlesExamples
 {
+    /// <summary>
+    /// http://stackoverflow.com/questions/78536/deep-cloning-objects
+    /// </summary>
     public class DeepCloneExample:IMainMethod
     {
         public void SummaryMethod()
