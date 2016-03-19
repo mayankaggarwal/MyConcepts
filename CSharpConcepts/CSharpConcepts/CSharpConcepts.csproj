@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CSharpConcepts</RootNamespace>
     <AssemblyName>CSharpConcepts</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConceptsFromArticles\ConceptSelectionClass.cs" />
+    <Compile Include="ConceptsFromArticles\DeepCloneExample.cs" />
     <Compile Include="CSharpTypesConcepts\ApplyingAttributesExamples.cs" />
     <Compile Include="CSharpTypesConcepts\ConceptSelectionClass.cs" />
     <Compile Include="CSharpTypesConcepts\ReflectionExamples.cs" />
