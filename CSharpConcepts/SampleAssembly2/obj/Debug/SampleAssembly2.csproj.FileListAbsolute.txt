@@ -1,0 +1,7 @@
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\bin\Debug\SampleAssembly2.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\bin\Debug\SampleAssembly2.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\bin\Debug\SampleAssembly1.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\bin\Debug\SampleAssembly1.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\obj\Debug\SampleAssembly2.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\obj\Debug\SampleAssembly2.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\obj\Debug\SampleAssembly2.pdb

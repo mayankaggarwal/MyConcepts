@@ -17,12 +17,16 @@ namespace CSharpConcepts.ArticlesExamples
                 case ArticlesExamplesConceptsList.DeepCloneExample:
                     conceptExecutionClass = new DeepCloneExample();
                     break;
+                case ArticlesExamplesConceptsList.DependencyInversionExample:
+                    conceptExecutionClass = new DependencyInversionExample();
+                    break;
             }
         }
     }
 
     public enum ArticlesExamplesConceptsList
     {
-        DeepCloneExample
+        DeepCloneExample,
+        DependencyInversionExample
     }
 }

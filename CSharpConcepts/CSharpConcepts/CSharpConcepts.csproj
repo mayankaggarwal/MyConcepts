@@ -48,10 +48,13 @@
   <ItemGroup>
     <Compile Include="ConceptsFromArticles\ConceptSelectionClass.cs" />
     <Compile Include="ConceptsFromArticles\DeepCloneExample.cs" />
+    <Compile Include="ConceptsFromArticles\DependencyInversionExample.cs" />
     <Compile Include="CSharpTypesConcepts\ApplyingAttributesExamples.cs" />
+    <Compile Include="CSharpTypesConcepts\CodeGenerationExamples.cs" />
     <Compile Include="CSharpTypesConcepts\ConceptSelectionClass.cs" />
     <Compile Include="CSharpTypesConcepts\ReflectionExamples.cs" />
     <Compile Include="CSharpTypesConcepts\StandardInterfacesImplementation.cs" />
+    <Compile Include="CSharpTypesConcepts\StringManipulationExamples.cs" />
     <Compile Include="EventsAndCallbacks\ConceptSelectionClass.cs" />
     <Compile Include="EventsAndCallbacks\DelegatesExamples.cs" />
     <Compile Include="EventsAndCallbacks\EventUsingAction.cs" />
@@ -63,6 +66,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="ProgrammingTests\ConceptSelectionClass.cs" />
     <Compile Include="ProgrammingTests\HackerRankTest1.cs" />
+    <Compile Include="ProgrammingTests\LargestNumberFromArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThreadingConcepts\Concept1.cs" />
     <Compile Include="ThreadingConcepts\Concept10.cs" />
@@ -100,6 +104,10 @@
     <ProjectReference Include="..\Concepts.Logging\Concepts.Logging.csproj">
       <Project>{26323f32-0241-4c09-a903-c1e31ce2a27d}</Project>
       <Name>Concepts.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleAssembly1\SampleAssembly1.csproj">
+      <Project>{e02151e3-cf70-4efa-8020-5f635716285f}</Project>
+      <Name>SampleAssembly1</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

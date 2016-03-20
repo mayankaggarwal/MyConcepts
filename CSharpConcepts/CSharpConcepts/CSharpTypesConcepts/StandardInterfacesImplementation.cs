@@ -2,6 +2,7 @@
 using CSharpConcepts.Interfaces;
 using System.Collections.Generic;
 using System.Collections;
+using System.IO;
 
 namespace CSharpConcepts.CSharpTypesConcepts
 {
@@ -78,7 +79,12 @@ namespace CSharpConcepts.CSharpTypesConcepts
         {
             Console.WriteLine("Implementation of IDisposable Interface");
             Console.WriteLine("IDisposable is used to facilitate working with external and unmanaged resources");
-            Console.WriteLine("Not Implemented------------------------------------");
+            //Console.WriteLine("Not Implemented------------------------------------");
+            UnManagerWrapper unmanagerWrapper = new UnManagerWrapper();
+            unmanagerWrapper.Close();
+            Console.WriteLine("Finalizer only calls dispose passing false for disposing because Stream object also implements a finalizer and GC takes care for that.");
+            Console.WriteLine("The regular dispose method calls GC.SuppressFinalize(this) to make sure that the object is removed from the finalization list that the garbage collector is keeping track of.");
+
         }
 
         private void IUnknownImplementationExample()
@@ -141,6 +147,43 @@ namespace CSharpConcepts.CSharpTypesConcepts
             IEnumerator IEnumerable.GetEnumerator()
             {
                 return GetEnumerator();
+            }
+        }
+
+        class UnManagerWrapper : IDisposable
+        {
+            public FileStream Stream { get; private set; }
+
+            public UnManagerWrapper()
+            {
+                this.Stream = File.Open("tmp.dat", FileMode.Create);
+            }
+
+            ~UnManagerWrapper()
+            {
+                Dispose(false);
+            }
+
+            public void Close()
+            {
+                Dispose();
+            }
+
+            public void Dispose()
+            {
+                Dispose(true);
+                System.GC.SuppressFinalize(this);
+            }
+
+            private void Dispose(bool disposing)
+            {
+                if(disposing)
+                {
+                    if(Stream!=null)
+                    {
+                        Stream.Close();
+                    }
+                }
             }
         }
     }

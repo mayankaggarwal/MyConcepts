@@ -15,3 +15,5 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharp
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.exe
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.pdb
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\log4net.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\SampleAssembly1.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\SampleAssembly1.pdb

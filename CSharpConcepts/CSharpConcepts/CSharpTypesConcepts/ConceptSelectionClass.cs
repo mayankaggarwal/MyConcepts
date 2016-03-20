@@ -23,7 +23,14 @@ namespace CSharpConcepts.CSharpTypesConcepts
                 case CSharpTypeConceptsList.ApplyingAttributesExamples:
                     conceptExecutionClass = new ApplyingAttributesExamples();
                     break;
+                case CSharpTypeConceptsList.CodeGenerationExample:
+                    conceptExecutionClass = new CodeGenerationExamples();
+                    break;
+                case CSharpTypeConceptsList.StringManipulationExamples:
+                    conceptExecutionClass = new StringManipulationExamples();
+                    break;
             }
+            
         }
     }
 
@@ -31,6 +38,8 @@ namespace CSharpConcepts.CSharpTypesConcepts
     {
         StandardInterfacesImplementation,
         ApplyingAttributesExamples,
-        ReflectionExamples
+        ReflectionExamples,
+        CodeGenerationExample,
+        StringManipulationExamples
     }
 }

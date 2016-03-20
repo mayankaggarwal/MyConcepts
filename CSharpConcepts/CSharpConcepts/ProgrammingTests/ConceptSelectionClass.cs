@@ -17,12 +17,16 @@ namespace CSharpConcepts.ProgrammingTests
                 case ProgrammingTestConceptList.HankerRankTest1:
                     conceptExecutionClass = new HackerRankTest1();
                     break;
+                case ProgrammingTestConceptList.LargestNumberFromArray:
+                    conceptExecutionClass = new LargestNumberFromArray();
+                    break;
             }
         }
     }
 
     public enum ProgrammingTestConceptList
     {
-        HankerRankTest1
+        HankerRankTest1,
+        LargestNumberFromArray
     }
 }

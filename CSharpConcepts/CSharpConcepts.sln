@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts.Logging.Log4Net", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts.Logging", "Concepts.Logging\Concepts.Logging.csproj", "{26323F32-0241-4C09-A903-C1E31CE2A27D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAssembly1", "SampleAssembly1\SampleAssembly1.csproj", "{E02151E3-CF70-4EFA-8020-5F635716285F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAssembly2", "SampleAssembly2\SampleAssembly2.csproj", "{B9984064-DD92-4724-BAF1-896742848BC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +42,14 @@ Global
 		{26323F32-0241-4C09-A903-C1E31CE2A27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26323F32-0241-4C09-A903-C1E31CE2A27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26323F32-0241-4C09-A903-C1E31CE2A27D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E02151E3-CF70-4EFA-8020-5F635716285F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02151E3-CF70-4EFA-8020-5F635716285F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02151E3-CF70-4EFA-8020-5F635716285F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02151E3-CF70-4EFA-8020-5F635716285F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9984064-DD92-4724-BAF1-896742848BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9984064-DD92-4724-BAF1-896742848BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9984064-DD92-4724-BAF1-896742848BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9984064-DD92-4724-BAF1-896742848BC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
