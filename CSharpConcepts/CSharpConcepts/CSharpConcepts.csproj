@@ -68,6 +68,12 @@
     <Compile Include="ProgrammingTests\HackerRankTest1.cs" />
     <Compile Include="ProgrammingTests\LargestNumberFromArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityConcepts\CASExample.cs" />
+    <Compile Include="SecurityConcepts\ConceptSelectionClass.cs" />
+    <Compile Include="SecurityConcepts\DigitalCertificateExample.cs" />
+    <Compile Include="SecurityConcepts\SecureStringExamples.cs" />
+    <Compile Include="SecurityConcepts\SplittingDataUsingHashing.cs" />
+    <Compile Include="SecurityConcepts\SymmetricAESAlogorithmExample.cs" />
     <Compile Include="ThreadingConcepts\Concept1.cs" />
     <Compile Include="ThreadingConcepts\Concept10.cs" />
     <Compile Include="ThreadingConcepts\Concept11.cs" />

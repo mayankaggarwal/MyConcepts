@@ -1,0 +1,7 @@
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\bin\Release\SampleAssembly1.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\bin\Release\SampleAssembly1.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\bin\Release\SampleAssembly1.dll.CodeAnalysisLog.xml
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\bin\Release\SampleAssembly1.dll.lastcodeanalysissucceeded
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Release\SampleAssembly1.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Release\SampleAssembly1.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Release\SampleAssembly1.pdb

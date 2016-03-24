@@ -19,8 +19,11 @@ namespace CSharpConcepts
             //conceptSelection.RunConcept(EventsAndCallbacks.EventsAndCallbacksConceptsList.EventUsingAction);
             //conceptSelection = new ImplementExceptionHandling.ConceptSelectionClass();
             //conceptSelection.RunConcept(ImplementExceptionHandling.ExceptionsConceptList.ParsingInvalidNumberExceptionEg);
-            conceptSelection = new CSharpTypesConcepts.ConceptSelectionClass();
-            conceptSelection.RunConcept(CSharpTypesConcepts.CSharpTypeConceptsList.StringManipulationExamples);
+            //conceptSelection = new CSharpTypesConcepts.ConceptSelectionClass();
+            //conceptSelection.RunConcept(CSharpTypesConcepts.CSharpTypeConceptsList.StringManipulationExamples);
+
+            conceptSelection = new SecurityConcepts.ConceptSelectionClass();
+            conceptSelection.RunConcept(SecurityConcepts.SecurityConcepts.SecureStringExample);
 
             //conceptSelection = new ProgrammingTests.ConceptSelectionClass();
             //conceptSelection.RunConcept(ProgrammingTests.ProgrammingTestConceptList.LargestNumberFromArray);

@@ -1,0 +1,13 @@
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\CSharpConcepts.exe.config
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\CSharpConcepts.exe
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\CSharpConcepts.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\Concepts.Logging.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\Concepts.LoggingLayer.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\log4net.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\SampleAssembly1.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\Concepts.LoggingLayer.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\Concepts.Logging.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Release\SampleAssembly1.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Release\CSharpConcepts.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Release\CSharpConcepts.exe
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Release\CSharpConcepts.pdb
