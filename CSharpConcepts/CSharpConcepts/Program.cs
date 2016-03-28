@@ -22,8 +22,14 @@ namespace CSharpConcepts
             //conceptSelection = new CSharpTypesConcepts.ConceptSelectionClass();
             //conceptSelection.RunConcept(CSharpTypesConcepts.CSharpTypeConceptsList.StringManipulationExamples);
 
-            conceptSelection = new SecurityConcepts.ConceptSelectionClass();
-            conceptSelection.RunConcept(SecurityConcepts.SecurityConcepts.SecureStringExample);
+            //conceptSelection = new SecurityConcepts.ConceptSelectionClass();
+            //conceptSelection.RunConcept(SecurityConcepts.SecurityConcepts.SecureStringExample);
+
+            //conceptSelection = new DebugingConcepts.ConceptSelectionClass();
+            //conceptSelection.RunConcept(DebugingConcepts.DebugApplicationsConcepts.DirectivesExamples);
+
+            conceptSelection = new DataAccessConcepts.ConceptSelectionClass();
+            conceptSelection.RunConcept(DataAccessConcepts.DataAccessConceptsList.WorkingWithFilesExamples);
 
             //conceptSelection = new ProgrammingTests.ConceptSelectionClass();
             //conceptSelection.RunConcept(ProgrammingTests.ProgrammingTestConceptList.LargestNumberFromArray);

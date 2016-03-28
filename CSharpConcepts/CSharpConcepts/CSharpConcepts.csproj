@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MyConceptsKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
       <HintPath>..\Libraries\log4net.dll</HintPath>
@@ -55,6 +61,11 @@
     <Compile Include="CSharpTypesConcepts\ReflectionExamples.cs" />
     <Compile Include="CSharpTypesConcepts\StandardInterfacesImplementation.cs" />
     <Compile Include="CSharpTypesConcepts\StringManipulationExamples.cs" />
+    <Compile Include="DataAccessConcepts\ConceptSelectionClass.cs" />
+    <Compile Include="DataAccessConcepts\WorkingWithFilesExamples.cs" />
+    <Compile Include="DebugingConcepts\ConceptSelectionClass.cs" />
+    <Compile Include="DebugingConcepts\DirectivesUsageExamples.cs" />
+    <Compile Include="DebugingConcepts\ReleaseAndDebugDiffExecution.cs" />
     <Compile Include="EventsAndCallbacks\ConceptSelectionClass.cs" />
     <Compile Include="EventsAndCallbacks\DelegatesExamples.cs" />
     <Compile Include="EventsAndCallbacks\EventUsingAction.cs" />
@@ -101,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="MyConceptsKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Concepts.LoggingLayer\Concepts.LoggingLayer.csproj">

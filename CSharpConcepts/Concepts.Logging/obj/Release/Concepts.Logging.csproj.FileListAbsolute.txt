@@ -1,7 +1,5 @@
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.Logging.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.Logging.pdb
-D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.Logging.dll.CodeAnalysisLog.xml
-D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.Logging.dll.lastcodeanalysissucceeded
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.LoggingLayer.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.LoggingLayer.pdb
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Release\Concepts.Logging.csprojResolveAssemblyReference.cache
