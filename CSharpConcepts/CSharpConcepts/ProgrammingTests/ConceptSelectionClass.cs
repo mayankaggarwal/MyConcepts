@@ -20,6 +20,9 @@ namespace CSharpConcepts.ProgrammingTests
                 case ProgrammingTestConceptList.LargestNumberFromArray:
                     conceptExecutionClass = new LargestNumberFromArray();
                     break;
+                case ProgrammingTestConceptList.ProducerConsumerProblem:
+                    conceptExecutionClass = new ProducerConsumerProblemExample();
+                    break;
             }
         }
     }
@@ -27,6 +30,7 @@ namespace CSharpConcepts.ProgrammingTests
     public enum ProgrammingTestConceptList
     {
         HankerRankTest1,
-        LargestNumberFromArray
+        LargestNumberFromArray,
+        ProducerConsumerProblem
     }
 }

@@ -11,14 +11,18 @@ namespace CSharpConcepts
         static void Main(string[] args)
         {
             Interfaces.ConceptSelections conceptSelection = null;
-            //conceptSelection = new ThreadingConcepts.ConceptSelectionClass();
-            //conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.ThreadCancellationExamples);
+            conceptSelection = new ThreadingConcepts.ConceptSelectionClass();
+            conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.BasicTaskExample);
+
             //conceptSelection = new ImplementingProgramFlow.ConceptSelectionClass();
             //conceptSelection.RunConcept(ImplementingProgramFlow.ProgramFlowConceptList.ForeachImplementation);
+
             //conceptSelection = new EventsAndCallbacks.ConceptSelectionClass();
             //conceptSelection.RunConcept(EventsAndCallbacks.EventsAndCallbacksConceptsList.EventUsingAction);
+
             //conceptSelection = new ImplementExceptionHandling.ConceptSelectionClass();
             //conceptSelection.RunConcept(ImplementExceptionHandling.ExceptionsConceptList.ParsingInvalidNumberExceptionEg);
+
             //conceptSelection = new CSharpTypesConcepts.ConceptSelectionClass();
             //conceptSelection.RunConcept(CSharpTypesConcepts.CSharpTypeConceptsList.StringManipulationExamples);
 
@@ -28,11 +32,11 @@ namespace CSharpConcepts
             //conceptSelection = new DebugingConcepts.ConceptSelectionClass();
             //conceptSelection.RunConcept(DebugingConcepts.DebugApplicationsConcepts.DirectivesExamples);
 
-            conceptSelection = new DataAccessConcepts.ConceptSelectionClass();
-            conceptSelection.RunConcept(DataAccessConcepts.DataAccessConceptsList.SerializationAndDeserializationExamples);
+            //conceptSelection = new DataAccessConcepts.ConceptSelectionClass();
+            //conceptSelection.RunConcept(DataAccessConcepts.DataAccessConceptsList.SerializationAndDeserializationExamples);
 
             //conceptSelection = new ProgrammingTests.ConceptSelectionClass();
-            //conceptSelection.RunConcept(ProgrammingTests.ProgrammingTestConceptList.LargestNumberFromArray);
+            //conceptSelection.RunConcept(ProgrammingTests.ProgrammingTestConceptList.ProducerConsumerProblem);
             Console.ReadLine();
         }
 

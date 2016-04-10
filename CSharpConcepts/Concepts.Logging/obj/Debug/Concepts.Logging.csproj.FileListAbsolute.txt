@@ -5,3 +5,10 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Debug\Conc
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Debug\Concepts.Logging.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Debug\Concepts.Logging.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Debug\Concepts.Logging.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Debug\Concepts.Logging.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Debug\Concepts.Logging.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Debug\Concepts.LoggingLayer.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Debug\Concepts.LoggingLayer.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Debug\Concepts.Logging.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Debug\Concepts.Logging.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Debug\Concepts.Logging.pdb

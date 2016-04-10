@@ -6,3 +6,11 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\bin\De
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\obj\Debug\Concepts.Logging.Log4Net.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\obj\Debug\Concepts.Logging.Log4Net.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\obj\Debug\Concepts.Logging.Log4Net.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\bin\Debug\Concepts.Logging.Log4Net.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\bin\Debug\Concepts.Logging.Log4Net.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\bin\Debug\Concepts.LoggingLayer.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\bin\Debug\log4net.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\bin\Debug\Concepts.LoggingLayer.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\obj\Debug\Concepts.Logging.Log4Net.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\obj\Debug\Concepts.Logging.Log4Net.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging.Log4Net\obj\Debug\Concepts.Logging.Log4Net.pdb

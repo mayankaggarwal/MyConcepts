@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>MyConceptsKey.pfx</AssemblyOriginatorKeyFile>
@@ -87,6 +87,7 @@
     <Compile Include="ProgrammingTests\ConceptSelectionClass.cs" />
     <Compile Include="ProgrammingTests\HackerRankTest1.cs" />
     <Compile Include="ProgrammingTests\LargestNumberFromArray.cs" />
+    <Compile Include="ProgrammingTests\ProducerConsumerProblemExample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecurityConcepts\CASExample.cs" />
     <Compile Include="SecurityConcepts\ConceptSelectionClass.cs" />

@@ -14,12 +14,19 @@ namespace CSharpConcepts.DataAccessConcepts
         public void MainMethod()
         {
             BasicLINQSelectQuery();
+            Console.WriteLine("\n-------------------------------------------------------------------------\n");
             UsingOrderBy();
+            Console.WriteLine("\n-------------------------------------------------------------------------\n");
             UsingMultipleFromExample();
+            Console.WriteLine("\n-------------------------------------------------------------------------\n");
             UsingLINQOnCustomTypes();
+            Console.WriteLine("\n-------------------------------------------------------------------------\n");
             UsingGroupByAndProjection();
+            Console.WriteLine("\n-------------------------------------------------------------------------\n");
             UsingJoin();
+            Console.WriteLine("\n-------------------------------------------------------------------------\n");
             UsingSkipAndTake();
+            Console.WriteLine("\n-------------------------------------------------------------------------\n");
 
 
 

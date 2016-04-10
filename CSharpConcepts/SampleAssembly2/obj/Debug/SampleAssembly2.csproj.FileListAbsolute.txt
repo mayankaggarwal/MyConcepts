@@ -5,3 +5,10 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\bin\Debug\Sampl
 D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\obj\Debug\SampleAssembly2.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\obj\Debug\SampleAssembly2.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\obj\Debug\SampleAssembly2.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\bin\Debug\SampleAssembly2.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\bin\Debug\SampleAssembly2.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\bin\Debug\SampleAssembly1.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\bin\Debug\SampleAssembly1.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\obj\Debug\SampleAssembly2.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\obj\Debug\SampleAssembly2.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly2\obj\Debug\SampleAssembly2.pdb

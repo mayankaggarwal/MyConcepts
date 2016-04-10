@@ -27,12 +27,12 @@ namespace CSharpConcepts.ThreadingConcepts
                 Console.WriteLine("Working on a thread from threadpool");
             });
 
-            //ThreadPool.QueueUserWorkItem(s);
+            ThreadPool.QueueUserWorkItem(ThreadPoolRun);
         }
 
-        private void s(object state)
+        private void ThreadPoolRun(object state)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Running from thread pool");
         }
     }
 }
