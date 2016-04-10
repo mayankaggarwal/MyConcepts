@@ -43,7 +43,11 @@
       <HintPath>..\Libraries\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,7 +66,12 @@
     <Compile Include="CSharpTypesConcepts\StandardInterfacesImplementation.cs" />
     <Compile Include="CSharpTypesConcepts\StringManipulationExamples.cs" />
     <Compile Include="DataAccessConcepts\ConceptSelectionClass.cs" />
+    <Compile Include="DataAccessConcepts\LINQExamples.cs" />
+    <Compile Include="DataAccessConcepts\SerializationAndDeserializationExamples.cs" />
+    <Compile Include="DataAccessConcepts\WorkingWithADO_DOTNET_Concepts.cs" />
     <Compile Include="DataAccessConcepts\WorkingWithFilesExamples.cs" />
+    <Compile Include="DataAccessConcepts\WorkingWithStreams.cs" />
+    <Compile Include="DataAccessConcepts\WorkingWithXMLExamples.cs" />
     <Compile Include="DebugingConcepts\ConceptSelectionClass.cs" />
     <Compile Include="DebugingConcepts\DirectivesUsageExamples.cs" />
     <Compile Include="DebugingConcepts\ReleaseAndDebugDiffExecution.cs" />

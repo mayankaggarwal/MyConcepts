@@ -9,11 +9,11 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\CSharp
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\CSharpConcepts.pdb
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\Concepts.Logging.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\Concepts.LoggingLayer.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\log4net.dll
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\SampleAssembly1.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\Concepts.LoggingLayer.pdb
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\Concepts.Logging.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\SampleAssembly1.pdb
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.exe
 D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\obj\Debug\CSharpConcepts.pdb
-D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\log4net.dll
-D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\SampleAssembly1.dll
-D:\Learning\Repository\MyConcepts\CSharpConcepts\CSharpConcepts\bin\Debug\SampleAssembly1.pdb

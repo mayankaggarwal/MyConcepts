@@ -2,3 +2,4 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\bin\Debug\Sampl
 D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\bin\Debug\SampleAssembly1.pdb
 D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Debug\SampleAssembly1.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Debug\SampleAssembly1.pdb
+D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Debug\SampleAssembly1.csprojResolveAssemblyReference.cache

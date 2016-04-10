@@ -19,6 +19,21 @@ namespace CSharpConcepts.DataAccessConcepts
                     case DataAccessConceptsList.WorkingWithFilesExamples:
                         conceptExecutionClass = new WorkingWithFilesExamples();
                         break;
+                    case DataAccessConceptsList.WorkingWithStreams:
+                        conceptExecutionClass = new WorkingWithStreams();
+                        break;
+                    case DataAccessConceptsList.WorkingWithADO_DOTNET_Concepts:
+                        conceptExecutionClass = new WorkingWithADO_DOTNET_Concepts();
+                        break;
+                    case DataAccessConceptsList.WorkingWithXMLConcepts:
+                        conceptExecutionClass = new WorkingWithXMLExamples();
+                        break;
+                    case DataAccessConceptsList.LINQExamples:
+                        conceptExecutionClass = new LINQExamples();
+                        break;
+                    case DataAccessConceptsList.SerializationAndDeserializationExamples:
+                        conceptExecutionClass = new SerializationAndDeserializationExamples();
+                        break;
                 }
             }
         }
@@ -26,6 +41,11 @@ namespace CSharpConcepts.DataAccessConcepts
 
     public enum DataAccessConceptsList
     {
-        WorkingWithFilesExamples
+        WorkingWithFilesExamples,
+        WorkingWithStreams,
+        WorkingWithADO_DOTNET_Concepts,
+        WorkingWithXMLConcepts,
+        LINQExamples,
+        SerializationAndDeserializationExamples
     }
 }

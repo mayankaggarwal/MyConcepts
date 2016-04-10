@@ -20,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAssembly1", "SampleAs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAssembly2", "SampleAssembly2\SampleAssembly2.csproj", "{B9984064-DD92-4724-BAF1-896742848BC2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{8954F2A7-40D9-4536-97E2-064E96D1DA7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleProjects", "SampleProjects", "{12238646-89D3-478E-9ABB-E0668BF065D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +57,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F5BA154-CFCB-45AD-8980-7FDCE5A01F86} = {8954F2A7-40D9-4536-97E2-064E96D1DA7A}
+		{C22F563B-46FC-467C-BACA-B2B2D1DADBB4} = {8954F2A7-40D9-4536-97E2-064E96D1DA7A}
+		{26323F32-0241-4C09-A903-C1E31CE2A27D} = {8954F2A7-40D9-4536-97E2-064E96D1DA7A}
+		{E02151E3-CF70-4EFA-8020-5F635716285F} = {12238646-89D3-478E-9ABB-E0668BF065D5}
+		{B9984064-DD92-4724-BAF1-896742848BC2} = {12238646-89D3-478E-9ABB-E0668BF065D5}
 	EndGlobalSection
 EndGlobal
