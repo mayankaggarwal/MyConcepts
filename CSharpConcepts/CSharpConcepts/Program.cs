@@ -12,7 +12,7 @@ namespace CSharpConcepts
         {
             Interfaces.ConceptSelections conceptSelection = null;
             conceptSelection = new ThreadingConcepts.ConceptSelectionClass();
-            conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.BasicTaskExample);
+            conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.ParentChildTask);
 
             //conceptSelection = new ImplementingProgramFlow.ConceptSelectionClass();
             //conceptSelection.RunConcept(ImplementingProgramFlow.ProgramFlowConceptList.ForeachImplementation);

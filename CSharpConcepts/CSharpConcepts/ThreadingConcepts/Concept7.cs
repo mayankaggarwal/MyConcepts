@@ -15,6 +15,7 @@ namespace CSharpConcepts.ThreadingConcepts
     ///     to wait until Task is finished before continuing
     ///     http://blogs.msdn.com/b/pfxteam/archive/2011/10/24/10229468.aspx
     ///     http://blogs.msdn.com/b/pfxteam/archive/2010/06/13/10024153.aspx
+    ///     http://blog.stephencleary.com/2013/08/startnew-is-dangerous.html
     /// </summary>
     internal class Concept7 : IMainMethod
     {

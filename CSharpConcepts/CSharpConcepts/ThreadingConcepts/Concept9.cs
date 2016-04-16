@@ -17,8 +17,10 @@ namespace CSharpConcepts.ThreadingConcepts
                 var result = new Int32[3];
 
                 new Task(() => result[0] = 0, TaskCreationOptions.AttachedToParent).Start();
-                new Task(() => result[1] = 1, TaskCreationOptions.AttachedToParent).Start();
-                new Task(() => result[2] = 2, TaskCreationOptions.AttachedToParent).Start();
+                //new Task(() => result[1] = 1, TaskCreationOptions.AttachedToParent).Start();
+                //new Task(() => result[2] = 2, TaskCreationOptions.AttachedToParent).Start();
+                Task.Run(() => result[1] = 1);
+                Task.Factory.StartNew(() => result[2] = 2, TaskCreationOptions.AttachedToParent);
 
                 return result;
             });
