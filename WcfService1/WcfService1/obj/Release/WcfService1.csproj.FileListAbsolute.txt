@@ -17,3 +17,9 @@ C:\Users\Inspiron\documents\visual studio 2015\Projects\WcfService1\WcfService1\
 C:\Users\Inspiron\documents\visual studio 2015\Projects\WcfService1\WcfService1\obj\Release\WcfService1.csprojResolveAssemblyReference.cache
 C:\Users\Inspiron\documents\visual studio 2015\Projects\WcfService1\WcfService1\obj\Release\WcfService1.dll
 C:\Users\Inspiron\documents\visual studio 2015\Projects\WcfService1\WcfService1\obj\Release\WcfService1.pdb
+D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\bin\WcfService1.dll.config
+D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\bin\WcfService1.dll
+D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\bin\WcfService1.pdb
+D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\obj\Release\WcfService1.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\obj\Release\WcfService1.dll
+D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\obj\Release\WcfService1.pdb
