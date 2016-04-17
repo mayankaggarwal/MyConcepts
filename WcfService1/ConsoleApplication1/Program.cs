@@ -1,5 +1,4 @@
-﻿using ConsoleApplication1.ServiceReference1;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,9 +10,6 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Service1Client client = new Service1Client();
-            CompositeType composite = new CompositeType();
-            ClassWithoutDC classwithoutDC = new ClassWithoutDC();
            
         }
     }

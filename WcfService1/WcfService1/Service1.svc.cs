@@ -29,17 +29,5 @@ namespace WcfService1
             }
             return composite;
         }
-
-        public ClassWithoutDC GetDataWithoutUsingDataContract(ClassWithoutDC cwdc)
-        {
-            if(cwdc == null)
-            {
-                throw new ArgumentNullException("ClassWithoutDC");
-            }
-
-            cwdc.field1 = "field1";
-            cwdc.field1 = "field2";
-            return cwdc;
-        }
     }
 }

@@ -18,14 +18,6 @@ namespace WcfService1
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
-
-        [OperationContract]
-        ClassWithoutDC GetDataWithoutUsingDataContract(ClassWithoutDC cwdc);
-        // TODO: Add your service operations here
-
-        //Gives error as ClassInternal is less accessible
-        //[OperationContract]
-        //ClassInternal GetDataClassInternal(ClassInternal internalClass);
     }
 
 
@@ -86,32 +78,4 @@ namespace WcfService1
 
     }
 
-    // This class will be serializable
-    public class ClassWithoutDC
-    {
-        //This member will be serializable;
-        public string field1;
-
-        //This field will be serialized
-        public string field2;
-
-        //This field should not be serialized
-        [DataMember]
-        public string fieldDataMember;
-
-        //This field will not be serialized
-        private string fieldPrivate;
-
-        //This field will not be serialized
-        public static string fieldStatic;
-
-        //This field will not be serialized
-        [IgnoreDataMember]
-        public string fieldIgnore;
-    }
-
-    internal class ClassInternal
-    {
-        internal string fieldInternal;
-    }
 }
