@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>AST.NET Security Training</title>
+    <link href="styles/Master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1>ASP.NET Security</h1>
+        <table summary="" style="padding: 0;">
+            <tr>
+                <td colspan="2">
+                    <div id="Login">
+                        <asp:LoginView ID="MasterLoginView" runat="server">
+                            <LoggedInTemplate>
+                                Welcome:
+                                <asp:LoginName ID="MasterLoginName" runat="server" />
+                            </LoggedInTemplate>
+                            <AnonymousTemplate>
+                                Welcome:
+                                Guest
+                            </AnonymousTemplate>
+                        </asp:LoginView>
+                        &nbsp;&nbsp;[&nbsp;<asp:LoginStatus ID="MasterLoginStatus" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Users/LoggedOut.aspx" />
+                        &nbsp;]&nbsp;&nbsp;
+                    </div>
+                </td>
+                <td colspan="1">
+                    <div id="clock">
+                        <script type="text/javascript">
+                            var monthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                            var now = new Date();
+                            thisYear = now.getYear();
+                            if (thisYear < 1900) { thisYear += 1900 };
+                            document.write(monthNames[now.getMonth()] + " " + now.getDate() + ", " + thisYear);
+                        </script>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 25%; vertical-align: top">
+                    <div class="left">
+                        <h3><a href="#" class="arrow">&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Navigation&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</a></h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Mailing List</a></li>
+                            <li><a href="#">F.A.Q.</a></li>
+                            <li><a href="#">Links</a></li>
+                            <li><a href="#">Download</a></li>
+                        </ul>
+                        <div class="footer">&raquo;</div>
+                    </div>
+                    <div class="left">
+                        <h3><a href="#" class="arrow">&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Links&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</a></h3>
+                        <ul>
+                            <li><a href="#">ASP.NET</a></li>
+                            <li><a href="#">WindowsClient.net</a></li>
+                            <li><a href="#">IIS.NET</a></li>
+                            <li><a href="#">Silverlight.net</a></li>
+                            <li><a href="#">SecureDeveloper.com</a></li>
+                        </ul>
+                        <div class="footer">&raquo;</div>
+                    </div>
+                </td>
+                <td style="width: 50%; vertical-align: top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="width: 25%; vertical-align: top">
+                    <div class="right">
+                        <h3><a href="#" class="arrow">&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</a></h3>
+                        <p>
+                            This is just a place holder for some real text. If you would like to have some real text here, 
+            just view the source, enter your text and then save the file as an HTML file. You should then
+            be able to see your text here instead of someone elses place holder filler text.
+                        </p>
+                        <div class="footer">&raquo;</div>
+                    </div>
+                    <div class="right">
+                        <h3><a href="#" class="arrow">&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</a></h3>
+                        <p>
+                            This is just a place holder for some real text. If you would like to have some real text here, 
+            just view the source, enter your text and then save the file as an HTML file. You should then
+            be able to see your text here instead of someone elses place holder filler text.
+                        </p>
+                        <div class="footer">&raquo;</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

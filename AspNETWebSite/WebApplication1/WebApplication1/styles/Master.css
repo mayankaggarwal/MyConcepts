@@ -1,0 +1,91 @@
+﻿body 
+{
+    margin: 0; 
+    padding: 0; 
+    font-family: sans-serif; 
+    background-color: #ffffff;
+}
+table 
+{
+    margin: 0; 
+    padding: 0;
+}
+
+p 
+{
+    margin: 5px; padding: 0;
+}
+
+h1 
+{
+    margin: 0; 
+    padding: 5px; 
+    background-color: #5f87d0; 
+    color: #eeeeee; 
+    letter-spacing: -2px; 
+    font-size: 180%;
+}
+
+h5 
+{
+    font-size: 100%; 
+    font-weight: bold; 
+    margin: 5px; 
+    padding: 0;
+}
+
+a 
+{
+    color: #1f58c0; 
+    text-decoration: none;
+}
+
+a:hover 
+{
+    text-decoration: underline; 
+    color: #0050e0;
+}
+
+
+#clock 
+{
+    background-color: #efe7cf; 
+    color: #666666; 
+    border-bottom: solid 1px #bfb8af; 
+    border-right:  solid 1px #bfb8af; 
+    border-top:  solid 1px #bfb8af; 
+    
+    text-align: right; 
+    font-size: 80%; 
+    margin: 0; 
+    padding: 5px;
+}
+
+#login
+{
+    background-color: #efe7cf; 
+    color: #666666; 
+    border-bottom: solid 1px #bfb8af; 
+    border-left:  solid 1px #bfb8af; 
+    border-top:  solid 1px #bfb8af; 
+    text-align: left; 
+    font-size: 80%; 
+    margin: 0; 
+    padding: 5px;    
+}
+
+.left {margin: 5px; padding: 0; border: solid 2px #0050e0; background-color: #cfd8ef; font-size: 78%;}
+.left h3 {margin: 0; padding: 4px; background-color: #0050e0; color: #ffffff; font: bold 110% sans-serif;}
+.left ul {margin: 1em; padding: 0; border: dotted 0px purple;}
+.left li {margin-left: 15px; border: solid 0px red; list-style: square; color: #0000cf;}
+
+.middle-1 {margin-left: 5px; margin-right: 5px; margin-top: 5px; border: solid 1px #0050e0; background-color: #cfd8ef; font-size: 78%;}
+.middle-2 {margin-left: 5px; margin-right: 5px; margin-top: 5px; border: solid 1px #0050e0; background-color: #fff8b0; font-size: 78%;}
+
+.right {margin: 5px; padding: 0; border: solid 2px #0050e0; background-color: #cfd8ef; font-size: 78%;}
+.right h3 {margin: 0; padding: 4px; background-color: #0050e0; color: #ffffff; font: bold 110% sans-serif;}
+
+.footer {margin: 0; padding: 3px; background-color: #efe7cf; border-top: solid 1px #bfb8af; text-align: right; color: #777777;} 
+
+a.arrow {font-size: 1.25em; border: outset 2px #ffffff; background-color: #6fb86f; color: #ffffff; width: 14px; height: 1em; text-align: center; font-weight: bold; letter-spacing: -2px; text-decoration: none; padding: 0;} 
+a:hover.arrow {font-size: 1.25em; border: outset 2px #ffffff; background-color:  #4fa84f; color: #ffffff; width: 14px; height: 1em; text-align: center; font-weight: bold; letter-spacing: -2px; text-decoration: none; padding: 0;} 
