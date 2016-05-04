@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+D:\Learning\Repository\MyConcepts\JavaWebService\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+886348036.index
+1094353368.index
+3219092934.index
+1992494549.index
+1576463664.index
+3514770465.index

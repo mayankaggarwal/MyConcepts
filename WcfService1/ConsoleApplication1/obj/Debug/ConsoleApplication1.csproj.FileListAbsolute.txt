@@ -1,0 +1,6 @@
+D:\Learning\Repository\MyConcepts\WcfService1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Learning\Repository\MyConcepts\WcfService1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Learning\Repository\MyConcepts\WcfService1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Learning\Repository\MyConcepts\WcfService1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\WcfService1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Learning\Repository\MyConcepts\WcfService1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
