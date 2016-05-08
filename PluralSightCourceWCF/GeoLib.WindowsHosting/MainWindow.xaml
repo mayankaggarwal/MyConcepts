@@ -1,0 +1,13 @@
+﻿<Window x:Class="GeoLib.WindowsHosting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoLib.WindowsHosting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="237" Width="239">
+    <StackPanel Orientation="Vertical">
+        <Button x:Name="btnStart" Content="Start Services" Margin="50,20,50,0" FontSize="18" Click="btnStart_Click"></Button>
+        <Button x:Name="btnStop" Content="Stop Services" Margin="50,20,50,20" FontSize="18" Click="btnStop_Click"></Button>
+    </StackPanel>
+</Window>

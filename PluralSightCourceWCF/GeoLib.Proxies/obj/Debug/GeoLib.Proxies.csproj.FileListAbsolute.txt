@@ -1,0 +1,7 @@
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Proxies\bin\Debug\GeoLib.Proxies.dll
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Proxies\bin\Debug\GeoLib.Proxies.pdb
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Proxies\bin\Debug\GeoLib.Contracts.dll
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Proxies\bin\Debug\GeoLib.Contracts.pdb
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Proxies\obj\Debug\GeoLib.Proxies.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Proxies\obj\Debug\GeoLib.Proxies.dll
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Proxies\obj\Debug\GeoLib.Proxies.pdb
