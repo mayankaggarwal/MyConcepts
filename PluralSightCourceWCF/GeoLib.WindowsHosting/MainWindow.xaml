@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GeoLib.WindowsHosting"
         mc:Ignorable="d"
-        Title="MainWindow" Height="237" Width="239">
+        Title="MainWindow" Height="315" Width="538">
     <StackPanel Orientation="Vertical">
         <Button x:Name="btnStart" Content="Start Services" Margin="50,20,50,0" FontSize="18" Click="btnStart_Click"></Button>
         <Button x:Name="btnStop" Content="Stop Services" Margin="50,20,50,20" FontSize="18" Click="btnStop_Click"></Button>
+        <Label Name="lblMessage" Margin="50,20,50,10" FontSize="18"></Label>
     </StackPanel>
 </Window>

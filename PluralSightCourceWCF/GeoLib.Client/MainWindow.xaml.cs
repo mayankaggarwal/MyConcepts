@@ -1,9 +1,11 @@
-﻿using GeoLib.Contracts;
+﻿using GeoLib.Client.Contracts;
+using GeoLib.Contracts;
 using GeoLib.Proxies;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -52,7 +54,17 @@ namespace GeoLib.Client
         {
             if(txtState.Text != "")
             {
-                GeoClient proxy = new GeoClient("ephttp");
+                //GeoClient proxy = new GeoClient("ephttp");
+                //IEnumerable<ZipCodeData> zipCodeData = proxy.GetZips(txtState.Text);
+                //if(zipCodeData!=null)
+                //{
+                //    lstZips.ItemsSource = zipCodeData;
+                //}
+                //proxy.Close();
+
+                EndpointAddress endpointAddress = new EndpointAddress("net.tcp://localhost:11001/GeoService");
+                System.ServiceModel.Channels.Binding binding = new NetTcpBinding();
+                GeoClient proxy = new GeoClient(binding, endpointAddress);
                 IEnumerable<ZipCodeData> zipCodeData = proxy.GetZips(txtState.Text);
                 if(zipCodeData!=null)
                 {
@@ -64,7 +76,11 @@ namespace GeoLib.Client
 
         private void btnMakeCall_Click(object sender, RoutedEventArgs e)
         {
+            ChannelFactory<IMessageService> factory = new ChannelFactory<IMessageService>("");
+            IMessageService proxy = factory.CreateChannel();
 
+            proxy.ShowMessage(txtMessage.Text);
+            factory.Close();
         }
     }
 }

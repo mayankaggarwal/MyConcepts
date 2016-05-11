@@ -28,3 +28,5 @@ D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.WebHosting\bin\Ent
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.WebHosting\obj\Debug\GeoLib.WebHosting.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.WebHosting\obj\Debug\GeoLib.WebHosting.dll
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.WebHosting\obj\Debug\GeoLib.WebHosting.pdb
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.WebHosting\bin\EntityFramework.SqlServer.dll
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.WebHosting\bin\EntityFramework.SqlServer.xml

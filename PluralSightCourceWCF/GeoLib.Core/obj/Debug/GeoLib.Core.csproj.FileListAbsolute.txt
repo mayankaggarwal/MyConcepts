@@ -3,10 +3,9 @@ D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\Geo
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\GeoLib.Core.pdb
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\EntityFramework.dll
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\Moq.dll
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\EntityFramework.xml
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\Moq.xml
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\obj\Debug\GeoLib.Core.dll
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\obj\Debug\GeoLib.Core.pdb
-D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\Moq.dll
-D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\Moq.xml
-D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\obj\Debug\GeoLib.Core.csprojResolveAssemblyReference.cache
