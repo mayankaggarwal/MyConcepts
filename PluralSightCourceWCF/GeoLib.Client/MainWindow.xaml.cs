@@ -3,9 +3,11 @@ using GeoLib.Contracts;
 using GeoLib.Proxies;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Diagnostics;
 using System.Linq;
 using System.ServiceModel;
+using System.ServiceModel.Configuration;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -26,18 +28,35 @@ namespace GeoLib.Client
     /// </summary>
     public partial class MainWindow : Window
     {
+        string endpointName;
         public MainWindow()
         {
             InitializeComponent();
             this.Title = "UI Running on Thread " + Thread.CurrentThread.ManagedThreadId 
                 + " | Process " + Process.GetCurrentProcess().Id.ToString();
+            LoadComboBox();
+            endpointName = cbEndpoint.SelectedValue.ToString();
+        }
+
+        private void LoadComboBox()
+        {
+            ClientSection clientSettings = ConfigurationManager.GetSection("system.serviceModel/client") as ClientSection;
+            List<string> endpointNames = new List<string>();
+            foreach(ChannelEndpointElement endpoint in clientSettings.Endpoints)
+            {
+                endpointNames.Add(endpoint.Name);
+            }
+
+            cbEndpoint.ItemsSource = endpointNames;
+            cbEndpoint.SelectedIndex = 0;
+
         }
 
         private void btnGetInfo_Click(object sender, RoutedEventArgs e)
         {
             if(txtZipCode.Text != "")
             {
-                GeoClient proxy = new GeoClient("eptcp");
+                GeoClient proxy = new GeoClient(endpointName);
                 ZipCodeData data = proxy.GetZipInfo(txtZipCode.Text);
                 if(data!=null)
                 {
@@ -54,23 +73,23 @@ namespace GeoLib.Client
         {
             if(txtState.Text != "")
             {
-                //GeoClient proxy = new GeoClient("ephttp");
+                GeoClient proxy = new GeoClient(endpointName);
+                IEnumerable<ZipCodeData> zipCodeData = proxy.GetZips(txtState.Text);
+                if (zipCodeData != null)
+                {
+                    lstZips.ItemsSource = zipCodeData;
+                }
+                proxy.Close();
+
+                //EndpointAddress endpointAddress = new EndpointAddress("net.tcp://localhost:11001/GeoService");
+                //System.ServiceModel.Channels.Binding binding = new NetTcpBinding();
+                //GeoClient proxy = new GeoClient(binding, endpointAddress);
                 //IEnumerable<ZipCodeData> zipCodeData = proxy.GetZips(txtState.Text);
                 //if(zipCodeData!=null)
                 //{
                 //    lstZips.ItemsSource = zipCodeData;
                 //}
                 //proxy.Close();
-
-                EndpointAddress endpointAddress = new EndpointAddress("net.tcp://localhost:11001/GeoService");
-                System.ServiceModel.Channels.Binding binding = new NetTcpBinding();
-                GeoClient proxy = new GeoClient(binding, endpointAddress);
-                IEnumerable<ZipCodeData> zipCodeData = proxy.GetZips(txtState.Text);
-                if(zipCodeData!=null)
-                {
-                    lstZips.ItemsSource = zipCodeData;
-                }
-                proxy.Close();
             }
         }
 
@@ -81,6 +100,14 @@ namespace GeoLib.Client
 
             proxy.ShowMessage(txtMessage.Text);
             factory.Close();
+        }
+
+        private void cbEndpoint_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            endpointName = cbEndpoint.SelectedValue.ToString();
+            lstZips.ItemsSource = null;
+            lblCity.Content = "";
+            lblState.Content = "";
         }
     }
 }

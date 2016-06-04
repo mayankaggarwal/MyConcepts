@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="554" Width="730">
     <Grid>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="200" Margin="5,5,0,0" Name="cbEndpoint" FontSize="20" SelectionChanged="cbEndpoint_SelectionChanged"></ComboBox>
         <Label Content="Zip Code:" Height="40" HorizontalAlignment="Left" Margin="53,42,0,0" Name="lblZipCode" VerticalAlignment="Top" Width="103" FontSize="20"></Label>
         <TextBox Height="36" HorizontalAlignment="Left" Margin="156,46,0,0" Name="txtZipCode" VerticalAlignment="Top" Width="143" FontSize="20"></TextBox>
         <Button Content="GetInfo" Height="39" HorizontalAlignment="Left" Margin="156,103,0,0" x:Name="btnGetInfo" VerticalAlignment="Top" Width="100" FontSize="20" Click="btnGetInfo_Click"></Button>
