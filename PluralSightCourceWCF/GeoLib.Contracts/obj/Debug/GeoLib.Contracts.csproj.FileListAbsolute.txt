@@ -2,3 +2,4 @@ D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Contracts\bin\Debu
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Contracts\bin\Debug\GeoLib.Contracts.pdb
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Contracts\obj\Debug\GeoLib.Contracts.dll
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Contracts\obj\Debug\GeoLib.Contracts.pdb
+D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Contracts\obj\Debug\GeoLib.Contracts.csprojResolveAssemblyReference.cache

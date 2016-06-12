@@ -36,6 +36,7 @@ namespace GeoLib.Client
                 + " | Process " + Process.GetCurrentProcess().Id.ToString();
             LoadComboBox();
             endpointName = cbEndpoint.SelectedValue.ToString();
+            _proxy = new GeoClient(endpointName);
         }
 
         private void LoadComboBox()
@@ -52,12 +53,14 @@ namespace GeoLib.Client
 
         }
 
+        GeoClient _proxy = null;
+
         private void btnGetInfo_Click(object sender, RoutedEventArgs e)
         {
             if(txtZipCode.Text != "")
             {
-                GeoClient proxy = new GeoClient(endpointName);
-                ZipCodeData data = proxy.GetZipInfo(txtZipCode.Text);
+                //GeoClient proxy = new GeoClient(endpointName);
+                ZipCodeData data = _proxy.GetZipInfo(txtZipCode.Text);
                 if(data!=null)
                 {
                     lblCity.Content = data.City;
@@ -65,7 +68,7 @@ namespace GeoLib.Client
 
                 }
 
-                proxy.Close();
+                //proxy.Close();
             }
         }
 

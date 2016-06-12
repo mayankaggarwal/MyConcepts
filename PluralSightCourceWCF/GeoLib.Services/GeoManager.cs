@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GeoLib.Services
 {
-    [ServiceBehavior(UseSynchronizationContext =false)]
+    [ServiceBehavior(UseSynchronizationContext =false,InstanceContextMode = InstanceContextMode.PerSession)]
     public class GeoManager : IGeoService
     {
         #region class Initializers
@@ -20,7 +20,7 @@ namespace GeoLib.Services
 
         IStateRepository _stateRepository;
         IZipCodeRepository _zipRepository;
-
+        int _counter = 0;
         public GeoManager(IStateRepository stateRepository)
         {
             this._stateRepository = stateRepository;
@@ -54,7 +54,8 @@ namespace GeoLib.Services
                     ZipCode = zipCode.Zip,
                 };
             }
-
+            _counter++;
+            Console.WriteLine("Counter = {0}", _counter);
             return zipCodeData;
         }
 
