@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.0": {
-      "FirstDotNetCoreApp/1.0.0": {
+      "FirstDotNetCoreApplication/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.App": "1.0.0-rc2-3002702"
         },
         "runtime": {
-          "FirstDotNetCoreApp.dll": {}
+          "FirstDotNetCoreApplication.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/1.1.0": {},
@@ -1316,7 +1316,7 @@
     }
   },
   "libraries": {
-    "FirstDotNetCoreApp/1.0.0": {
+    "FirstDotNetCoreApplication/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
