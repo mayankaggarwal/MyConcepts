@@ -1,0 +1,11 @@
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\WCFService.dll.config
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\WCFService.dll
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\WCFService.pdb
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\EntityFramework.dll
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\EntityFramework.SqlServer.dll
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\System.Web.Providers.dll
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\EntityFramework.xml
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\EntityFramework.SqlServer.xml
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\System.Web.Providers.xml
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\obj\Debug\WCFService.dll
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\obj\Debug\WCFService.pdb
