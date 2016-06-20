@@ -13,10 +13,10 @@ namespace GeoLib.Contracts
         [OperationContract]
         void PushZip(string zip);
 
-        [OperationContract]
+        [OperationContract(IsInitiating =false)]
         ZipCodeData GetZipInfo();
 
-        [OperationContract]
+        [OperationContract(IsInitiating = false)]
         IEnumerable<ZipCodeData> GetZips(int range);
     }
 }

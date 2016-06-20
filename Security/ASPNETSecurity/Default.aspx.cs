@@ -9,6 +9,7 @@ public partial class _Default : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        //NetFourMembershipProvider temp = new NetFourMembershipProvider();
+        //string pass = temp.GetClearTextPassword("6WD5EQFGm/S4syxgLuIvbo0bEYp830SzIosZY3Ee5Fs=");
     }
 }

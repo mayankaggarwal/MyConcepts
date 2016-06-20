@@ -49,6 +49,8 @@ namespace GeoLib.SelfHosting
             host.AddServiceEndpoint(typeof(IMetadataExchange), MetadataExchangeBindings.CreateMexHttpBinding(), "MEXHttp");
             host.Open();
 
+
+            Se
             Console.WriteLine("Press key to stop the service");
             Console.ReadKey();
 

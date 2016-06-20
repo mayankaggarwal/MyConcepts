@@ -9,3 +9,4 @@ D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin
 D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\bin\Debug\System.Web.Providers.xml
 D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\obj\Debug\WCFService.dll
 D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\obj\Debug\WCFService.pdb
+D:\Learning\Repository\MyConcepts\Security\SecurityImplementation\WCFService\obj\Debug\WCFService.csprojResolveAssemblyReference.cache

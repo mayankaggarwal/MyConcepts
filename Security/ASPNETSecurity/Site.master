@@ -7,7 +7,7 @@
     <title><%: Page.Title %>- My ASP.NET Application</title>
     <link href="~/Content/Site.css" rel="stylesheet" />
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <asp:PlaceHolder runat="server">           
+    <asp:PlaceHolder runat="server">
         <script src="<%: ResolveUrl("~/Scripts/modernizr-2.6.2.js") %>"></script>
     </asp:PlaceHolder>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -16,61 +16,104 @@
 </head>
 <body>
     <form runat="server">
-    <asp:ScriptManager runat="server">
-        <Scripts>
-            <asp:ScriptReference Name="jquery" />
-            <asp:ScriptReference Name="jquery.ui.combined" />
-        </Scripts>
-    </asp:ScriptManager>
-    <header>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p class="site-title"><a runat="server" href="~/">your logo here</a></p>
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />
+            </Scripts>
+        </asp:ScriptManager>
+        <header>
+            <div id="header">
+                <span class="title">User Account Tutorials</span><br />
+                <span class="breadcrumb">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                </span>
             </div>
-            <div class="float-right">
-                <section id="login">
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul>
-                                <li><a id="registerLink" runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a id="loginLink" runat="server" href="~/Account/Login">Log in</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <p>
-                                Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">
-                                    <asp:LoginName runat="server" CssClass="username" />
-                                </a>!
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"><a runat="server" href="~/">your logo here</a></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        <asp:LoginView runat="server" ViewStateMode="Disabled">
+                            <AnonymousTemplate>
+                                <ul>
+                                    <li><a id="registerLink" runat="server" href="~/Account/Register">Register</a></li>
+                                    <li><a id="loginLink" runat="server" href="~/Account/Login">Log in</a></li>
+                                </ul>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <p>
+                                    Hello, <a runat="server" class="username" href="~/Account/Manage" title="Manage your account">
+                                        <asp:LoginName runat="server" CssClass="username" />
+                                    </a>!
                                 <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
-                            </p>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </section>
-                <nav>
-                    <ul id="menu">
+                                </p>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </section>
+                    <nav>
+                        <%--                    <ul id="menu">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </nav>
+                    </ul>--%>
+                        <ul>
+                            <li>
+
+                                <asp:HyperLink runat="server" ID="lnkHome" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+                            </li>
+                            <asp:Repeater runat="server" ID="menu" DataSourceID="SiteMapDataSource1">
+
+                                <ItemTemplate>
+                                    <li>
+                                        <asp:HyperLink ID="lnkMenuItem" runat="server"
+                                            NavigateUrl='<%# Eval("Url") %>'><%# Eval("Title") %></asp:HyperLink>
+
+                                        <asp:Repeater ID="submenu" runat="server" DataSource="<%#
+                         ((SiteMapNode) Container.DataItem).ChildNodes %>">
+                                            <HeaderTemplate>
+                                                <ul>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+
+                                                <li>
+                                                    <asp:HyperLink ID="lnkMenuItem" runat="server" NavigateUrl='<%#
+                                        Eval("Url") %>'><%# Eval("Title") %></asp:HyperLink>
+
+                                                </li>
+                                            </ItemTemplate>
+                                            <FooterTemplate>
+                                                </ul>
+                                            </FooterTemplate>
+                                        </asp:Repeater>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+
+                        </ul>
+
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+                    </nav>
+                </div>
             </div>
+        </header>
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
         </div>
-    </header>
-    <div id="body">
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-        </section>
-    </div>
-    <footer>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p>
-                    &copy; <%: DateTime.Now.Year %> - My ASP.NET Application
-                </p>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>
+                        &copy; <%: DateTime.Now.Year %> - My ASP.NET Application
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </form>
 </body>
 </html>

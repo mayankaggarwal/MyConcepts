@@ -1,0 +1,11 @@
+PostNumber	EndpointName	Binding	Service
+11001	SelfHost_tcp	netTcpBinding	
+11002	SelfHost_BasicHttp	basicHttpBinding
+11003	SelftHost_wsHttp	wsHttpBinding
+8080	WebHost_wshttp	wsHttpBinding	
+8080	WebHost_tcp	netTcpBinding
+11004		netTcpBinding	MessageService
+11005
+11006
+11007
+11008

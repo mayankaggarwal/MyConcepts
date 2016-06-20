@@ -126,5 +126,20 @@ namespace GeoLib.Services
 
             return zipCodeDataList;
         }
+
+        public void PushZip(string zip)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ZipCodeData GetZipInfo()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<ZipCodeData> GetZips(int range)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
