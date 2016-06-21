@@ -1,15 +1,15 @@
 <publishData>
   <publishTarget publishUrl="http://localhost:13000/">
-    <file relUrl="bin/EntityFramework.xml" publishTime="09/11/2013 09:10:04" />
-    <file relUrl="Web.config" publishTime="06/20/2016 21:48:36" />
+    <file relUrl="Web.config" publishTime="06/21/2016 19:33:25" />
     <file relUrl="bin/EntityFramework.SqlServer.xml" publishTime="09/11/2013 09:10:02" />
+    <file relUrl="bin/WCFService.dll.config" publishTime="06/21/2016 19:33:25" />
+    <file relUrl="bin/WCFService.dll" publishTime="06/21/2016 19:33:27" />
     <file relUrl="bin/EntityFramework.SqlServer.dll" publishTime="09/11/2013 09:10:02" />
-    <file relUrl="bin/WCFService.pdb" publishTime="06/20/2016 21:48:51" />
+    <file relUrl="bin/WCFService.pdb" publishTime="06/21/2016 19:33:27" />
     <file relUrl="bin/System.Web.Providers.dll" publishTime="11/22/2013 10:21:56" />
     <file relUrl="bin/EntityFramework.dll" publishTime="09/11/2013 09:10:02" />
-    <file relUrl="bin/WCFService.dll.config" publishTime="06/20/2016 21:48:36" />
-    <file relUrl="WCFService.Service1.svc" publishTime="06/20/2016 21:49:02" />
+    <file relUrl="bin/EntityFramework.xml" publishTime="09/11/2013 09:10:04" />
     <file relUrl="bin/System.Web.Providers.xml" publishTime="11/22/2013 10:21:56" />
-    <file relUrl="bin/WCFService.dll" publishTime="06/20/2016 21:48:51" />
+    <file relUrl="WCFService.Service1.svc" publishTime="06/21/2016 19:33:27" />
   </publishTarget>
 </publishData>
