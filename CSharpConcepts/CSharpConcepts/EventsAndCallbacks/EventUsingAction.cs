@@ -28,8 +28,6 @@ namespace CSharpConcepts.EventsAndCallbacks
             Console.WriteLine("\n-------------------------------------------------------------------------\n");
         }
 
-
-
         private void EventUsingActionExample()
         {
             Console.WriteLine("Implementing publish subscribe using Action");
@@ -222,14 +220,5 @@ namespace CSharpConcepts.EventsAndCallbacks
             }
         }
 
-        
-
-        
-
-        
-
-        
     }
-
-
 }

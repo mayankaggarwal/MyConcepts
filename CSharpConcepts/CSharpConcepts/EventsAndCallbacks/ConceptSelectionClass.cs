@@ -20,6 +20,9 @@ namespace CSharpConcepts.EventsAndCallbacks
                 case EventsAndCallbacksConceptsList.EventUsingAction:
                     conceptExecutionClass = new EventUsingAction();
                     break;
+                case EventsAndCallbacksConceptsList.EventInheritanceExample:
+                    conceptExecutionClass = new EventInheritanceExample();
+                    break;
             }
         }
     }
@@ -27,6 +30,7 @@ namespace CSharpConcepts.EventsAndCallbacks
     public enum EventsAndCallbacksConceptsList
     {
         BasicDelegateExample,
-        EventUsingAction
+        EventUsingAction,
+        EventInheritanceExample
     }
 }

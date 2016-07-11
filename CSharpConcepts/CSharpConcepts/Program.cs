@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,14 +13,14 @@ namespace CSharpConcepts
         {
 
             Interfaces.ConceptSelections conceptSelection = null;
-            conceptSelection = new ThreadingConcepts.ConceptSelectionClass();
-            conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.ParentChildTask);
+            //conceptSelection = new ThreadingConcepts.ConceptSelectionClass();
+            //conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.ParentChildTask);
 
             //conceptSelection = new ImplementingProgramFlow.ConceptSelectionClass();
             //conceptSelection.RunConcept(ImplementingProgramFlow.ProgramFlowConceptList.ForeachImplementation);
 
-            //conceptSelection = new EventsAndCallbacks.ConceptSelectionClass();
-            //conceptSelection.RunConcept(EventsAndCallbacks.EventsAndCallbacksConceptsList.EventUsingAction);
+            conceptSelection = new EventsAndCallbacks.ConceptSelectionClass();
+            conceptSelection.RunConcept(EventsAndCallbacks.EventsAndCallbacksConceptsList.EventInheritanceExample);
 
             //conceptSelection = new ImplementExceptionHandling.ConceptSelectionClass();
             //conceptSelection.RunConcept(ImplementExceptionHandling.ExceptionsConceptList.ParsingInvalidNumberExceptionEg);
@@ -38,7 +39,12 @@ namespace CSharpConcepts
 
             //conceptSelection = new ProgrammingTests.ConceptSelectionClass();
             //conceptSelection.RunConcept(ProgrammingTests.ProgrammingTestConceptList.ProducerConsumerProblem);
-            Console.ReadLine();
+            
+            if(Debugger.IsAttached)
+            {
+                Console.WriteLine("Press any key to exit!");
+                Console.ReadKey(true);
+            }
         }
 
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using CSharpConcepts.Interfaces;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace CSharpConcepts.EventsAndCallbacks
 {
@@ -24,7 +25,10 @@ namespace CSharpConcepts.EventsAndCallbacks
             DelegateWithLambdaExpression();
             Console.WriteLine("\n-------------------------------------------------------------------------\n");
             ActionDelegateExample();
-
+            Console.WriteLine("\n-------------------------------------------------------------------------\n");
+            StaticAndInstanceDelegateDiff();
+            Console.WriteLine("\n-------------------------------------------------------------------------\n");
+            AsyncLambdaExample();
         }
 
         private void BasicDelegateEg()
@@ -95,6 +99,84 @@ namespace CSharpConcepts.EventsAndCallbacks
             del(5,6);
         }
 
+        private void StaticAndInstanceDelegateDiff()
+        {
+            Console.WriteLine("Code to show the difference between Static method assignment and Instance method assignment in delegate");
+
+            Person alice = new Person { Name = "Alice" };
+            Person bob = new Person { Name = "Bob" };
+
+            alice.InstanceMethod = alice.GetName;
+            alice.StaticMethod = Person.StaticName;
+
+            bob.InstanceMethod = alice.GetName;
+            bob.StaticMethod = Person.StaticName;
+
+            string result = "";
+            result = String.Format("Alice's Instance method returns: {0} \n"
+                + "Alice's Static method returns: {1} \n"
+                + "Bob's Instance method returns: {2} \n"
+                + "Bob's Static method returns: {3}"
+                ,alice.InstanceMethod(),alice.StaticMethod()
+                ,bob.InstanceMethod(),bob.StaticMethod());
+
+            Console.WriteLine(result);
+
+        }
+
+        protected class Person
+        {
+            public string Name;
+
+            public delegate string GetStringDelegate();
+
+            public static string StaticName()
+            {
+                return "Static";
+            }
+
+            public string GetName()
+            {
+                return Name;
+            }
+
+            public GetStringDelegate StaticMethod;
+            public GetStringDelegate InstanceMethod;
+        }
+
+        private int Trial = 0;
+        private void AsyncLambdaExample()
+        {
+            Form form = new Form();
+            //form.ButtonClick += Form_ButtonClick; 
+            form.ButtonClick += async (button, buttonArgs) =>
+            {
+                int trial = ++Trial;
+                Console.WriteLine("Running Trial " + trial.ToString() + ".....");
+                await DoSomethingAsync();
+                Console.WriteLine("Done with Trial " + trial.ToString() + ".....");
+
+            };
+
+            form.OnButtonClick();
+        }
+
+        async Task DoSomethingAsync()
+        {
+            await Task.Delay(3000);
+            Console.WriteLine("Timedelay finished");
+        }
+
+        public class Form
+        {
+            public event EventHandler ButtonClick = delegate { };
+
+            public void OnButtonClick()
+            {
+                ButtonClick(this, EventArgs.Empty);
+            }
+        }
+
         #region Supporting methods
         public delegate int Calculate(int x, int y);
         public int Add(int x,int y) { return x + y; }
@@ -111,6 +193,7 @@ namespace CSharpConcepts.EventsAndCallbacks
 
         public delegate void ContraVarianceDel(StreamWriter tw);
         public void DoSomething(TextWriter tw) { }
+
         #endregion
     }
 }
