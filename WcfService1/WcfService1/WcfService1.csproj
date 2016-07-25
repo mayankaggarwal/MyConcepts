@@ -66,6 +66,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAnotherInterface.cs" />
     <Compile Include="PeopleService.svc.cs">
       <DependentUpon>PeopleService.svc</DependentUpon>
     </Compile>

@@ -21,4 +21,3 @@ D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\bin\WcfService1.dll
 D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\bin\WcfService1.pdb
 D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\obj\Debug\WcfService1.dll
 D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
-D:\Learning\Repository\MyConcepts\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
