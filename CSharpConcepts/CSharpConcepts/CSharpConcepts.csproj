@@ -62,9 +62,11 @@
     <Compile Include="CSharpTypesConcepts\ApplyingAttributesExamples.cs" />
     <Compile Include="CSharpTypesConcepts\CodeGenerationExamples.cs" />
     <Compile Include="CSharpTypesConcepts\ConceptSelectionClass.cs" />
+    <Compile Include="CSharpTypesConcepts\ConversionExamples.cs" />
     <Compile Include="CSharpTypesConcepts\ReflectionExamples.cs" />
     <Compile Include="CSharpTypesConcepts\StandardInterfacesImplementation.cs" />
     <Compile Include="CSharpTypesConcepts\StringManipulationExamples.cs" />
+    <Compile Include="DataAccessConcepts\ClassHierarchyExample.cs" />
     <Compile Include="DataAccessConcepts\ConceptSelectionClass.cs" />
     <Compile Include="DataAccessConcepts\LINQExamples.cs" />
     <Compile Include="DataAccessConcepts\SerializationAndDeserializationExamples.cs" />

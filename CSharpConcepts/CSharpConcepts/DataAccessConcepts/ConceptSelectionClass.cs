@@ -34,6 +34,9 @@ namespace CSharpConcepts.DataAccessConcepts
                     case DataAccessConceptsList.SerializationAndDeserializationExamples:
                         conceptExecutionClass = new SerializationAndDeserializationExamples();
                         break;
+                    case DataAccessConceptsList.ImplementingClassHierarchy:
+                        conceptExecutionClass = new ClassHierarchyExample();
+                        break;
                 }
             }
         }
@@ -46,6 +49,7 @@ namespace CSharpConcepts.DataAccessConcepts
         WorkingWithADO_DOTNET_Concepts,
         WorkingWithXMLConcepts,
         LINQExamples,
-        SerializationAndDeserializationExamples
+        SerializationAndDeserializationExamples,
+        ImplementingClassHierarchy
     }
 }

@@ -93,9 +93,14 @@ namespace CSharpConcepts.CSharpTypesConcepts
             Console.WriteLine("Not Implemented---------------------------");
         }
 
-        class Order : IComparable
+        class Order : IComparable<Order>
         {
             public DateTime Created { get; set; }
+
+            public int CompareTo(Order other)
+            {
+                throw new NotImplementedException();
+            }
 
             public int CompareTo(object obj)
             {

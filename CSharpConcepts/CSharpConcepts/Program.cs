@@ -11,7 +11,7 @@ namespace CSharpConcepts
     {
         static void Main(string[] args)
         {
-
+     
             Interfaces.ConceptSelections conceptSelection = null;
             //conceptSelection = new ThreadingConcepts.ConceptSelectionClass();
             //conceptSelection.RunConcept(ThreadingConcepts.ThreadingConceptsList.ParentChildTask);
@@ -19,14 +19,14 @@ namespace CSharpConcepts
             //conceptSelection = new ImplementingProgramFlow.ConceptSelectionClass();
             //conceptSelection.RunConcept(ImplementingProgramFlow.ProgramFlowConceptList.ForeachImplementation);
 
-            conceptSelection = new EventsAndCallbacks.ConceptSelectionClass();
-            conceptSelection.RunConcept(EventsAndCallbacks.EventsAndCallbacksConceptsList.EventInheritanceExample);
+            //conceptSelection = new EventsAndCallbacks.ConceptSelectionClass();
+            //conceptSelection.RunConcept(EventsAndCallbacks.EventsAndCallbacksConceptsList.EventInheritanceExample);
 
             //conceptSelection = new ImplementExceptionHandling.ConceptSelectionClass();
             //conceptSelection.RunConcept(ImplementExceptionHandling.ExceptionsConceptList.ParsingInvalidNumberExceptionEg);
 
-            //conceptSelection = new CSharpTypesConcepts.ConceptSelectionClass();
-            //conceptSelection.RunConcept(CSharpTypesConcepts.CSharpTypeConceptsList.StringManipulationExamples);
+            conceptSelection = new CSharpTypesConcepts.ConceptSelectionClass();
+            conceptSelection.RunConcept(CSharpTypesConcepts.CSharpTypeConceptsList.ConversionExamples);
 
             //conceptSelection = new SecurityConcepts.ConceptSelectionClass();
             //conceptSelection.RunConcept(SecurityConcepts.SecurityConcepts.SecureStringExample);
@@ -39,8 +39,8 @@ namespace CSharpConcepts
 
             //conceptSelection = new ProgrammingTests.ConceptSelectionClass();
             //conceptSelection.RunConcept(ProgrammingTests.ProgrammingTestConceptList.ProducerConsumerProblem);
-            
-            if(Debugger.IsAttached)
+
+            if (Debugger.IsAttached)
             {
                 Console.WriteLine("Press any key to exit!");
                 Console.ReadKey(true);

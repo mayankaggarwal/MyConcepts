@@ -29,6 +29,9 @@ namespace CSharpConcepts.CSharpTypesConcepts
                 case CSharpTypeConceptsList.StringManipulationExamples:
                     conceptExecutionClass = new StringManipulationExamples();
                     break;
+                case CSharpTypeConceptsList.ConversionExamples:
+                    conceptExecutionClass = new ConversionExamples();
+                    break;
             }
             
         }
@@ -40,6 +43,7 @@ namespace CSharpConcepts.CSharpTypesConcepts
         ApplyingAttributesExamples,
         ReflectionExamples,
         CodeGenerationExample,
-        StringManipulationExamples
+        StringManipulationExamples,
+        ConversionExamples
     }
 }
