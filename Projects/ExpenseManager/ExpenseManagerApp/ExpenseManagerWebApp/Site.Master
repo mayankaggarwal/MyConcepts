@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ExpenseManagerWebApp.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Expense Manager</title>
+    <link href="Styles/Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <span class="title">User Account Tutorials</span>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="navigation">
+        </div>
+    </form>
+</body>
+</html>

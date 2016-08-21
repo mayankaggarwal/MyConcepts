@@ -1,0 +1,6 @@
+D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManagerWebApp.dll.config
+D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManagerWebApp.dll
+D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManagerWebApp.pdb
+D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\obj\Debug\ExpenseManagerWebApp.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\obj\Debug\ExpenseManagerWebApp.dll
+D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\obj\Debug\ExpenseManagerWebApp.pdb
