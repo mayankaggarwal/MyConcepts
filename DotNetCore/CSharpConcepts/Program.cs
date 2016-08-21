@@ -20,8 +20,11 @@ namespace CSharpConcepts
 		//ClassHierarchiesExamples classHierarchiesExamples = new ClassHierarchiesExamples();
 		//classHierarchiesExamples.Run();
 
-		StandardInterfacesExample standardInterfacesExamples = new StandardInterfacesExample();
-		standardInterfacesExamples.Run();
+		//StandardInterfacesExample standardInterfacesExamples = new StandardInterfacesExample();
+		//standardInterfacesExamples.Run();
+
+		DataValidations dataValidations = new DataValidations();
+		dataValidations.Run();
 		if(Debugger.IsAttached)
 		{
 			Console.WriteLine("Press Any Key to continue");
