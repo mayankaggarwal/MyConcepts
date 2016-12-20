@@ -5,3 +5,10 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Co
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Release\Concepts.Logging.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Release\Concepts.Logging.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Release\Concepts.Logging.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.Logging.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.Logging.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.LoggingLayer.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\bin\Release\Concepts.LoggingLayer.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Release\Concepts.Logging.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Release\Concepts.Logging.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.Logging\obj\Release\Concepts.Logging.pdb

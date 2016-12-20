@@ -1,0 +1,71 @@
+﻿using IDW.Entities.GIR;
+using IDW.Entities.Plazza;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace IDW.Entities.OneDIR
+{
+    [Table("tbl_od_identity")]
+    public class OD_Identity:IEntityBase
+    {
+        [Key]
+        public string CUID { get; set; }
+        public Nullable<Int16> Title { get; set; }
+        public string Last_Name { get; set; }
+        public string First_Name { get; set; }
+        public string Type_OD { get; set; }
+        public string Mobile { get; set; }
+        public string Phone_Number { get; set; }
+        public string Fax { get; set; }
+        public string Email { get; set; }
+        public string Secretary_CUID { get; set; }
+        public string Postal_Address { get; set; }
+        public string Location_Code { get; set; }
+        public string Entity { get; set; }
+        public string Manager_CUID { get; set; }
+        public string Category_Code { get; set; }
+        public string Mission { get; set; }
+        public string Function { get; set; }
+        public string Activity1 { get; set; }
+        public string Activity2 { get; set; }
+        public string Skill { get; set; }
+        public string Secondary_Entity { get; set; }
+        public string Secondary_Manager_CUID { get; set; }
+        public string Secondary_Secretary_CUID { get; set; }
+        public string Local_ID { get; set; }
+        public string Preferred_Language { get; set; }
+        public string Country_GIR { get; set; }
+        public string Country { get; set; }
+        public Nullable<Int16> Status { get; set; }
+        public string Rank { get; set; }
+        public string Room_Number { get; set; }
+        public string Visiting_Card { get; set; }
+        public string Visiting_Card_FR { get; set; }
+        public string Visiting_Card_EN { get; set; }
+        public string Photo_Name { get; set; }
+        public Nullable<System.DateTime> Last_Update_Date { get; set; }
+        public Nullable<System.DateTime> Creation_Date { get; set; }
+        public string Other_Phone_Number { get; set; }
+        public string Email_Secondary { get; set; }
+        public string Display_Name { get; set; }
+        public Nullable<bool> PKI { get; set; }
+
+        [NotMapped]
+        public long ID
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+    }
+}

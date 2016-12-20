@@ -23,8 +23,11 @@ namespace CSharpConcepts
 		//StandardInterfacesExample standardInterfacesExamples = new StandardInterfacesExample();
 		//standardInterfacesExamples.Run();
 
-		DataValidations dataValidations = new DataValidations();
-		dataValidations.Run();
+		//DataValidations dataValidations = new DataValidations();
+		//dataValidations.Run();
+		
+		DataAccess dataAccess = new DataAccess();
+		dataAccess.Run();
 		if(Debugger.IsAttached)
 		{
 			Console.WriteLine("Press Any Key to continue");

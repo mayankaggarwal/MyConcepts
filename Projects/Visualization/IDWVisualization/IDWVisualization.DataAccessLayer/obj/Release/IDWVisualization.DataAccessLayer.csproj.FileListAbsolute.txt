@@ -1,0 +1,13 @@
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\IDWVisualization.DataAccessLayer.dll.config
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\IDWVisualization.DataAccessLayer.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\IDWVisualization.DataAccessLayer.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\EntityFramework.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\IDWVisualization.Core.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\MySql.Data.Entity.EF6.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\IDWVisualization.Core.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\EntityFramework.xml
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\obj\Release\IDWVisualization.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\obj\Release\IDWVisualization.DataAccessLayer.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.DataAccessLayer\obj\Release\IDWVisualization.DataAccessLayer.pdb

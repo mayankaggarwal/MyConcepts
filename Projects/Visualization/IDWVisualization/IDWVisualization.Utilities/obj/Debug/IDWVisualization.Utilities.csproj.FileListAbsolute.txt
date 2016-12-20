@@ -1,0 +1,4 @@
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Utilities\bin\Debug\IDWVisualization.Utilities.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Utilities\bin\Debug\IDWVisualization.Utilities.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Utilities\obj\Debug\IDWVisualization.Utilities.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Utilities\obj\Debug\IDWVisualization.Utilities.pdb

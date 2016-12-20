@@ -1,0 +1,11 @@
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\bin\Release\ExpenseManager.Data.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\bin\Release\ExpenseManager.Data.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\bin\Release\EntityFramework.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\bin\Release\ExpenseManager.Core.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\bin\Release\ExpenseManager.Core.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\bin\Release\EntityFramework.xml
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\obj\Release\ExpenseManager.Data.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\obj\Release\ExpenseManager.Data.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManager.Data\obj\Release\ExpenseManager.Data.pdb

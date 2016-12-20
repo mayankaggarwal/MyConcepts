@@ -1,0 +1,11 @@
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\bin\Debug\IDW.Services.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\bin\Debug\IDW.Services.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\bin\Debug\IDW.Data.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\bin\Debug\IDW.Entities.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\bin\Debug\EntityFramework.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\bin\Debug\IDW.Data.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\bin\Debug\IDW.Entities.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\bin\Debug\EntityFramework.xml
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\obj\Debug\IDW.Services.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\obj\Debug\IDW.Services.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Services\obj\Debug\IDW.Services.pdb

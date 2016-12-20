@@ -50,7 +50,6 @@ namespace GeoLib.SelfHosting
             host.Open();
 
 
-            Se
             Console.WriteLine("Press key to stop the service");
             Console.ReadKey();
 

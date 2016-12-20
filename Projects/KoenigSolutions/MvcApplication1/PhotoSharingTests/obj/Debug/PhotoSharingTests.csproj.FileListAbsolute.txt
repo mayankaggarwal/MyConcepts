@@ -1,0 +1,11 @@
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\bin\Debug\PhotoSharingTests.dll
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\bin\Debug\PhotoSharingTests.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\bin\Debug\PhotoSharingApplication.dll
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\bin\Debug\System.Web.Mvc.dll
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\bin\Debug\EntityFramework.dll
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\bin\Debug\PhotoSharingApplication.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\bin\Debug\System.Web.Mvc.xml
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\bin\Debug\EntityFramework.xml
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\obj\Debug\PhotoSharingTests.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\obj\Debug\PhotoSharingTests.dll
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingTests\obj\Debug\PhotoSharingTests.pdb

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\D\Projects\IDW\Development\IDWVisualisation</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/dll/x64/msvcp120.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/msvcr120.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/OpenCvSharpExtern.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_calib3d2410.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_contrib2410.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_core2410.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_features2d2410.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_ffmpeg2410_64.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_flann2410.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_gpu2410.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_highgui2410.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_imgproc2410.dll">
+      <publishTime>10/31/2016 20:41:40</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_legacy2410.dll">
+      <publishTime>10/31/2016 20:41:40</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_ml2410.dll">
+      <publishTime>10/31/2016 20:41:41</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_nonfree2410.dll">
+      <publishTime>10/31/2016 20:41:41</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_objdetect2410.dll">
+      <publishTime>10/31/2016 20:41:41</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_ocl2410.dll">
+      <publishTime>10/31/2016 20:41:41</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_photo2410.dll">
+      <publishTime>10/31/2016 20:41:41</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_stitching2410.dll">
+      <publishTime>10/31/2016 20:41:41</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_superres2410.dll">
+      <publishTime>10/31/2016 20:41:41</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_video2410.dll">
+      <publishTime>10/31/2016 20:41:41</publishTime>
+    </File>
+    <File Include="bin/dll/x64/opencv_videostab2410.dll">
+      <publishTime>10/31/2016 20:41:42</publishTime>
+    </File>
+    <File Include="bin/dll/x86/msvcp120.dll">
+      <publishTime>10/31/2016 20:41:42</publishTime>
+    </File>
+    <File Include="bin/dll/x86/msvcr120.dll">
+      <publishTime>10/31/2016 20:41:42</publishTime>
+    </File>
+    <File Include="bin/dll/x86/OpenCvSharpExtern.dll">
+      <publishTime>10/31/2016 20:41:42</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_calib3d2410.dll">
+      <publishTime>10/31/2016 20:41:42</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_contrib2410.dll">
+      <publishTime>10/31/2016 20:41:42</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_core2410.dll">
+      <publishTime>10/31/2016 20:41:42</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_features2d2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_ffmpeg2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_flann2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_gpu2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_highgui2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_imgproc2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_legacy2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_ml2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_nonfree2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_objdetect2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_ocl2410.dll">
+      <publishTime>10/31/2016 20:41:43</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_photo2410.dll">
+      <publishTime>10/31/2016 20:41:44</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_stitching2410.dll">
+      <publishTime>10/31/2016 20:41:44</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_superres2410.dll">
+      <publishTime>10/31/2016 20:41:44</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_video2410.dll">
+      <publishTime>10/31/2016 20:41:44</publishTime>
+    </File>
+    <File Include="bin/dll/x86/opencv_videostab2410.dll">
+      <publishTime>10/31/2016 20:41:44</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>08/10/2016 12:37:32</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>08/10/2016 12:37:32</publishTime>
+    </File>
+    <File Include="bin/IDW.ImageProcessing.dll">
+      <publishTime>11/01/2016 16:51:43</publishTime>
+    </File>
+    <File Include="bin/IDWVisualization.App.dll">
+      <publishTime>11/03/2016 09:11:09</publishTime>
+    </File>
+    <File Include="bin/IDWVisualization.Core.dll">
+      <publishTime>01/11/2016 12:13:25</publishTime>
+    </File>
+    <File Include="bin/IDWVisualization.DataAccessLayer.dll">
+      <publishTime>11/03/2016 09:11:08</publishTime>
+    </File>
+    <File Include="bin/Images/image1.png">
+      <publishTime>10/13/2016 16:17:42</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF6.dll">
+      <publishTime>08/10/2016 12:41:35</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/10/2016 11:45:36</publishTime>
+    </File>
+    <File Include="bin/OpenCvSharp.Blob.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/OpenCvSharp.CPlusPlus.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/OpenCvSharp.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/OpenCvSharp.Extensions.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/OpenCvSharp.UserInterface.dll">
+      <publishTime>10/31/2016 20:41:39</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>09/10/2016 12:27:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>09/10/2016 12:27:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>09/10/2016 12:27:43</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/10/2016 12:27:37</publishTime>
+    </File>
+    <File Include="Images/image1.png">
+      <publishTime>10/13/2016 16:17:42</publishTime>
+    </File>
+    <File Include="Images/load.gif">
+      <publishTime>10/14/2016 08:33:26</publishTime>
+    </File>
+    <File Include="Images/loader.gif">
+      <publishTime>11/08/2012 06:10:34</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>10/31/2016 20:41:56</publishTime>
+    </File>
+    <File Include="Images/PlazzaImage.png">
+      <publishTime>10/19/2016 13:37:38</publishTime>
+    </File>
+    <File Include="Images/TemplateEnglish.jpg">
+      <publishTime>01/11/2016 14:32:06</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/01/2016 14:44:30</publishTime>
+    </File>
+    <File Include="ProfileCompletion.html">
+      <publishTime>01/11/2016 18:48:51</publishTime>
+    </File>
+    <File Include="Scripts/app.js">
+      <publishTime>01/11/2016 19:09:25</publishTime>
+    </File>
+    <File Include="Scripts/d3.js">
+      <publishTime>09/10/2016 14:57:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>09/10/2016 14:59:50</publishTime>
+    </File>
+    <File Include="Styles/style.css">
+      <publishTime>01/11/2016 11:50:41</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/01/2016 17:22:13</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

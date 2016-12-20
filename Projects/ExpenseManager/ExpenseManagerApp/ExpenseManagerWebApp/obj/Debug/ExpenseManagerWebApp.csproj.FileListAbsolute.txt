@@ -4,3 +4,17 @@ D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\Expe
 D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\obj\Debug\ExpenseManagerWebApp.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\obj\Debug\ExpenseManagerWebApp.dll
 D:\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\obj\Debug\ExpenseManagerWebApp.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManagerWebApp.dll.config
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManagerWebApp.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManagerWebApp.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\obj\Debug\ExpenseManagerWebApp.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\obj\Debug\ExpenseManagerWebApp.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\obj\Debug\ExpenseManagerWebApp.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\EntityFramework.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\EntityFramework.SqlServer.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManager.Core.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManager.Data.dll
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManager.Core.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\ExpenseManager.Data.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\EntityFramework.xml
+C:\D\Learning\Repository\MyConcepts\Projects\ExpenseManager\ExpenseManagerApp\ExpenseManagerWebApp\bin\EntityFramework.SqlServer.xml

@@ -1,0 +1,8 @@
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Release\IDWVisualization.Core.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Release\IDWVisualization.Core.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Release\EntityFramework.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Release\EntityFramework.SqlServer.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Release\EntityFramework.xml
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Release\EntityFramework.SqlServer.xml
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\obj\Release\IDWVisualization.Core.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\obj\Release\IDWVisualization.Core.pdb

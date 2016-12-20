@@ -3,6 +3,8 @@ using CSharpConcepts.Interfaces;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Threading;
+using System.IO;
+using System.Diagnostics;
 
 namespace CSharpConcepts.ThreadingConcepts
 {
@@ -26,6 +28,7 @@ namespace CSharpConcepts.ThreadingConcepts
             ParallelForEachLoop();
             ParallelInvokeMethod();
             BreakingParallel();
+            
         }
 
         private void ParallelInvokeMethod()

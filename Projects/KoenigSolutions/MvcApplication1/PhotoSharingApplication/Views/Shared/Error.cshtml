@@ -1,0 +1,21 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Custom Error</title>
+</head>
+<body>
+    <div>
+        <h1>MVC Error</h1>
+        <div>@Model.ControllerName</div>
+        <div>@Model.ActionName</div>
+        <div>@Model.Exception.Message</div> 
+    </div>
+</body>
+</html>

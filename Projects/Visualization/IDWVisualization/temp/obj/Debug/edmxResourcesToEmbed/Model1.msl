@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="queryzoneModelStoreContainer" CdmEntityContainer="queryzoneEntities">
+    <EntitySetMapping Name="tbl_entity_comex">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_entity_comex">
+        <MappingFragment StoreEntitySet="tbl_entity_comex">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Comex_Name" ColumnName="Comex_Name" />
+          <ScalarProperty Name="Comex_Description" ColumnName="Comex_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_entity_countries">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_entity_countries">
+        <MappingFragment StoreEntitySet="tbl_entity_countries">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Country_Name" ColumnName="Country_Name" />
+          <ScalarProperty Name="Entity" ColumnName="Entity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_gir_category">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_category">
+        <MappingFragment StoreEntitySet="tbl_gir_category">
+          <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="Mask" ColumnName="Mask" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_gir_domain">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_domain">
+        <MappingFragment StoreEntitySet="tbl_gir_domain">
+          <ScalarProperty Name="Domain_Code" ColumnName="Domain_Code" />
+          <ScalarProperty Name="Domain_Name" ColumnName="Domain_Name" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_gir_identity">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_identity">
+        <MappingFragment StoreEntitySet="tbl_gir_identity">
+          <ScalarProperty Name="CUID" ColumnName="CUID" />
+          <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+          <ScalarProperty Name="Update_Date" ColumnName="Update_Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Domain_Code" ColumnName="Domain_Code" />
+          <ScalarProperty Name="Directory_Sync" ColumnName="Directory_Sync" />
+          <ScalarProperty Name="Entry_Date" ColumnName="Entry_Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Reporting_Global" ColumnName="Reporting_Global" />
+          <ScalarProperty Name="GASSI" ColumnName="GASSI" />
+          <ScalarProperty Name="Lock_Identity" ColumnName="Lock_Identity" />
+          <ScalarProperty Name="First_Entry_Date" ColumnName="First_Entry_Date" />
+          <ScalarProperty Name="VIP" ColumnName="VIP" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Local_Id" ColumnName="Local_Id" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+          <ScalarProperty Name="Birth_Date" ColumnName="Birth_Date" />
+          <ScalarProperty Name="Departure_Date" ColumnName="Departure_Date" />
+          <ScalarProperty Name="Last_Departure_Date" ColumnName="Last_Departure_Date" />
+          <ScalarProperty Name="Preferred_First_Name" ColumnName="Preferred_First_Name" />
+          <ScalarProperty Name="Preferred_Last_Name" ColumnName="Preferred_Last_Name" />
+          <ScalarProperty Name="Middle_Name" ColumnName="Middle_Name" />
+          <ScalarProperty Name="Alternate_Notification_Mail" ColumnName="Alternate_Notification_Mail" />
+          <ScalarProperty Name="Partner_Code" ColumnName="Partner_Code" />
+          <ScalarProperty Name="Sub_Employee_Type" ColumnName="Sub_Employee_Type" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_gir_identity_his">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_identity_his">
+        <MappingFragment StoreEntitySet="tbl_gir_identity_his">
+          <ScalarProperty Name="CUID" ColumnName="CUID" />
+          <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+          <ScalarProperty Name="Update_Date" ColumnName="Update_Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Domain_Code" ColumnName="Domain_Code" />
+          <ScalarProperty Name="Directory_Sync" ColumnName="Directory_Sync" />
+          <ScalarProperty Name="Entry_Date" ColumnName="Entry_Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Reporting_Global" ColumnName="Reporting_Global" />
+          <ScalarProperty Name="GASSI" ColumnName="GASSI" />
+          <ScalarProperty Name="Lock_Identity" ColumnName="Lock_Identity" />
+          <ScalarProperty Name="First_Entry_Date" ColumnName="First_Entry_Date" />
+          <ScalarProperty Name="VIP" ColumnName="VIP" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+          <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Local_Id" ColumnName="Local_Id" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+          <ScalarProperty Name="Birth_Date" ColumnName="Birth_Date" />
+          <ScalarProperty Name="Departure_Date" ColumnName="Departure_Date" />
+          <ScalarProperty Name="Last_Departure_Date" ColumnName="Last_Departure_Date" />
+          <ScalarProperty Name="Preferred_First_Name" ColumnName="Preferred_First_Name" />
+          <ScalarProperty Name="Preferred_Last_Name" ColumnName="Preferred_Last_Name" />
+          <ScalarProperty Name="Middle_Name" ColumnName="Middle_Name" />
+          <ScalarProperty Name="Alternate_Notification_Mail" ColumnName="Alternate_Notification_Mail" />
+          <ScalarProperty Name="Partner_Code" ColumnName="Partner_Code" />
+          <ScalarProperty Name="Sub_Employee_Type" ColumnName="Sub_Employee_Type" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="MONTH_HIS" ColumnName="MONTH_HIS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_gir_log">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_log">
+        <MappingFragment StoreEntitySet="tbl_gir_log">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LOG_ID" ColumnName="LOG_ID" />
+          <ScalarProperty Name="LOG_AUTHOR" ColumnName="LOG_AUTHOR" />
+          <ScalarProperty Name="LOG_DATE" ColumnName="LOG_DATE" />
+          <ScalarProperty Name="ACTION_TYPE" ColumnName="ACTION_TYPE" />
+          <ScalarProperty Name="Field" ColumnName="Field" />
+          <ScalarProperty Name="INITIAL_VALUE" ColumnName="INITIAL_VALUE" />
+          <ScalarProperty Name="TARGET_VALUE" ColumnName="TARGET_VALUE" />
+          <ScalarProperty Name="LOG_ENTITY" ColumnName="LOG_ENTITY" />
+          <ScalarProperty Name="MODIFIED_CUID" ColumnName="MODIFIED_CUID" />
+          <ScalarProperty Name="LOG_ORIGIN" ColumnName="LOG_ORIGIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_gir_partner">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_partner">
+        <MappingFragment StoreEntitySet="tbl_gir_partner">
+          <ScalarProperty Name="Partner_Code" ColumnName="Partner_Code" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_gir_purge">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_purge">
+        <MappingFragment StoreEntitySet="tbl_gir_purge">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CUID" ColumnName="CUID" />
+          <ScalarProperty Name="Departure_Date" ColumnName="Departure_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_gir_subsidiary">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_subsidiary">
+        <MappingFragment StoreEntitySet="tbl_gir_subsidiary">
+          <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_manager">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_manager">
+        <MappingFragment StoreEntitySet="tbl_manager">
+          <ScalarProperty Name="CUID" ColumnName="CUID" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+          <ScalarProperty Name="Subsidiary_Label" ColumnName="Subsidiary_Label" />
+          <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Entity" ColumnName="Entity" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Is_Manager_Of_Persons" ColumnName="Is_Manager_Of_Persons" />
+          <ScalarProperty Name="Is_Manager_Of_Internal" ColumnName="Is_Manager_Of_Internal" />
+          <ScalarProperty Name="Is_Manager_Of_Manager" ColumnName="Is_Manager_Of_Manager" />
+          <ScalarProperty Name="Manager_Level" ColumnName="Manager_Level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_od_entity">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_od_entity">
+        <MappingFragment StoreEntitySet="tbl_od_entity">
+          <ScalarProperty Name="Entity" ColumnName="Entity" />
+          <ScalarProperty Name="Sigle" ColumnName="Sigle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Other_Name" ColumnName="Other_Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Mission" ColumnName="Mission" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="Secondary_Manager" ColumnName="Secondary_Manager" />
+          <ScalarProperty Name="Secretary" ColumnName="Secretary" />
+          <ScalarProperty Name="RANK" ColumnName="RANK" />
+          <ScalarProperty Name="Email_Alias" ColumnName="Email_Alias" />
+          <ScalarProperty Name="Postal_Address" ColumnName="Postal_Address" />
+          <ScalarProperty Name="Location_Code" ColumnName="Location_Code" />
+          <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+          <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+          <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+          <ScalarProperty Name="Entity_Comex" ColumnName="Entity_Comex" />
+          <ScalarProperty Name="Entity_Country" ColumnName="Entity_Country" />
+          <ScalarProperty Name="Entity_Display_Name" ColumnName="Entity_Display_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_od_identity">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_od_identity">
+        <MappingFragment StoreEntitySet="tbl_od_identity">
+          <ScalarProperty Name="CUID" ColumnName="CUID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Type_OD" ColumnName="Type_OD" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Secretary_CUID" ColumnName="Secretary_CUID" />
+          <ScalarProperty Name="Postal_Address" ColumnName="Postal_Address" />
+          <ScalarProperty Name="Location_Code" ColumnName="Location_Code" />
+          <ScalarProperty Name="Entity" ColumnName="Entity" />
+          <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+          <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+          <ScalarProperty Name="Mission" ColumnName="Mission" />
+          <ScalarProperty Name="Function" ColumnName="Function" />
+          <ScalarProperty Name="Activity1" ColumnName="Activity1" />
+          <ScalarProperty Name="Activity2" ColumnName="Activity2" />
+          <ScalarProperty Name="Skill" ColumnName="Skill" />
+          <ScalarProperty Name="Secondary_Entity" ColumnName="Secondary_Entity" />
+          <ScalarProperty Name="Secondary_Manager_CUID" ColumnName="Secondary_Manager_CUID" />
+          <ScalarProperty Name="Secondary_Secretary_CUID" ColumnName="Secondary_Secretary_CUID" />
+          <ScalarProperty Name="Local_ID" ColumnName="Local_ID" />
+          <ScalarProperty Name="Preferred_Language" ColumnName="Preferred_Language" />
+          <ScalarProperty Name="Country_GIR" ColumnName="Country_GIR" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="Room_Number" ColumnName="Room_Number" />
+          <ScalarProperty Name="Visiting_Card" ColumnName="Visiting_Card" />
+          <ScalarProperty Name="Visiting_Card_FR" ColumnName="Visiting_Card_FR" />
+          <ScalarProperty Name="Visiting_Card_EN" ColumnName="Visiting_Card_EN" />
+          <ScalarProperty Name="Photo_Name" ColumnName="Photo_Name" />
+          <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+          <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+          <ScalarProperty Name="Other_Phone_Number" ColumnName="Other_Phone_Number" />
+          <ScalarProperty Name="Email_Secondary" ColumnName="Email_Secondary" />
+          <ScalarProperty Name="Display_Name" ColumnName="Display_Name" />
+          <ScalarProperty Name="PKI" ColumnName="PKI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_od_identity_his">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_od_identity_his">
+        <MappingFragment StoreEntitySet="tbl_od_identity_his">
+          <ScalarProperty Name="CUID" ColumnName="CUID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Type_OD" ColumnName="Type_OD" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Secretary_CUID" ColumnName="Secretary_CUID" />
+          <ScalarProperty Name="Postal_Address" ColumnName="Postal_Address" />
+          <ScalarProperty Name="Location_Code" ColumnName="Location_Code" />
+          <ScalarProperty Name="Entity" ColumnName="Entity" />
+          <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+          <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+          <ScalarProperty Name="Mission" ColumnName="Mission" />
+          <ScalarProperty Name="Function" ColumnName="Function" />
+          <ScalarProperty Name="Activity1" ColumnName="Activity1" />
+          <ScalarProperty Name="Activity2" ColumnName="Activity2" />
+          <ScalarProperty Name="Skill" ColumnName="Skill" />
+          <ScalarProperty Name="Secondary_Entity" ColumnName="Secondary_Entity" />
+          <ScalarProperty Name="Secondary_Manager_CUID" ColumnName="Secondary_Manager_CUID" />
+          <ScalarProperty Name="Secondary_Secretary_CUID" ColumnName="Secondary_Secretary_CUID" />
+          <ScalarProperty Name="Local_ID" ColumnName="Local_ID" />
+          <ScalarProperty Name="Preferred_Language" ColumnName="Preferred_Language" />
+          <ScalarProperty Name="Country_GIR" ColumnName="Country_GIR" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="Room_Number" ColumnName="Room_Number" />
+          <ScalarProperty Name="Visiting_Card" ColumnName="Visiting_Card" />
+          <ScalarProperty Name="Visiting_Card_FR" ColumnName="Visiting_Card_FR" />
+          <ScalarProperty Name="Visiting_Card_EN" ColumnName="Visiting_Card_EN" />
+          <ScalarProperty Name="Photo_Name" ColumnName="Photo_Name" />
+          <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+          <ScalarProperty Name="PKI" ColumnName="PKI" />
+          <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+          <ScalarProperty Name="Other_Phone_Number" ColumnName="Other_Phone_Number" />
+          <ScalarProperty Name="Email_Secondary" ColumnName="Email_Secondary" />
+          <ScalarProperty Name="Display_Name" ColumnName="Display_Name" />
+          <ScalarProperty Name="Entity_Comex" ColumnName="Entity_Comex" />
+          <ScalarProperty Name="Entity_Country" ColumnName="Entity_Country" />
+          <ScalarProperty Name="MONTH_HIS" ColumnName="MONTH_HIS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_od_location">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_od_location">
+        <MappingFragment StoreEntitySet="tbl_od_location">
+          <ScalarProperty Name="Location_Code" ColumnName="Location_Code" />
+          <ScalarProperty Name="Country_Code" ColumnName="Country_Code" />
+          <ScalarProperty Name="Building_Name" ColumnName="Building_Name" />
+          <ScalarProperty Name="Complementary_Address" ColumnName="Complementary_Address" />
+          <ScalarProperty Name="Postal_Code" ColumnName="Postal_Code" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Expiration_Date" ColumnName="Expiration_Date" />
+          <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_acclaim">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_acclaim">
+        <MappingFragment StoreEntitySet="tbl_pz_acclaim">
+          <ScalarProperty Name="AcclaimID" ColumnName="AcclaimID" />
+          <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="AcclaimType" ColumnName="AcclaimType" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="ScoreDisplay" ColumnName="ScoreDisplay" />
+          <ScalarProperty Name="Visibility" ColumnName="Visibility" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_activity">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_activity">
+        <MappingFragment StoreEntitySet="tbl_pz_activity">
+          <ScalarProperty Name="ActivityID" ColumnName="ActivityID" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+          <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationMonth" ColumnName="CreationMonth" />
+          <ScalarProperty Name="CreationYear" ColumnName="CreationYear" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_announce">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_announce">
+        <MappingFragment StoreEntitySet="tbl_pz_announce">
+          <ScalarProperty Name="AnnouncementID" ColumnName="AnnouncementID" />
+          <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_answer">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_answer">
+        <MappingFragment StoreEntitySet="tbl_pz_answer">
+          <ScalarProperty Name="ThreadID" ColumnName="ThreadID" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+          <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="HelpfulAnswer" ColumnName="HelpfulAnswer" />
+          <ScalarProperty Name="CorrectAnswer" ColumnName="CorrectAnswer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_blog">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_blog">
+        <MappingFragment StoreEntitySet="tbl_pz_blog">
+          <ScalarProperty Name="BlogID" ColumnName="BlogID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="CMAuthentication" ColumnName="CMAuthentication" />
+          <ScalarProperty Name="FeedEnabled" ColumnName="FeedEnabled" />
+          <ScalarProperty Name="FeedFullContent" ColumnName="FeedFullContent" />
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+          <ScalarProperty Name="ContainerCode" ColumnName="ContainerCode" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_blogpost">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_blogpost">
+        <MappingFragment StoreEntitySet="tbl_pz_blogpost">
+          <ScalarProperty Name="BlogPostID" ColumnName="BlogPostID" />
+          <ScalarProperty Name="BlogID" ColumnName="BlogID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="PermaLink" ColumnName="PermaLink" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CommentStatus" ColumnName="CommentStatus" />
+          <ScalarProperty Name="PublishedDate" ColumnName="PublishedDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="MinorEdit" ColumnName="MinorEdit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_comment">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_comment">
+        <MappingFragment StoreEntitySet="tbl_pz_comment">
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+          <ScalarProperty Name="ParentCommentID" ColumnName="ParentCommentID" />
+          <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="ParentObjectTypeCode" ColumnName="ParentObjectTypeCode" />
+          <ScalarProperty Name="ParentObjectType" ColumnName="ParentObjectType" />
+          <ScalarProperty Name="ParentObjectID" ColumnName="ParentObjectID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_community">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_community">
+        <MappingFragment StoreEntitySet="tbl_pz_community">
+          <ScalarProperty Name="CommunityID" ColumnName="CommunityID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_content">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_content">
+        <MappingFragment StoreEntitySet="tbl_pz_content">
+          <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+          <ScalarProperty Name="ContentTypeCode" ColumnName="ContentTypeCode" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+          <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_document">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_document">
+        <MappingFragment StoreEntitySet="tbl_pz_document">
+          <ScalarProperty Name="InternalDocID" ColumnName="InternalDocID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DocumentID" ColumnName="DocumentID" />
+          <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+          <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="EditPolicy" ColumnName="EditPolicy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="Recommended" ColumnName="Recommended" />
+          <ScalarProperty Name="MeanRating" ColumnName="MeanRating" />
+          <ScalarProperty Name="ReadCount" ColumnName="ReadCount" />
+          <ScalarProperty Name="CommentStatus" ColumnName="CommentStatus" />
+          <ScalarProperty Name="WorkflowID" ColumnName="WorkflowID" />
+          <ScalarProperty Name="VersionID" ColumnName="VersionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_groupmember">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_groupmember">
+        <MappingFragment StoreEntitySet="tbl_pz_groupmember">
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="MemberDate" ColumnName="MemberDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_message">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_message">
+        <MappingFragment StoreEntitySet="tbl_pz_message">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="ParentMessageID" ColumnName="ParentMessageID" />
+          <ScalarProperty Name="ThreadID" ColumnName="ThreadID" />
+          <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+          <ScalarProperty Name="ContainerCode" ColumnName="ContainerCode" />
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_poll">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_poll">
+        <MappingFragment StoreEntitySet="tbl_pz_poll">
+          <ScalarProperty Name="PollID" ColumnName="PollID" />
+          <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="PollVoteNb" ColumnName="PollVoteNb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_profile">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_profile">
+        <MappingFragment StoreEntitySet="tbl_pz_profile">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserEnabled" ColumnName="UserEnabled" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationMonth" ColumnName="CreationMonth" />
+          <ScalarProperty Name="CreationYear" ColumnName="CreationYear" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModificationMonth" ColumnName="ModificationMonth" />
+          <ScalarProperty Name="ModificationYear" ColumnName="ModificationYear" />
+          <ScalarProperty Name="LastLoggedIn" ColumnName="LastLoggedIn" />
+          <ScalarProperty Name="LastLoggedInMonth" ColumnName="LastLoggedInMonth" />
+          <ScalarProperty Name="LastLoggedInYear" ColumnName="LastLoggedInYear" />
+          <ScalarProperty Name="LastProfileUpdate" ColumnName="LastProfileUpdate" />
+          <ScalarProperty Name="LastProfileUpdateMonth" ColumnName="LastProfileUpdateMonth" />
+          <ScalarProperty Name="LastProfileUpdateYear" ColumnName="LastProfileUpdateYear" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Federated" ColumnName="Federated" />
+          <ScalarProperty Name="NameVisible" ColumnName="NameVisible" />
+          <ScalarProperty Name="EmailVisible" ColumnName="EmailVisible" />
+          <ScalarProperty Name="OrangeEmployeeType" ColumnName="OrangeEmployeeType" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Biography" ColumnName="Biography" />
+          <ScalarProperty Name="OrangeEmployeeStatus" ColumnName="OrangeEmployeeStatus" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="CVPaste_Optional" ColumnName="CVPaste_Optional" />
+          <ScalarProperty Name="WorkActivities" ColumnName="WorkActivities" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="OrangeCUID" ColumnName="OrangeCUID" />
+          <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+          <ScalarProperty Name="MyObjectivesAndGoals" ColumnName="MyObjectivesAndGoals" />
+          <ScalarProperty Name="CharterSigned" ColumnName="CharterSigned" />
+          <ScalarProperty Name="DigitalPassport" ColumnName="DigitalPassport" />
+          <ScalarProperty Name="AlternativePhone" ColumnName="AlternativePhone" />
+          <ScalarProperty Name="M2AndCommunity" ColumnName="M2AndCommunity" />
+          <ScalarProperty Name="CVPaste" ColumnName="CVPaste" />
+          <ScalarProperty Name="ROICode" ColumnName="ROICode" />
+          <ScalarProperty Name="BillingCode" ColumnName="BillingCode" />
+          <ScalarProperty Name="Expertise" ColumnName="Expertise" />
+          <ScalarProperty Name="Execs" ColumnName="Execs" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Interests" ColumnName="Interests" />
+          <ScalarProperty Name="Schools" ColumnName="Schools" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="OrangeAddress" ColumnName="OrangeAddress" />
+          <ScalarProperty Name="FunFact" ColumnName="FunFact" />
+          <ScalarProperty Name="Languages" ColumnName="Languages" />
+          <ScalarProperty Name="GIRStatus" ColumnName="GIRStatus" />
+          <ScalarProperty Name="GIRBirthdate" ColumnName="GIRBirthdate" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_profile_his">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_profile_his">
+        <MappingFragment StoreEntitySet="tbl_pz_profile_his">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="Logged" ColumnName="Logged" />
+          <ScalarProperty Name="ProfileUpdated" ColumnName="ProfileUpdated" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Month_His" ColumnName="Month_His" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_project">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_project">
+        <MappingFragment StoreEntitySet="tbl_pz_project">
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="ParentTypeCode" ColumnName="ParentTypeCode" />
+          <ScalarProperty Name="ParentType" ColumnName="ParentType" />
+          <ScalarProperty Name="ParentObjectID" ColumnName="ParentObjectID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_question">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_question">
+        <MappingFragment StoreEntitySet="tbl_pz_question">
+          <ScalarProperty Name="ThreadID" ColumnName="ThreadID" />
+          <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+          <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="creationdate" ColumnName="creationdate" />
+          <ScalarProperty Name="resolutiondate" ColumnName="resolutiondate" />
+          <ScalarProperty Name="resolutionstate" ColumnName="resolutionstate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_socialgroup">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_socialgroup">
+        <MappingFragment StoreEntitySet="tbl_pz_socialgroup">
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="GroupType" ColumnName="GroupType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_statuslevelpoint">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_statuslevelpoint">
+        <MappingFragment StoreEntitySet="tbl_pz_statuslevelpoint">
+          <ScalarProperty Name="PointID" ColumnName="PointID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+          <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pz_userrelation">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_userrelation">
+        <MappingFragment StoreEntitySet="tbl_pz_userrelation">
+          <ScalarProperty Name="RelationshipID" ColumnName="RelationshipID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="RelatedUserID" ColumnName="RelatedUserID" />
+          <ScalarProperty Name="RelnshipTypeID" ColumnName="RelnshipTypeID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="RetirementDate" ColumnName="RetirementDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_od_role">
+      <EntityTypeMapping TypeName="queryzoneModel.tbl_od_role">
+        <MappingFragment StoreEntitySet="tbl_od_role">
+          <ScalarProperty Name="CUID" ColumnName="CUID" />
+          <ScalarProperty Name="Profile" ColumnName="Profile" />
+          <ScalarProperty Name="Perimeter" ColumnName="Perimeter" />
+          <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

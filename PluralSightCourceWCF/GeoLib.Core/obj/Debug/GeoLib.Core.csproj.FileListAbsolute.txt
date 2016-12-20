@@ -9,3 +9,14 @@ D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\Ent
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\Moq.xml
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\obj\Debug\GeoLib.Core.dll
 D:\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\obj\Debug\GeoLib.Core.pdb
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\GeoLib.Core.dll.config
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\GeoLib.Core.dll
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\GeoLib.Core.pdb
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\EntityFramework.dll
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\Moq.dll
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\EntityFramework.xml
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\bin\Debug\Moq.xml
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\obj\Debug\GeoLib.Core.dll
+C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Core\obj\Debug\GeoLib.Core.pdb

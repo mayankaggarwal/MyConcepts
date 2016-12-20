@@ -1,0 +1,16 @@
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Data.dll.config
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Data.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Data.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\EntityFramework.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Entities.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\MySql.Data.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Entities.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\EntityFramework.xml
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.Migrations.intial_migration.resources
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.csproj.GenerateResource.Cache
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.pdb

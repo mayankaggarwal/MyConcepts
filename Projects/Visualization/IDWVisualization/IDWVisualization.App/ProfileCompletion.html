@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Plazza Profile Completion</title>
+    <link href="Styles/style.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/d3.js"></script>
+
+</head>
+<body>
+    <table style="width:100%">
+        <tr style="height:80px;background-color:black">
+            <td style="width:100%">
+                <img src="Images/logo.png" style="height:50px;width:100px;text-align:center;vertical-align:middle;padding-top:10px;padding-left:20px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <select id="quality">
+                                <option value="low" selected="selected">Low Quality</option>
+                                <option value="high">High Quality</option>
+                            </select>
+                            <input id="id" name="ID" value="Generate Report" type="button" onclick="ID_OnCLick()" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="Images/loader.gif" id="img" style="display:none" />
+                            <img id="test" src="#" width="180" height="540" />
+                            <!--<svg id="barChart"></svg>-->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <!--<div id="imgContainer"></div>-->
+    <!--<img src="path\to\loading\gif" id="img" style="display:none" />-->
+
+    <script src="Scripts/app.js"></script>
+</body>
+</html>

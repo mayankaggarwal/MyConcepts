@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html ng-app="idw">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDW</title>
+    @System.Web.Optimization.Styles.Render("~/Content/css")
+    @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
+</head>
+<body ng-controller="rootCtrl">
+    <top-bar></top-bar>
+    <div class="row-offcanvas row-offcanvas-left">
+        <side-bar></side-bar>
+        <div id="main">
+            <div class="col-md-12">
+                <p class="visible-xs">
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                    </button>
+                </p>
+                <div class="page {{ pageClass }}" ng-view></div>
+            </div>
+        </div>
+    </div><!--/row-offcanvas -->
+    @System.Web.Optimization.Scripts.Render("~/bundles/vendors")
+    @System.Web.Optimization.Scripts.Render("~/bundles/spa")
+</body>
+</html>

@@ -69,7 +69,6 @@ namespace CSharpConcepts.DataAccessConcepts
                 }
                 Console.WriteLine(Encoding.UTF8.GetString(data));
             }
-
         }
 
         private void OpenTextFileAndReadContent()

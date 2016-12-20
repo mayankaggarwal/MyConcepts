@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/OperaStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <h1>Operas I have seen</h1>
+        <div class="topmenu">
+            @Html.MvcSiteMap().Menu(false, false, true)
+        </div>
+        <div class="clear-floats" />
+        <div class="breadcrumb">
+            Bread crum trail : @Html.MvcSiteMap().SiteMapPath()
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

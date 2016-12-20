@@ -3,3 +3,8 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\bin\Release\Sam
 D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Release\SampleAssembly1.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Release\SampleAssembly1.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Release\SampleAssembly1.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\bin\Release\SampleAssembly1.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\bin\Release\SampleAssembly1.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Release\SampleAssembly1.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Release\SampleAssembly1.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\SampleAssembly1\obj\Release\SampleAssembly1.pdb

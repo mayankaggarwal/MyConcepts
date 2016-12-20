@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="queryzoneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_entity_comex">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Comex_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Comex_Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_entity_countries">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Country_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Entity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_gir_category">
+    <Key>
+      <PropertyRef Name="Category_Code" />
+    </Key>
+    <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Label" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Mask" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_gir_domain">
+    <Key>
+      <PropertyRef Name="Domain_Code" />
+    </Key>
+    <Property Name="Domain_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Domain_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rank" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_gir_identity">
+    <Key>
+      <PropertyRef Name="CUID" />
+    </Key>
+    <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Creation_Date" Type="DateTime" />
+    <Property Name="Update_Date" Type="DateTime" />
+    <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Name="Domain_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Directory_Sync" Type="Boolean" />
+    <Property Name="Entry_Date" Type="DateTime" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="Reporting_Global" Type="Boolean" />
+    <Property Name="GASSI" Type="Boolean" />
+    <Property Name="Lock_Identity" Type="Boolean" />
+    <Property Name="First_Entry_Date" Type="DateTime" />
+    <Property Name="VIP" Type="Boolean" />
+    <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnable" Type="Boolean" />
+    <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Local_Id" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="SByte" />
+    <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Birth_Date" Type="DateTime" />
+    <Property Name="Departure_Date" Type="DateTime" />
+    <Property Name="Last_Departure_Date" Type="DateTime" />
+    <Property Name="Preferred_First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Preferred_Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Middle_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Alternate_Notification_Mail" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Partner_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Sub_Employee_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Prefix" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_gir_identity_his">
+    <Key>
+      <PropertyRef Name="CUID" />
+      <PropertyRef Name="MONTH_HIS" />
+    </Key>
+    <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Creation_Date" Type="DateTime" />
+    <Property Name="Update_Date" Type="DateTime" />
+    <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Name="Domain_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Directory_Sync" Type="Boolean" />
+    <Property Name="Entry_Date" Type="DateTime" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="Reporting_Global" Type="Boolean" />
+    <Property Name="GASSI" Type="Boolean" />
+    <Property Name="Lock_Identity" Type="Boolean" />
+    <Property Name="First_Entry_Date" Type="DateTime" />
+    <Property Name="VIP" Type="Boolean" />
+    <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IsEnable" Type="Boolean" />
+    <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Local_Id" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="SByte" />
+    <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Birth_Date" Type="DateTime" />
+    <Property Name="Departure_Date" Type="DateTime" />
+    <Property Name="Last_Departure_Date" Type="DateTime" />
+    <Property Name="Preferred_First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Preferred_Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Middle_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Alternate_Notification_Mail" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Partner_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Sub_Employee_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Prefix" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MONTH_HIS" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_gir_log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="LOG_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LOG_AUTHOR" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="LOG_DATE" Type="DateTime" />
+    <Property Name="ACTION_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Field" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="INITIAL_VALUE" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Name="TARGET_VALUE" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Name="LOG_ENTITY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFIED_CUID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LOG_ORIGIN" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_gir_partner">
+    <Key>
+      <PropertyRef Name="Partner_Code" />
+    </Key>
+    <Property Name="Partner_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Label" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Admin" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Rank" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_gir_purge">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Departure_Date" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_gir_subsidiary">
+    <Key>
+      <PropertyRef Name="Subsidiary_Code" />
+    </Key>
+    <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Label" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rank" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_manager">
+    <Key>
+      <PropertyRef Name="CUID" />
+    </Key>
+    <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Subsidiary_Label" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Is_Manager_Of_Persons" Type="Boolean" />
+    <Property Name="Is_Manager_Of_Internal" Type="Boolean" />
+    <Property Name="Is_Manager_Of_Manager" Type="Boolean" />
+    <Property Name="Manager_Level" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_od_entity">
+    <Key>
+      <PropertyRef Name="Entity" />
+    </Key>
+    <Property Name="Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Sigle" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="Other_Name" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="URL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Mission" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Manager" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Manager" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Secretary" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="RANK" Type="Int32" />
+    <Property Name="Email_Alias" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Postal_Address" Type="String" MaxLength="164" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Last_Update_Date" Type="DateTime" />
+    <Property Name="Creation_Date" Type="DateTime" />
+    <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Entity_Comex" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Entity_Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Entity_Display_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_od_identity">
+    <Key>
+      <PropertyRef Name="CUID" />
+    </Key>
+    <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Title" Type="SByte" />
+    <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Type_OD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Phone_Number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Secretary_CUID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Postal_Address" Type="String" MaxLength="160" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Mission" Type="String" MaxLength="1200" FixedLength="false" Unicode="false" />
+    <Property Name="Function" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Activity1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Activity2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Skill" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Secretary_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Local_ID" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="Preferred_Language" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Country_GIR" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="SByte" />
+    <Property Name="Rank" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Room_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Visiting_Card" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Visiting_Card_FR" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Visiting_Card_EN" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Photo_Name" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Last_Update_Date" Type="DateTime" />
+    <Property Name="Creation_Date" Type="DateTime" />
+    <Property Name="Other_Phone_Number" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Email_Secondary" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Display_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PKI" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_od_identity_his">
+    <Key>
+      <PropertyRef Name="CUID" />
+      <PropertyRef Name="MONTH_HIS" />
+    </Key>
+    <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Title" Type="SByte" />
+    <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Type_OD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Phone_Number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Secretary_CUID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Postal_Address" Type="String" MaxLength="160" FixedLength="false" Unicode="false" />
+    <Property Name="Location_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Mission" Type="String" MaxLength="1200" FixedLength="false" Unicode="false" />
+    <Property Name="Function" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Activity1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Activity2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Skill" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Secondary_Secretary_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Local_ID" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="Preferred_Language" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Country_GIR" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="SByte" />
+    <Property Name="Rank" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Room_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Visiting_Card" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Visiting_Card_FR" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Visiting_Card_EN" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Photo_Name" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Last_Update_Date" Type="DateTime" />
+    <Property Name="PKI" Type="Boolean" />
+    <Property Name="Creation_Date" Type="DateTime" />
+    <Property Name="Other_Phone_Number" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Email_Secondary" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Display_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Entity_Comex" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Entity_Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MONTH_HIS" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_od_location">
+    <Key>
+      <PropertyRef Name="Location_Code" />
+    </Key>
+    <Property Name="Location_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Country_Code" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Building_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Complementary_Address" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Postal_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="28" FixedLength="false" Unicode="false" />
+    <Property Name="Street" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Expiration_Date" Type="DateTime" />
+    <Property Name="Last_Update_Date" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_pz_acclaim">
+    <Key>
+      <PropertyRef Name="AcclaimID" />
+    </Key>
+    <Property Name="AcclaimID" Type="Int32" Nullable="false" />
+    <Property Name="ObjectTypeCode" Type="Int64" />
+    <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectID" Type="Int32" />
+    <Property Name="AcclaimType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Score" Type="Decimal" />
+    <Property Name="ScoreDisplay" Type="Decimal" />
+    <Property Name="Visibility" Type="Boolean" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_pz_activity">
+    <Key>
+      <PropertyRef Name="ActivityID" />
+    </Key>
+    <Property Name="ActivityID" Type="Int64" Nullable="false" />
+    <Property Name="ActivityType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectTypeCode" Type="Int64" />
+    <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectID" Type="Int32" />
+    <Property Name="ContainerTypeCode" Type="Int64" />
+    <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ContainerID" Type="Int32" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="CreationMonth" Type="Int16" />
+    <Property Name="CreationYear" Type="Int16" />
+  </EntityType>
+  <EntityType Name="tbl_pz_announce">
+    <Key>
+      <PropertyRef Name="AnnouncementID" />
+    </Key>
+    <Property Name="AnnouncementID" Type="Int32" Nullable="false" />
+    <Property Name="ObjectTypeCode" Type="Int64" />
+    <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectID" Type="Int32" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="Subject" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ModificationDate" Type="DateTime" />
+    <Property Name="CreationDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_pz_answer">
+    <Key>
+      <PropertyRef Name="ThreadID" />
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="ThreadID" Type="Int32" Nullable="false" />
+    <Property Name="MessageID" Type="Int32" Nullable="false" />
+    <Property Name="ContainerTypeCode" Type="Int64" />
+    <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ContainerID" Type="Int32" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="HelpfulAnswer" Type="Boolean" />
+    <Property Name="CorrectAnswer" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_pz_blog">
+    <Key>
+      <PropertyRef Name="BlogID" />
+    </Key>
+    <Property Name="BlogID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+    <Property Name="CMAuthentication" Type="Int16" />
+    <Property Name="FeedEnabled" Type="SByte" />
+    <Property Name="FeedFullContent" Type="SByte" />
+    <Property Name="ContainerID" Type="Int32" />
+    <Property Name="ContainerType" Type="Int64" />
+    <Property Name="ContainerCode" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_pz_blogpost">
+    <Key>
+      <PropertyRef Name="BlogPostID" />
+    </Key>
+    <Property Name="BlogPostID" Type="Int32" Nullable="false" />
+    <Property Name="BlogID" Type="Int32" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="Subject" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PermaLink" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CommentStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PublishedDate" Type="DateTime" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+    <Property Name="MinorEdit" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_pz_comment">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="Int32" Nullable="false" />
+    <Property Name="ParentCommentID" Type="Int32" />
+    <Property Name="ObjectTypeCode" Type="Int64" />
+    <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectID" Type="Int32" />
+    <Property Name="ParentObjectTypeCode" Type="Int64" />
+    <Property Name="ParentObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ParentObjectID" Type="Int32" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="IP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_pz_community">
+    <Key>
+      <PropertyRef Name="CommunityID" />
+    </Key>
+    <Property Name="CommunityID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_pz_content">
+    <Key>
+      <PropertyRef Name="ContentID" />
+      <PropertyRef Name="ContentTypeCode" />
+    </Key>
+    <Property Name="ContentID" Type="Int32" Nullable="false" />
+    <Property Name="ContentTypeCode" Type="Int64" Nullable="false" />
+    <Property Name="ContentType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Subject" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="ContainerID" Type="Int32" />
+    <Property Name="ContainerTypeCode" Type="Int64" />
+    <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_pz_document">
+    <Key>
+      <PropertyRef Name="InternalDocID" />
+    </Key>
+    <Property Name="InternalDocID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="DocumentID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ContainerTypeCode" Type="Int64" />
+    <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ContainerID" Type="Int32" />
+    <Property Name="Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EditPolicy" Type="Int32" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ExpirationDate" Type="DateTime" />
+    <Property Name="Recommended" Type="Boolean" />
+    <Property Name="MeanRating" Type="Int32" />
+    <Property Name="ReadCount" Type="Int32" />
+    <Property Name="CommentStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WorkflowID" Type="Int32" />
+    <Property Name="VersionID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_pz_groupmember">
+    <Key>
+      <PropertyRef Name="GroupID" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="MemberType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="MembershipID" Type="Int32" />
+    <Property Name="MemberDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_pz_message">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="Int32" Nullable="false" />
+    <Property Name="ParentMessageID" Type="Int32" />
+    <Property Name="ThreadID" Type="Int32" />
+    <Property Name="ContainerType" Type="Int64" />
+    <Property Name="ContainerCode" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ContainerID" Type="Int32" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="Subject" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_pz_poll">
+    <Key>
+      <PropertyRef Name="PollID" />
+    </Key>
+    <Property Name="PollID" Type="Int32" Nullable="false" />
+    <Property Name="ObjectTypeCode" Type="Int32" />
+    <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectID" Type="Int32" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="ExpireDate" Type="DateTime" />
+    <Property Name="PollVoteNb" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_pz_profile">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UserEnabled" Type="Boolean" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="CreationMonth" Type="Int16" />
+    <Property Name="CreationYear" Type="Int16" />
+    <Property Name="ModificationDate" Type="DateTime" />
+    <Property Name="ModificationMonth" Type="Int16" />
+    <Property Name="ModificationYear" Type="Int16" />
+    <Property Name="LastLoggedIn" Type="DateTime" />
+    <Property Name="LastLoggedInMonth" Type="Int16" />
+    <Property Name="LastLoggedInYear" Type="Int16" />
+    <Property Name="LastProfileUpdate" Type="DateTime" />
+    <Property Name="LastProfileUpdateMonth" Type="Int16" />
+    <Property Name="LastProfileUpdateYear" Type="Int16" />
+    <Property Name="UserType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Visible" Type="Boolean" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Federated" Type="Boolean" />
+    <Property Name="NameVisible" Type="Boolean" />
+    <Property Name="EmailVisible" Type="Boolean" />
+    <Property Name="OrangeEmployeeType" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Biography" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="OrangeEmployeeStatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CVPaste_Optional" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="WorkActivities" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="OrangeCUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="MobilePhoneNumber" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="MyObjectivesAndGoals" Type="String" MaxLength="3500" FixedLength="false" Unicode="false" />
+    <Property Name="CharterSigned" Type="Boolean" />
+    <Property Name="DigitalPassport" Type="Boolean" />
+    <Property Name="AlternativePhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="M2AndCommunity" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CVPaste" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="ROICode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BillingCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Expertise" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="Execs" Type="Boolean" />
+    <Property Name="Company" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Interests" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="Schools" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="Birthday" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="OrangeAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="FunFact" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="Languages" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="GIRStatus" Type="Boolean" />
+    <Property Name="GIRBirthdate" Type="DateTime" />
+    <Property Name="Points" Type="Int64" />
+  </EntityType>
+  <EntityType Name="tbl_pz_profile_his">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Month_His" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Modified" Type="Boolean" />
+    <Property Name="Logged" Type="Boolean" />
+    <Property Name="ProfileUpdated" Type="Boolean" />
+    <Property Name="Points" Type="Int64" />
+    <Property Name="Department" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Month_His" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_pz_project">
+    <Key>
+      <PropertyRef Name="ProjectID" />
+    </Key>
+    <Property Name="ProjectID" Type="Int32" Nullable="false" />
+    <Property Name="ParentTypeCode" Type="Int64" />
+    <Property Name="ParentType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ParentObjectID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="OwnerID" Type="Int32" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="DueDate" Type="DateTime" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_pz_question">
+    <Key>
+      <PropertyRef Name="ThreadID" />
+    </Key>
+    <Property Name="ThreadID" Type="Int32" Nullable="false" />
+    <Property Name="ContainerTypeCode" Type="Int64" />
+    <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ContainerID" Type="Int32" />
+    <Property Name="userid" Type="Int32" />
+    <Property Name="creationdate" Type="DateTime" />
+    <Property Name="resolutiondate" Type="DateTime" />
+    <Property Name="resolutionstate" Type="Int16" />
+  </EntityType>
+  <EntityType Name="tbl_pz_socialgroup">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="GroupType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="10000" FixedLength="false" Unicode="false" />
+    <Property Name="OwnerID" Type="Int32" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+    <Property Name="Status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_pz_statuslevelpoint">
+    <Key>
+      <PropertyRef Name="PointID" />
+    </Key>
+    <Property Name="PointID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="ContainerTypeCode" Type="Int64" />
+    <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ContainerID" Type="Int32" />
+    <Property Name="Points" Type="Int32" />
+    <Property Name="ObjectTypeCode" Type="Int64" />
+    <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ObjectID" Type="Int32" />
+    <Property Name="Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_pz_userrelation">
+    <Key>
+      <PropertyRef Name="RelationshipID" />
+    </Key>
+    <Property Name="RelationshipID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="RelatedUserID" Type="Int32" />
+    <Property Name="RelnshipTypeID" Type="Int32" />
+    <Property Name="State" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CreationDate" Type="DateTime" />
+    <Property Name="RetirementDate" Type="DateTime" />
+    <Property Name="ModificationDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tbl_od_role">
+    <Key>
+      <PropertyRef Name="CUID" />
+    </Key>
+    <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Profile" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Perimeter" Type="String" MaxLength="96" FixedLength="false" Unicode="false" />
+    <Property Name="Last_Update_Date" Type="DateTime" />
+  </EntityType>
+  <EntityContainer Name="queryzoneEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_entity_comex" EntityType="Self.tbl_entity_comex" />
+    <EntitySet Name="tbl_entity_countries" EntityType="Self.tbl_entity_countries" />
+    <EntitySet Name="tbl_gir_category" EntityType="Self.tbl_gir_category" />
+    <EntitySet Name="tbl_gir_domain" EntityType="Self.tbl_gir_domain" />
+    <EntitySet Name="tbl_gir_identity" EntityType="Self.tbl_gir_identity" />
+    <EntitySet Name="tbl_gir_identity_his" EntityType="Self.tbl_gir_identity_his" />
+    <EntitySet Name="tbl_gir_log" EntityType="Self.tbl_gir_log" />
+    <EntitySet Name="tbl_gir_partner" EntityType="Self.tbl_gir_partner" />
+    <EntitySet Name="tbl_gir_purge" EntityType="Self.tbl_gir_purge" />
+    <EntitySet Name="tbl_gir_subsidiary" EntityType="Self.tbl_gir_subsidiary" />
+    <EntitySet Name="tbl_manager" EntityType="Self.tbl_manager" />
+    <EntitySet Name="tbl_od_entity" EntityType="Self.tbl_od_entity" />
+    <EntitySet Name="tbl_od_identity" EntityType="Self.tbl_od_identity" />
+    <EntitySet Name="tbl_od_identity_his" EntityType="Self.tbl_od_identity_his" />
+    <EntitySet Name="tbl_od_location" EntityType="Self.tbl_od_location" />
+    <EntitySet Name="tbl_pz_acclaim" EntityType="Self.tbl_pz_acclaim" />
+    <EntitySet Name="tbl_pz_activity" EntityType="Self.tbl_pz_activity" />
+    <EntitySet Name="tbl_pz_announce" EntityType="Self.tbl_pz_announce" />
+    <EntitySet Name="tbl_pz_answer" EntityType="Self.tbl_pz_answer" />
+    <EntitySet Name="tbl_pz_blog" EntityType="Self.tbl_pz_blog" />
+    <EntitySet Name="tbl_pz_blogpost" EntityType="Self.tbl_pz_blogpost" />
+    <EntitySet Name="tbl_pz_comment" EntityType="Self.tbl_pz_comment" />
+    <EntitySet Name="tbl_pz_community" EntityType="Self.tbl_pz_community" />
+    <EntitySet Name="tbl_pz_content" EntityType="Self.tbl_pz_content" />
+    <EntitySet Name="tbl_pz_document" EntityType="Self.tbl_pz_document" />
+    <EntitySet Name="tbl_pz_groupmember" EntityType="Self.tbl_pz_groupmember" />
+    <EntitySet Name="tbl_pz_message" EntityType="Self.tbl_pz_message" />
+    <EntitySet Name="tbl_pz_poll" EntityType="Self.tbl_pz_poll" />
+    <EntitySet Name="tbl_pz_profile" EntityType="Self.tbl_pz_profile" />
+    <EntitySet Name="tbl_pz_profile_his" EntityType="Self.tbl_pz_profile_his" />
+    <EntitySet Name="tbl_pz_project" EntityType="Self.tbl_pz_project" />
+    <EntitySet Name="tbl_pz_question" EntityType="Self.tbl_pz_question" />
+    <EntitySet Name="tbl_pz_socialgroup" EntityType="Self.tbl_pz_socialgroup" />
+    <EntitySet Name="tbl_pz_statuslevelpoint" EntityType="Self.tbl_pz_statuslevelpoint" />
+    <EntitySet Name="tbl_pz_userrelation" EntityType="Self.tbl_pz_userrelation" />
+    <EntitySet Name="tbl_od_role" EntityType="Self.tbl_od_role" />
+  </EntityContainer>
+</Schema>

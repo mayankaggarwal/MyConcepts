@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ExpenseManager" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\D\\Learning\\Repository\\MyConcepts\\Projects\\ExpenseManager\\ExpenseManagerApp\\ExpenseManagerWebApp\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\D\\Learning\\Repository\\MyConcepts\\Projects\\ExpenseManager\\ExpenseManagerApp\\ExpenseManagerWebApp\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="SqlConn-Web.config Connection String" description="" value="Data Source=.\SQLExpress;Initial Catalog=ExpenseManager;User ID=EMAdmin;Password=admin123+" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\D\\Learning\\Repository\\MyConcepts\\Projects\\ExpenseManager\\ExpenseManagerApp\\ExpenseManagerWebApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SqlConn']/@connectionString" />
+  </parameter>
+</parameters>

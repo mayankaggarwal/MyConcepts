@@ -3,3 +3,8 @@ D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.LoggingLayer\bin\Relea
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.LoggingLayer\obj\Release\Concepts.LoggingLayer.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.LoggingLayer\obj\Release\Concepts.LoggingLayer.dll
 D:\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.LoggingLayer\obj\Release\Concepts.LoggingLayer.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.LoggingLayer\bin\Release\Concepts.LoggingLayer.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.LoggingLayer\bin\Release\Concepts.LoggingLayer.pdb
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.LoggingLayer\obj\Release\Concepts.LoggingLayer.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.LoggingLayer\obj\Release\Concepts.LoggingLayer.dll
+C:\D\Learning\Repository\MyConcepts\CSharpConcepts\Concepts.LoggingLayer\obj\Release\Concepts.LoggingLayer.pdb

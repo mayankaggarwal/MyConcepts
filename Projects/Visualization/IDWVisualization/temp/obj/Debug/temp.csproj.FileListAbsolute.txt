@@ -1,0 +1,9 @@
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\temp\bin\Debug\temp.dll.config
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\temp\bin\Debug\temp.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\temp\bin\Debug\temp.pdb
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\temp\bin\Debug\EntityFramework.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\temp\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\temp\bin\Debug\EntityFramework.xml
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\temp\obj\Debug\temp.csprojResolveAssemblyReference.cache
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\temp\obj\Debug\temp.dll
+C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\temp\obj\Debug\temp.pdb

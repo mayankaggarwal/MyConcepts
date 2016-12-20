@@ -1,9 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseManagerWebApp", "ExpenseManagerWebApp\ExpenseManagerWebApp.csproj", "{662E2FD6-DC55-4C75-B406-2D8EF58E560E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempApp", "TempApp\TempApp.csproj", "{79B4E1AF-8AE5-4D11-BCDF-BA508D87E1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseManager.Data", "ExpenseManager.Data\ExpenseManager.Data.csproj", "{737FD08E-C03B-467E-B751-AC693ACB7AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseManager.Core", "ExpenseManager.Core\ExpenseManager.Core.csproj", "{ABF25984-823D-4CEA-9F05-212AC9E16036}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{6B757983-D1E2-4019-BC1F-393DB13B876B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\PluralSightCourceWCF\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll = ..\..\..\PluralSightCourceWCF\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll
+		..\..\..\PluralSightCourceWCF\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll = ..\..\..\PluralSightCourceWCF\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,18 @@ Global
 		{662E2FD6-DC55-4C75-B406-2D8EF58E560E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{662E2FD6-DC55-4C75-B406-2D8EF58E560E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{662E2FD6-DC55-4C75-B406-2D8EF58E560E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B4E1AF-8AE5-4D11-BCDF-BA508D87E1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B4E1AF-8AE5-4D11-BCDF-BA508D87E1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B4E1AF-8AE5-4D11-BCDF-BA508D87E1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B4E1AF-8AE5-4D11-BCDF-BA508D87E1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737FD08E-C03B-467E-B751-AC693ACB7AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737FD08E-C03B-467E-B751-AC693ACB7AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737FD08E-C03B-467E-B751-AC693ACB7AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737FD08E-C03B-467E-B751-AC693ACB7AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF25984-823D-4CEA-9F05-212AC9E16036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF25984-823D-4CEA-9F05-212AC9E16036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF25984-823D-4CEA-9F05-212AC9E16036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF25984-823D-4CEA-9F05-212AC9E16036}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

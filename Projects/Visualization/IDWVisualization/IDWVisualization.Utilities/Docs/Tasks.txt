@@ -1,0 +1,6 @@
+﻿https://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/build-a-single-page-application-spa-with-aspnet-web-api-and-angularjs
+https://dzone.com/articles/how-use-angularjs-aspnet-mvc
+http://eriksteinebach.com/2016/05/25/Creating-charts-with-d3js-and-ASPNET-MVC/
+http://www.dotnetcurry.com/aspnet/1053/using-d3js-aspnet-webapi-design-pie-donut-chart
+https://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
+https://www.sitepoint.com/creating-simple-line-bar-charts-using-d3-js/

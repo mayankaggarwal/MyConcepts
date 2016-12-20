@@ -1,0 +1,2167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="queryzoneModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_entity_comex">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Comex_Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Comex_Description" Type="varchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_entity_countries">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Country_Name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Entity" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_gir_category">
+          <Key>
+            <PropertyRef Name="Category_Code" />
+          </Key>
+          <Property Name="Category_Code" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Label" Type="varchar" MaxLength="255" />
+          <Property Name="Mask" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_gir_domain">
+          <Key>
+            <PropertyRef Name="Domain_Code" />
+          </Key>
+          <Property Name="Domain_Code" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Domain_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Rank" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_gir_identity">
+          <Key>
+            <PropertyRef Name="CUID" />
+          </Key>
+          <Property Name="CUID" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="Creation_Date" Type="datetime" Precision="0" />
+          <Property Name="Update_Date" Type="datetime" Precision="0" />
+          <Property Name="Description" Type="varchar" MaxLength="1024" />
+          <Property Name="Domain_Code" Type="char" MaxLength="10" />
+          <Property Name="Directory_Sync" Type="bool" />
+          <Property Name="Entry_Date" Type="datetime" Precision="0" />
+          <Property Name="Status" Type="bool" />
+          <Property Name="Reporting_Global" Type="bool" />
+          <Property Name="GASSI" Type="bool" />
+          <Property Name="Lock_Identity" Type="bool" />
+          <Property Name="First_Entry_Date" Type="datetime" Precision="0" />
+          <Property Name="VIP" Type="bit" />
+          <Property Name="Last_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Subsidiary_Code" Type="char" MaxLength="10" />
+          <Property Name="IsEnable" Type="bool" />
+          <Property Name="Email" Type="varchar" MaxLength="128" />
+          <Property Name="Local_Id" Type="varchar" MaxLength="24" />
+          <Property Name="First_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Manager_CUID" Type="char" MaxLength="8" />
+          <Property Name="Title" Type="tinyint" />
+          <Property Name="Category_Code" Type="varchar" MaxLength="50" />
+          <Property Name="Birth_Date" Type="datetime" Precision="0" />
+          <Property Name="Departure_Date" Type="datetime" Precision="0" />
+          <Property Name="Last_Departure_Date" Type="datetime" Precision="0" />
+          <Property Name="Preferred_First_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Preferred_Last_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Middle_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Alternate_Notification_Mail" Type="varchar" MaxLength="128" />
+          <Property Name="Partner_Code" Type="char" MaxLength="10" />
+          <Property Name="Sub_Employee_Type" Type="varchar" MaxLength="20" />
+          <Property Name="Prefix" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="tbl_gir_identity_his">
+          <Key>
+            <PropertyRef Name="CUID" />
+            <PropertyRef Name="MONTH_HIS" />
+          </Key>
+          <Property Name="CUID" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="Creation_Date" Type="datetime" Precision="0" />
+          <Property Name="Update_Date" Type="datetime" Precision="0" />
+          <Property Name="Description" Type="varchar" MaxLength="1024" />
+          <Property Name="Domain_Code" Type="char" MaxLength="10" />
+          <Property Name="Directory_Sync" Type="bool" />
+          <Property Name="Entry_Date" Type="datetime" Precision="0" />
+          <Property Name="Status" Type="bool" />
+          <Property Name="Reporting_Global" Type="bool" />
+          <Property Name="GASSI" Type="bool" />
+          <Property Name="Lock_Identity" Type="bool" />
+          <Property Name="First_Entry_Date" Type="datetime" Precision="0" />
+          <Property Name="VIP" Type="bit" />
+          <Property Name="Last_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Subsidiary_Code" Type="char" MaxLength="10" />
+          <Property Name="IsEnable" Type="bool" />
+          <Property Name="Email" Type="varchar" MaxLength="128" />
+          <Property Name="Local_Id" Type="varchar" MaxLength="24" />
+          <Property Name="First_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Manager_CUID" Type="char" MaxLength="8" />
+          <Property Name="Title" Type="tinyint" />
+          <Property Name="Category_Code" Type="varchar" MaxLength="50" />
+          <Property Name="Birth_Date" Type="datetime" Precision="0" />
+          <Property Name="Departure_Date" Type="datetime" Precision="0" />
+          <Property Name="Last_Departure_Date" Type="datetime" Precision="0" />
+          <Property Name="Preferred_First_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Preferred_Last_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Middle_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Alternate_Notification_Mail" Type="varchar" MaxLength="128" />
+          <Property Name="Partner_Code" Type="char" MaxLength="10" />
+          <Property Name="Sub_Employee_Type" Type="varchar" MaxLength="20" />
+          <Property Name="Prefix" Type="varchar" MaxLength="100" />
+          <Property Name="MONTH_HIS" Type="char" MaxLength="6" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_gir_log">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="LOG_ID" Type="varchar" MaxLength="100" />
+          <Property Name="LOG_AUTHOR" Type="varchar" MaxLength="255" />
+          <Property Name="LOG_DATE" Type="datetime" Precision="0" />
+          <Property Name="ACTION_TYPE" Type="varchar" MaxLength="20" />
+          <Property Name="Field" Type="varchar" MaxLength="100" />
+          <Property Name="INITIAL_VALUE" Type="varchar" MaxLength="1024" />
+          <Property Name="TARGET_VALUE" Type="varchar" MaxLength="1024" />
+          <Property Name="LOG_ENTITY" Type="varchar" MaxLength="100" />
+          <Property Name="MODIFIED_CUID" Type="char" MaxLength="10" />
+          <Property Name="LOG_ORIGIN" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="tbl_gir_partner">
+          <Key>
+            <PropertyRef Name="Partner_Code" />
+          </Key>
+          <Property Name="Partner_Code" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Label" Type="varchar" MaxLength="50" />
+          <Property Name="Admin" Type="varchar" MaxLength="10" />
+          <Property Name="Rank" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_gir_purge">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="CUID" Type="char" MaxLength="8" />
+          <Property Name="Departure_Date" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_gir_subsidiary">
+          <Key>
+            <PropertyRef Name="Subsidiary_Code" />
+          </Key>
+          <Property Name="Subsidiary_Code" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Label" Type="varchar" MaxLength="50" />
+          <Property Name="Rank" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_manager">
+          <Key>
+            <PropertyRef Name="CUID" />
+          </Key>
+          <Property Name="CUID" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="First_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Last_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Subsidiary_Code" Type="char" MaxLength="10" />
+          <Property Name="Subsidiary_Label" Type="varchar" MaxLength="50" />
+          <Property Name="Manager_CUID" Type="char" MaxLength="8" />
+          <Property Name="Email" Type="varchar" MaxLength="128" />
+          <Property Name="Entity" Type="varchar" MaxLength="128" />
+          <Property Name="Mobile" Type="varchar" MaxLength="20" />
+          <Property Name="Phone" Type="varchar" MaxLength="20" />
+          <Property Name="Is_Manager_Of_Persons" Type="bool" />
+          <Property Name="Is_Manager_Of_Internal" Type="bool" />
+          <Property Name="Is_Manager_Of_Manager" Type="bool" />
+          <Property Name="Manager_Level" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_od_entity">
+          <Key>
+            <PropertyRef Name="Entity" />
+          </Key>
+          <Property Name="Entity" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="Sigle" Type="varchar" MaxLength="64" />
+          <Property Name="Description" Type="varchar" MaxLength="256" />
+          <Property Name="Other_Name" Type="varchar" MaxLength="128" />
+          <Property Name="Type" Type="varchar" MaxLength="10" />
+          <Property Name="URL" Type="varchar" MaxLength="100" />
+          <Property Name="Mission" Type="varchar" MaxLength="256" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="Fax" Type="varchar" MaxLength="50" />
+          <Property Name="Manager" Type="char" MaxLength="8" />
+          <Property Name="Secondary_Manager" Type="char" MaxLength="8" />
+          <Property Name="Secretary" Type="varchar" MaxLength="18" />
+          <Property Name="RANK" Type="int" />
+          <Property Name="Email_Alias" Type="varchar" MaxLength="20" />
+          <Property Name="Postal_Address" Type="varchar" MaxLength="164" />
+          <Property Name="Location_Code" Type="char" MaxLength="16" />
+          <Property Name="Last_Update_Date" Type="datetime" Precision="0" />
+          <Property Name="Creation_Date" Type="datetime" Precision="0" />
+          <Property Name="Subsidiary_Code" Type="char" MaxLength="10" />
+          <Property Name="Entity_Comex" Type="varchar" MaxLength="50" />
+          <Property Name="Entity_Country" Type="varchar" MaxLength="50" />
+          <Property Name="Entity_Display_Name" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="tbl_od_identity">
+          <Key>
+            <PropertyRef Name="CUID" />
+          </Key>
+          <Property Name="CUID" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="Title" Type="tinyint" />
+          <Property Name="Last_Name" Type="varchar" MaxLength="64" />
+          <Property Name="First_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Type_OD" Type="varchar" MaxLength="15" />
+          <Property Name="Mobile" Type="varchar" MaxLength="20" />
+          <Property Name="Phone_Number" Type="varchar" MaxLength="20" />
+          <Property Name="Fax" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="128" />
+          <Property Name="Secretary_CUID" Type="varchar" MaxLength="40" />
+          <Property Name="Postal_Address" Type="varchar" MaxLength="160" />
+          <Property Name="Location_Code" Type="char" MaxLength="16" />
+          <Property Name="Entity" Type="varchar" MaxLength="128" />
+          <Property Name="Manager_CUID" Type="char" MaxLength="8" />
+          <Property Name="Category_Code" Type="varchar" MaxLength="50" />
+          <Property Name="Mission" Type="varchar" MaxLength="1200" />
+          <Property Name="Function" Type="varchar" MaxLength="128" />
+          <Property Name="Activity1" Type="varchar" MaxLength="200" />
+          <Property Name="Activity2" Type="varchar" MaxLength="200" />
+          <Property Name="Skill" Type="varchar" MaxLength="1024" />
+          <Property Name="Secondary_Entity" Type="varchar" MaxLength="128" />
+          <Property Name="Secondary_Manager_CUID" Type="char" MaxLength="8" />
+          <Property Name="Secondary_Secretary_CUID" Type="char" MaxLength="8" />
+          <Property Name="Local_ID" Type="varchar" MaxLength="24" />
+          <Property Name="Preferred_Language" Type="char" MaxLength="2" />
+          <Property Name="Country_GIR" Type="char" MaxLength="2" />
+          <Property Name="Country" Type="char" MaxLength="2" />
+          <Property Name="Status" Type="tinyint" />
+          <Property Name="Rank" Type="varchar" MaxLength="10" />
+          <Property Name="Room_Number" Type="varchar" MaxLength="100" />
+          <Property Name="Visiting_Card" Type="varchar" MaxLength="128" />
+          <Property Name="Visiting_Card_FR" Type="varchar" MaxLength="128" />
+          <Property Name="Visiting_Card_EN" Type="varchar" MaxLength="128" />
+          <Property Name="Photo_Name" Type="varchar" MaxLength="16" />
+          <Property Name="Last_Update_Date" Type="datetime" Precision="0" />
+          <Property Name="Creation_Date" Type="datetime" Precision="0" />
+          <Property Name="Other_Phone_Number" Type="varchar" MaxLength="200" />
+          <Property Name="Email_Secondary" Type="varchar" MaxLength="128" />
+          <Property Name="Display_Name" Type="varchar" MaxLength="150" />
+          <Property Name="PKI" Type="bool" />
+        </EntityType>
+        <EntityType Name="tbl_od_identity_his">
+          <Key>
+            <PropertyRef Name="CUID" />
+            <PropertyRef Name="MONTH_HIS" />
+          </Key>
+          <Property Name="CUID" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="Title" Type="tinyint" />
+          <Property Name="Last_Name" Type="varchar" MaxLength="64" />
+          <Property Name="First_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Type_OD" Type="varchar" MaxLength="15" />
+          <Property Name="Mobile" Type="varchar" MaxLength="20" />
+          <Property Name="Phone_Number" Type="varchar" MaxLength="20" />
+          <Property Name="Fax" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="128" />
+          <Property Name="Secretary_CUID" Type="varchar" MaxLength="40" />
+          <Property Name="Postal_Address" Type="varchar" MaxLength="160" />
+          <Property Name="Location_Code" Type="char" MaxLength="16" />
+          <Property Name="Entity" Type="varchar" MaxLength="128" />
+          <Property Name="Manager_CUID" Type="char" MaxLength="8" />
+          <Property Name="Category_Code" Type="varchar" MaxLength="50" />
+          <Property Name="Mission" Type="varchar" MaxLength="1200" />
+          <Property Name="Function" Type="varchar" MaxLength="128" />
+          <Property Name="Activity1" Type="varchar" MaxLength="200" />
+          <Property Name="Activity2" Type="varchar" MaxLength="200" />
+          <Property Name="Skill" Type="varchar" MaxLength="1024" />
+          <Property Name="Secondary_Entity" Type="varchar" MaxLength="128" />
+          <Property Name="Secondary_Manager_CUID" Type="char" MaxLength="8" />
+          <Property Name="Secondary_Secretary_CUID" Type="char" MaxLength="8" />
+          <Property Name="Local_ID" Type="varchar" MaxLength="24" />
+          <Property Name="Preferred_Language" Type="char" MaxLength="2" />
+          <Property Name="Country_GIR" Type="char" MaxLength="2" />
+          <Property Name="Country" Type="char" MaxLength="2" />
+          <Property Name="Status" Type="tinyint" />
+          <Property Name="Rank" Type="varchar" MaxLength="10" />
+          <Property Name="Room_Number" Type="varchar" MaxLength="100" />
+          <Property Name="Visiting_Card" Type="varchar" MaxLength="128" />
+          <Property Name="Visiting_Card_FR" Type="varchar" MaxLength="128" />
+          <Property Name="Visiting_Card_EN" Type="varchar" MaxLength="128" />
+          <Property Name="Photo_Name" Type="varchar" MaxLength="16" />
+          <Property Name="Last_Update_Date" Type="datetime" Precision="0" />
+          <Property Name="PKI" Type="bool" />
+          <Property Name="Creation_Date" Type="datetime" Precision="0" />
+          <Property Name="Other_Phone_Number" Type="varchar" MaxLength="200" />
+          <Property Name="Email_Secondary" Type="varchar" MaxLength="128" />
+          <Property Name="Display_Name" Type="varchar" MaxLength="150" />
+          <Property Name="Entity_Comex" Type="varchar" MaxLength="50" />
+          <Property Name="Entity_Country" Type="varchar" MaxLength="50" />
+          <Property Name="MONTH_HIS" Type="char" MaxLength="6" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_od_location">
+          <Key>
+            <PropertyRef Name="Location_Code" />
+          </Key>
+          <Property Name="Location_Code" Type="char" MaxLength="16" Nullable="false" />
+          <Property Name="Country_Code" Type="char" MaxLength="2" />
+          <Property Name="Building_Name" Type="varchar" MaxLength="64" />
+          <Property Name="Complementary_Address" Type="varchar" MaxLength="64" />
+          <Property Name="Postal_Code" Type="varchar" MaxLength="16" />
+          <Property Name="City" Type="varchar" MaxLength="28" />
+          <Property Name="Street" Type="varchar" MaxLength="64" />
+          <Property Name="Expiration_Date" Type="datetime" Precision="0" />
+          <Property Name="Last_Update_Date" Type="datetime" Precision="0" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'def.queryzone.tbl_od_role' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="tbl_od_role">
+          <Key>
+            <PropertyRef Name="CUID" />
+          </Key>
+          <Property Name="CUID" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="Profile" Type="varchar" MaxLength="16" />
+          <Property Name="Perimeter" Type="varchar" MaxLength="96" />
+          <Property Name="Last_Update_Date" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_pz_acclaim">
+          <Key>
+            <PropertyRef Name="AcclaimID" />
+          </Key>
+          <Property Name="AcclaimID" Type="int" Nullable="false" />
+          <Property Name="ObjectTypeCode" Type="bigint" />
+          <Property Name="ObjectType" Type="varchar" MaxLength="255" />
+          <Property Name="ObjectID" Type="int" />
+          <Property Name="AcclaimType" Type="varchar" MaxLength="50" />
+          <Property Name="Score" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="ScoreDisplay" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="Visibility" Type="bool" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_pz_activity">
+          <Key>
+            <PropertyRef Name="ActivityID" />
+          </Key>
+          <Property Name="ActivityID" Type="bigint" Nullable="false" />
+          <Property Name="ActivityType" Type="varchar" MaxLength="50" />
+          <Property Name="ObjectTypeCode" Type="bigint" />
+          <Property Name="ObjectType" Type="varchar" MaxLength="255" />
+          <Property Name="ObjectID" Type="int" />
+          <Property Name="ContainerTypeCode" Type="bigint" />
+          <Property Name="ContainerType" Type="varchar" MaxLength="255" />
+          <Property Name="ContainerID" Type="int" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="CreationMonth" Type="smallint" />
+          <Property Name="CreationYear" Type="smallint" />
+        </EntityType>
+        <EntityType Name="tbl_pz_announce">
+          <Key>
+            <PropertyRef Name="AnnouncementID" />
+          </Key>
+          <Property Name="AnnouncementID" Type="int" Nullable="false" />
+          <Property Name="ObjectTypeCode" Type="bigint" />
+          <Property Name="ObjectType" Type="varchar" MaxLength="255" />
+          <Property Name="ObjectID" Type="int" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="Subject" Type="varchar" MaxLength="255" />
+          <Property Name="StartDate" Type="datetime" Precision="0" />
+          <Property Name="EndDate" Type="datetime" Precision="0" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_pz_answer">
+          <Key>
+            <PropertyRef Name="ThreadID" />
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="ThreadID" Type="int" Nullable="false" />
+          <Property Name="MessageID" Type="int" Nullable="false" />
+          <Property Name="ContainerTypeCode" Type="bigint" />
+          <Property Name="ContainerType" Type="varchar" MaxLength="255" />
+          <Property Name="ContainerID" Type="int" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="HelpfulAnswer" Type="bool" />
+          <Property Name="CorrectAnswer" Type="bool" />
+        </EntityType>
+        <EntityType Name="tbl_pz_blog">
+          <Key>
+            <PropertyRef Name="BlogID" />
+          </Key>
+          <Property Name="BlogID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+          <Property Name="DisplayName" Type="varchar" MaxLength="255" />
+          <Property Name="Description" Type="varchar" MaxLength="1000" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+          <Property Name="CMAuthentication" Type="smallint" />
+          <Property Name="FeedEnabled" Type="tinyint" />
+          <Property Name="FeedFullContent" Type="tinyint" />
+          <Property Name="ContainerID" Type="int" />
+          <Property Name="ContainerType" Type="bigint" />
+          <Property Name="ContainerCode" Type="varchar" MaxLength="255" />
+          <Property Name="Status" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_pz_blogpost">
+          <Key>
+            <PropertyRef Name="BlogPostID" />
+          </Key>
+          <Property Name="BlogPostID" Type="int" Nullable="false" />
+          <Property Name="BlogID" Type="int" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="Subject" Type="varchar" MaxLength="255" />
+          <Property Name="PermaLink" Type="varchar" MaxLength="255" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="CommentStatus" Type="varchar" MaxLength="50" />
+          <Property Name="PublishedDate" Type="datetime" Precision="0" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+          <Property Name="MinorEdit" Type="bool" />
+        </EntityType>
+        <EntityType Name="tbl_pz_comment">
+          <Key>
+            <PropertyRef Name="CommentID" />
+          </Key>
+          <Property Name="CommentID" Type="int" Nullable="false" />
+          <Property Name="ParentCommentID" Type="int" />
+          <Property Name="ObjectTypeCode" Type="bigint" />
+          <Property Name="ObjectType" Type="varchar" MaxLength="255" />
+          <Property Name="ObjectID" Type="int" />
+          <Property Name="ParentObjectTypeCode" Type="bigint" />
+          <Property Name="ParentObjectType" Type="varchar" MaxLength="255" />
+          <Property Name="ParentObjectID" Type="int" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="IP" Type="varchar" MaxLength="15" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_pz_community">
+          <Key>
+            <PropertyRef Name="CommunityID" />
+          </Key>
+          <Property Name="CommunityID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+          <Property Name="DisplayName" Type="varchar" MaxLength="255" />
+          <Property Name="Description" Type="varchar" MaxLength="1000" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_pz_content">
+          <Key>
+            <PropertyRef Name="ContentID" />
+            <PropertyRef Name="ContentTypeCode" />
+          </Key>
+          <Property Name="ContentID" Type="int" Nullable="false" />
+          <Property Name="ContentTypeCode" Type="bigint" Nullable="false" />
+          <Property Name="ContentType" Type="varchar" MaxLength="255" />
+          <Property Name="Subject" Type="varchar" MaxLength="255" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="ContainerID" Type="int" />
+          <Property Name="ContainerTypeCode" Type="bigint" />
+          <Property Name="ContainerType" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_pz_document">
+          <Key>
+            <PropertyRef Name="InternalDocID" />
+          </Key>
+          <Property Name="InternalDocID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="DocumentID" Type="varchar" MaxLength="255" />
+          <Property Name="ContainerTypeCode" Type="bigint" />
+          <Property Name="ContainerType" Type="varchar" MaxLength="255" />
+          <Property Name="ContainerID" Type="int" />
+          <Property Name="Type" Type="varchar" MaxLength="100" />
+          <Property Name="EditPolicy" Type="int" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ExpirationDate" Type="datetime" Precision="0" />
+          <Property Name="Recommended" Type="bool" />
+          <Property Name="MeanRating" Type="int" />
+          <Property Name="ReadCount" Type="int" />
+          <Property Name="CommentStatus" Type="varchar" MaxLength="50" />
+          <Property Name="WorkflowID" Type="int" />
+          <Property Name="VersionID" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'def.queryzone.tbl_pz_expertise' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="tbl_pz_expertise">
+          <Property Name="ExpertiseTagID" Type="int" />
+          <Property Name="TagID" Type="int" />
+          <Property Name="TargetUserID" Type="int" />
+          <Property Name="OriginUserID" Type="int" />
+          <Property Name="Approved" Type="bool" />
+          <Property Name="ExpertiseCreationDate" Type="datetime" Precision="0" />
+          <Property Name="TagName" Type="varchar" MaxLength="100" />
+          <Property Name="TagCreationDate" Type="datetime" Precision="0" />
+        </EntityType>-->
+        <EntityType Name="tbl_pz_groupmember">
+          <Key>
+            <PropertyRef Name="GroupID" />
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="GroupID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="MemberType" Type="varchar" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="MembershipID" Type="int" />
+          <Property Name="MemberDate" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_pz_message">
+          <Key>
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="MessageID" Type="int" Nullable="false" />
+          <Property Name="ParentMessageID" Type="int" />
+          <Property Name="ThreadID" Type="int" />
+          <Property Name="ContainerType" Type="bigint" />
+          <Property Name="ContainerCode" Type="varchar" MaxLength="255" />
+          <Property Name="ContainerID" Type="int" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="Subject" Type="varchar" MaxLength="255" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'def.queryzone.tbl_pz_objecttag' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="tbl_pz_objecttag">
+          <Property Name="ObjectID" Type="int" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ObjectTypeCode" Type="bigint" />
+          <Property Name="ObjectType" Type="varchar" MaxLength="255" />
+          <Property Name="TagID" Type="int" />
+          <Property Name="TagName" Type="varchar" MaxLength="100" />
+        </EntityType>-->
+        <EntityType Name="tbl_pz_poll">
+          <Key>
+            <PropertyRef Name="PollID" />
+          </Key>
+          <Property Name="PollID" Type="int" Nullable="false" />
+          <Property Name="ObjectTypeCode" Type="int" />
+          <Property Name="ObjectType" Type="varchar" MaxLength="255" />
+          <Property Name="ObjectID" Type="int" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+          <Property Name="StartDate" Type="datetime" Precision="0" />
+          <Property Name="EndDate" Type="datetime" Precision="0" />
+          <Property Name="ExpireDate" Type="datetime" Precision="0" />
+          <Property Name="PollVoteNb" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_pz_profile">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="100" />
+          <Property Name="FirstName" Type="varchar" MaxLength="100" />
+          <Property Name="LastName" Type="varchar" MaxLength="100" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="UserEnabled" Type="bool" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="CreationMonth" Type="smallint" />
+          <Property Name="CreationYear" Type="smallint" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationMonth" Type="smallint" />
+          <Property Name="ModificationYear" Type="smallint" />
+          <Property Name="LastLoggedIn" Type="datetime" Precision="0" />
+          <Property Name="LastLoggedInMonth" Type="smallint" />
+          <Property Name="LastLoggedInYear" Type="smallint" />
+          <Property Name="LastProfileUpdate" Type="datetime" Precision="0" />
+          <Property Name="LastProfileUpdateMonth" Type="smallint" />
+          <Property Name="LastProfileUpdateYear" Type="smallint" />
+          <Property Name="UserType" Type="varchar" MaxLength="50" />
+          <Property Name="Visible" Type="bool" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Federated" Type="bool" />
+          <Property Name="NameVisible" Type="bool" />
+          <Property Name="EmailVisible" Type="bool" />
+          <Property Name="OrangeEmployeeType" Type="varchar" MaxLength="15" />
+          <Property Name="Title" Type="varchar" MaxLength="100" />
+          <Property Name="Biography" Type="text" />
+          <Property Name="OrangeEmployeeStatus" Type="varchar" MaxLength="10" />
+          <Property Name="Department" Type="varchar" MaxLength="150" />
+          <Property Name="CVPaste_Optional" Type="text" />
+          <Property Name="WorkActivities" Type="text" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="80" />
+          <Property Name="OrangeCUID" Type="char" MaxLength="8" />
+          <Property Name="MobilePhoneNumber" Type="varchar" MaxLength="80" />
+          <Property Name="MyObjectivesAndGoals" Type="varchar" MaxLength="3500" />
+          <Property Name="CharterSigned" Type="bool" />
+          <Property Name="DigitalPassport" Type="bool" />
+          <Property Name="AlternativePhone" Type="varchar" MaxLength="80" />
+          <Property Name="M2AndCommunity" Type="varchar" MaxLength="100" />
+          <Property Name="CVPaste" Type="text" />
+          <Property Name="ROICode" Type="varchar" MaxLength="50" />
+          <Property Name="BillingCode" Type="varchar" MaxLength="50" />
+          <Property Name="Expertise" Type="text" />
+          <Property Name="Execs" Type="bool" />
+          <Property Name="Company" Type="varchar" MaxLength="100" />
+          <Property Name="Interests" Type="text" />
+          <Property Name="Schools" Type="text" />
+          <Property Name="Birthday" Type="varchar" MaxLength="12" />
+          <Property Name="OrangeAddress" Type="varchar" MaxLength="500" />
+          <Property Name="FunFact" Type="text" />
+          <Property Name="Languages" Type="varchar" MaxLength="500" />
+          <Property Name="GIRStatus" Type="bool" />
+          <Property Name="GIRBirthdate" Type="date" />
+          <Property Name="Points" Type="bigint" />
+        </EntityType>
+        <EntityType Name="tbl_pz_profile_his">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="Month_His" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Modified" Type="bool" />
+          <Property Name="Logged" Type="bool" />
+          <Property Name="ProfileUpdated" Type="bool" />
+          <Property Name="Points" Type="bigint" />
+          <Property Name="Department" Type="varchar" MaxLength="150" />
+          <Property Name="Month_His" Type="char" MaxLength="6" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_pz_project">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Name="ProjectID" Type="int" Nullable="false" />
+          <Property Name="ParentTypeCode" Type="bigint" />
+          <Property Name="ParentType" Type="varchar" MaxLength="255" />
+          <Property Name="ParentObjectID" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+          <Property Name="Description" Type="varchar" MaxLength="1000" />
+          <Property Name="OwnerID" Type="int" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+          <Property Name="StartDate" Type="date" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_pz_question">
+          <Key>
+            <PropertyRef Name="ThreadID" />
+          </Key>
+          <Property Name="ThreadID" Type="int" Nullable="false" />
+          <Property Name="ContainerTypeCode" Type="bigint" />
+          <Property Name="ContainerType" Type="varchar" MaxLength="255" />
+          <Property Name="ContainerID" Type="int" />
+          <Property Name="userid" Type="int" />
+          <Property Name="creationdate" Type="datetime" Precision="0" />
+          <Property Name="resolutiondate" Type="datetime" Precision="0" />
+          <Property Name="resolutionstate" Type="smallint" />
+        </EntityType>
+        <EntityType Name="tbl_pz_socialgroup">
+          <Key>
+            <PropertyRef Name="GroupID" />
+          </Key>
+          <Property Name="GroupID" Type="int" Nullable="false" />
+          <Property Name="GroupType" Type="varchar" MaxLength="50" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+          <Property Name="DisplayName" Type="varchar" MaxLength="255" />
+          <Property Name="Description" Type="varchar" MaxLength="10000" />
+          <Property Name="OwnerID" Type="int" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+          <Property Name="Status" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_pz_statuslevelpoint">
+          <Key>
+            <PropertyRef Name="PointID" />
+          </Key>
+          <Property Name="PointID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="ContainerTypeCode" Type="bigint" />
+          <Property Name="ContainerType" Type="varchar" MaxLength="255" />
+          <Property Name="ContainerID" Type="int" />
+          <Property Name="Points" Type="int" />
+          <Property Name="ObjectTypeCode" Type="bigint" />
+          <Property Name="ObjectType" Type="varchar" MaxLength="255" />
+          <Property Name="ObjectID" Type="int" />
+          <Property Name="Code" Type="varchar" MaxLength="20" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_pz_userrelation">
+          <Key>
+            <PropertyRef Name="RelationshipID" />
+          </Key>
+          <Property Name="RelationshipID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="RelatedUserID" Type="int" />
+          <Property Name="RelnshipTypeID" Type="int" />
+          <Property Name="State" Type="varchar" MaxLength="20" />
+          <Property Name="CreationDate" Type="datetime" Precision="0" />
+          <Property Name="RetirementDate" Type="datetime" Precision="0" />
+          <Property Name="ModificationDate" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="queryzoneModelStoreContainer">
+          <EntitySet Name="tbl_entity_comex" EntityType="Self.tbl_entity_comex" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_entity_countries" EntityType="Self.tbl_entity_countries" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_gir_category" EntityType="Self.tbl_gir_category" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_gir_domain" EntityType="Self.tbl_gir_domain" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_gir_identity" EntityType="Self.tbl_gir_identity" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_gir_identity_his" EntityType="Self.tbl_gir_identity_his" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_gir_log" EntityType="Self.tbl_gir_log" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_gir_partner" EntityType="Self.tbl_gir_partner" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_gir_purge" EntityType="Self.tbl_gir_purge" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_gir_subsidiary" EntityType="Self.tbl_gir_subsidiary" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_manager" EntityType="Self.tbl_manager" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_od_entity" EntityType="Self.tbl_od_entity" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_od_identity" EntityType="Self.tbl_od_identity" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_od_identity_his" EntityType="Self.tbl_od_identity_his" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_od_location" EntityType="Self.tbl_od_location" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_acclaim" EntityType="Self.tbl_pz_acclaim" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_activity" EntityType="Self.tbl_pz_activity" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_announce" EntityType="Self.tbl_pz_announce" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_answer" EntityType="Self.tbl_pz_answer" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_blog" EntityType="Self.tbl_pz_blog" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_blogpost" EntityType="Self.tbl_pz_blogpost" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_comment" EntityType="Self.tbl_pz_comment" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_community" EntityType="Self.tbl_pz_community" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_content" EntityType="Self.tbl_pz_content" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_document" EntityType="Self.tbl_pz_document" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_groupmember" EntityType="Self.tbl_pz_groupmember" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_message" EntityType="Self.tbl_pz_message" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_poll" EntityType="Self.tbl_pz_poll" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_profile" EntityType="Self.tbl_pz_profile" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_profile_his" EntityType="Self.tbl_pz_profile_his" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_project" EntityType="Self.tbl_pz_project" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_question" EntityType="Self.tbl_pz_question" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_socialgroup" EntityType="Self.tbl_pz_socialgroup" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_statuslevelpoint" EntityType="Self.tbl_pz_statuslevelpoint" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_pz_userrelation" EntityType="Self.tbl_pz_userrelation" Schema="queryzone" store:Type="Tables" />
+          <EntitySet Name="tbl_od_role" EntityType="Self.tbl_od_role" store:Type="Tables" store:Schema="queryzone">
+            <DefiningQuery>SELECT
+`tbl_od_role`.`CUID`, 
+`tbl_od_role`.`Profile`, 
+`tbl_od_role`.`Perimeter`, 
+`tbl_od_role`.`Last_Update_Date`
+FROM `tbl_od_role` AS `tbl_od_role`</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="queryzoneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_entity_comex">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Comex_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Comex_Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_entity_countries">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Country_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Entity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_gir_category">
+          <Key>
+            <PropertyRef Name="Category_Code" />
+          </Key>
+          <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Label" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Mask" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_gir_domain">
+          <Key>
+            <PropertyRef Name="Domain_Code" />
+          </Key>
+          <Property Name="Domain_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Domain_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Rank" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_gir_identity">
+          <Key>
+            <PropertyRef Name="CUID" />
+          </Key>
+          <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Creation_Date" Type="DateTime" />
+          <Property Name="Update_Date" Type="DateTime" />
+          <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Name="Domain_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Directory_Sync" Type="Boolean" />
+          <Property Name="Entry_Date" Type="DateTime" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="Reporting_Global" Type="Boolean" />
+          <Property Name="GASSI" Type="Boolean" />
+          <Property Name="Lock_Identity" Type="Boolean" />
+          <Property Name="First_Entry_Date" Type="DateTime" />
+          <Property Name="VIP" Type="Boolean" />
+          <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IsEnable" Type="Boolean" />
+          <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Local_Id" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+          <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="SByte" />
+          <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Birth_Date" Type="DateTime" />
+          <Property Name="Departure_Date" Type="DateTime" />
+          <Property Name="Last_Departure_Date" Type="DateTime" />
+          <Property Name="Preferred_First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Preferred_Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Middle_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Alternate_Notification_Mail" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Partner_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Sub_Employee_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Prefix" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_gir_identity_his">
+          <Key>
+            <PropertyRef Name="CUID" />
+            <PropertyRef Name="MONTH_HIS" />
+          </Key>
+          <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Creation_Date" Type="DateTime" />
+          <Property Name="Update_Date" Type="DateTime" />
+          <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Name="Domain_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Directory_Sync" Type="Boolean" />
+          <Property Name="Entry_Date" Type="DateTime" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="Reporting_Global" Type="Boolean" />
+          <Property Name="GASSI" Type="Boolean" />
+          <Property Name="Lock_Identity" Type="Boolean" />
+          <Property Name="First_Entry_Date" Type="DateTime" />
+          <Property Name="VIP" Type="Boolean" />
+          <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IsEnable" Type="Boolean" />
+          <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Local_Id" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+          <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="SByte" />
+          <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Birth_Date" Type="DateTime" />
+          <Property Name="Departure_Date" Type="DateTime" />
+          <Property Name="Last_Departure_Date" Type="DateTime" />
+          <Property Name="Preferred_First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Preferred_Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Middle_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Alternate_Notification_Mail" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Partner_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Sub_Employee_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Prefix" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="MONTH_HIS" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_gir_log">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="LOG_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LOG_AUTHOR" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="LOG_DATE" Type="DateTime" />
+          <Property Name="ACTION_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Field" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="INITIAL_VALUE" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Name="TARGET_VALUE" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Name="LOG_ENTITY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="MODIFIED_CUID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="LOG_ORIGIN" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_gir_partner">
+          <Key>
+            <PropertyRef Name="Partner_Code" />
+          </Key>
+          <Property Name="Partner_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Label" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Admin" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Rank" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_gir_purge">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" />
+          <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Departure_Date" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_gir_subsidiary">
+          <Key>
+            <PropertyRef Name="Subsidiary_Code" />
+          </Key>
+          <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Label" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Rank" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_manager">
+          <Key>
+            <PropertyRef Name="CUID" />
+          </Key>
+          <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Subsidiary_Label" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Is_Manager_Of_Persons" Type="Boolean" />
+          <Property Name="Is_Manager_Of_Internal" Type="Boolean" />
+          <Property Name="Is_Manager_Of_Manager" Type="Boolean" />
+          <Property Name="Manager_Level" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_od_entity">
+          <Key>
+            <PropertyRef Name="Entity" />
+          </Key>
+          <Property Name="Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sigle" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Name="Other_Name" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="URL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Mission" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Manager" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Secondary_Manager" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Secretary" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="RANK" Type="Int32" />
+          <Property Name="Email_Alias" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Postal_Address" Type="String" MaxLength="164" FixedLength="false" Unicode="false" />
+          <Property Name="Location_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Last_Update_Date" Type="DateTime" />
+          <Property Name="Creation_Date" Type="DateTime" />
+          <Property Name="Subsidiary_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Entity_Comex" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Entity_Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Entity_Display_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_od_identity">
+          <Key>
+            <PropertyRef Name="CUID" />
+          </Key>
+          <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Title" Type="SByte" />
+          <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Type_OD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Phone_Number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Secretary_CUID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Postal_Address" Type="String" MaxLength="160" FixedLength="false" Unicode="false" />
+          <Property Name="Location_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Mission" Type="String" MaxLength="1200" FixedLength="false" Unicode="false" />
+          <Property Name="Function" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Activity1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Activity2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Skill" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Name="Secondary_Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Secondary_Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Secondary_Secretary_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Local_ID" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+          <Property Name="Preferred_Language" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Country_GIR" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="SByte" />
+          <Property Name="Rank" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Room_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Visiting_Card" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Visiting_Card_FR" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Visiting_Card_EN" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Photo_Name" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Last_Update_Date" Type="DateTime" />
+          <Property Name="Creation_Date" Type="DateTime" />
+          <Property Name="Other_Phone_Number" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Email_Secondary" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Display_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="PKI" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="tbl_od_identity_his">
+          <Key>
+            <PropertyRef Name="CUID" />
+            <PropertyRef Name="MONTH_HIS" />
+          </Key>
+          <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Title" Type="SByte" />
+          <Property Name="Last_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="First_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Type_OD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Phone_Number" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Secretary_CUID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Postal_Address" Type="String" MaxLength="160" FixedLength="false" Unicode="false" />
+          <Property Name="Location_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Category_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Mission" Type="String" MaxLength="1200" FixedLength="false" Unicode="false" />
+          <Property Name="Function" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Activity1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Activity2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Skill" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Name="Secondary_Entity" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Secondary_Manager_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Secondary_Secretary_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Local_ID" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+          <Property Name="Preferred_Language" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Country_GIR" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="SByte" />
+          <Property Name="Rank" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Room_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Visiting_Card" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Visiting_Card_FR" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Visiting_Card_EN" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Photo_Name" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Last_Update_Date" Type="DateTime" />
+          <Property Name="PKI" Type="Boolean" />
+          <Property Name="Creation_Date" Type="DateTime" />
+          <Property Name="Other_Phone_Number" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Email_Secondary" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="Display_Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Entity_Comex" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Entity_Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MONTH_HIS" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_od_location">
+          <Key>
+            <PropertyRef Name="Location_Code" />
+          </Key>
+          <Property Name="Location_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Country_Code" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Building_Name" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Complementary_Address" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Postal_Code" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="28" FixedLength="false" Unicode="false" />
+          <Property Name="Street" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+          <Property Name="Expiration_Date" Type="DateTime" />
+          <Property Name="Last_Update_Date" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_pz_acclaim">
+          <Key>
+            <PropertyRef Name="AcclaimID" />
+          </Key>
+          <Property Name="AcclaimID" Type="Int32" Nullable="false" />
+          <Property Name="ObjectTypeCode" Type="Int64" />
+          <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ObjectID" Type="Int32" />
+          <Property Name="AcclaimType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Score" Type="Decimal" />
+          <Property Name="ScoreDisplay" Type="Decimal" />
+          <Property Name="Visibility" Type="Boolean" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_pz_activity">
+          <Key>
+            <PropertyRef Name="ActivityID" />
+          </Key>
+          <Property Name="ActivityID" Type="Int64" Nullable="false" />
+          <Property Name="ActivityType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ObjectTypeCode" Type="Int64" />
+          <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ObjectID" Type="Int32" />
+          <Property Name="ContainerTypeCode" Type="Int64" />
+          <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ContainerID" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="CreationMonth" Type="Int16" />
+          <Property Name="CreationYear" Type="Int16" />
+        </EntityType>
+        <EntityType Name="tbl_pz_announce">
+          <Key>
+            <PropertyRef Name="AnnouncementID" />
+          </Key>
+          <Property Name="AnnouncementID" Type="Int32" Nullable="false" />
+          <Property Name="ObjectTypeCode" Type="Int64" />
+          <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ObjectID" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="Subject" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="StartDate" Type="DateTime" />
+          <Property Name="EndDate" Type="DateTime" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ModificationDate" Type="DateTime" />
+          <Property Name="CreationDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_pz_answer">
+          <Key>
+            <PropertyRef Name="ThreadID" />
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="ThreadID" Type="Int32" Nullable="false" />
+          <Property Name="MessageID" Type="Int32" Nullable="false" />
+          <Property Name="ContainerTypeCode" Type="Int64" />
+          <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ContainerID" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="HelpfulAnswer" Type="Boolean" />
+          <Property Name="CorrectAnswer" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="tbl_pz_blog">
+          <Key>
+            <PropertyRef Name="BlogID" />
+          </Key>
+          <Property Name="BlogID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+          <Property Name="CMAuthentication" Type="Int16" />
+          <Property Name="FeedEnabled" Type="SByte" />
+          <Property Name="FeedFullContent" Type="SByte" />
+          <Property Name="ContainerID" Type="Int32" />
+          <Property Name="ContainerType" Type="Int64" />
+          <Property Name="ContainerCode" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_pz_blogpost">
+          <Key>
+            <PropertyRef Name="BlogPostID" />
+          </Key>
+          <Property Name="BlogPostID" Type="Int32" Nullable="false" />
+          <Property Name="BlogID" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="Subject" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PermaLink" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CommentStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PublishedDate" Type="DateTime" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+          <Property Name="MinorEdit" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="tbl_pz_comment">
+          <Key>
+            <PropertyRef Name="CommentID" />
+          </Key>
+          <Property Name="CommentID" Type="Int32" Nullable="false" />
+          <Property Name="ParentCommentID" Type="Int32" />
+          <Property Name="ObjectTypeCode" Type="Int64" />
+          <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ObjectID" Type="Int32" />
+          <Property Name="ParentObjectTypeCode" Type="Int64" />
+          <Property Name="ParentObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ParentObjectID" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="IP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_pz_community">
+          <Key>
+            <PropertyRef Name="CommunityID" />
+          </Key>
+          <Property Name="CommunityID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_pz_content">
+          <Key>
+            <PropertyRef Name="ContentID" />
+            <PropertyRef Name="ContentTypeCode" />
+          </Key>
+          <Property Name="ContentID" Type="Int32" Nullable="false" />
+          <Property Name="ContentTypeCode" Type="Int64" Nullable="false" />
+          <Property Name="ContentType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Subject" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="ContainerID" Type="Int32" />
+          <Property Name="ContainerTypeCode" Type="Int64" />
+          <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_pz_document">
+          <Key>
+            <PropertyRef Name="InternalDocID" />
+          </Key>
+          <Property Name="InternalDocID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="DocumentID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ContainerTypeCode" Type="Int64" />
+          <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ContainerID" Type="Int32" />
+          <Property Name="Type" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EditPolicy" Type="Int32" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ExpirationDate" Type="DateTime" />
+          <Property Name="Recommended" Type="Boolean" />
+          <Property Name="MeanRating" Type="Int32" />
+          <Property Name="ReadCount" Type="Int32" />
+          <Property Name="CommentStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WorkflowID" Type="Int32" />
+          <Property Name="VersionID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_pz_groupmember">
+          <Key>
+            <PropertyRef Name="GroupID" />
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="GroupID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="MemberType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="MembershipID" Type="Int32" />
+          <Property Name="MemberDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_pz_message">
+          <Key>
+            <PropertyRef Name="MessageID" />
+          </Key>
+          <Property Name="MessageID" Type="Int32" Nullable="false" />
+          <Property Name="ParentMessageID" Type="Int32" />
+          <Property Name="ThreadID" Type="Int32" />
+          <Property Name="ContainerType" Type="Int64" />
+          <Property Name="ContainerCode" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ContainerID" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="Subject" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_pz_poll">
+          <Key>
+            <PropertyRef Name="PollID" />
+          </Key>
+          <Property Name="PollID" Type="Int32" Nullable="false" />
+          <Property Name="ObjectTypeCode" Type="Int32" />
+          <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ObjectID" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+          <Property Name="StartDate" Type="DateTime" />
+          <Property Name="EndDate" Type="DateTime" />
+          <Property Name="ExpireDate" Type="DateTime" />
+          <Property Name="PollVoteNb" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_pz_profile">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="UserEnabled" Type="Boolean" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="CreationMonth" Type="Int16" />
+          <Property Name="CreationYear" Type="Int16" />
+          <Property Name="ModificationDate" Type="DateTime" />
+          <Property Name="ModificationMonth" Type="Int16" />
+          <Property Name="ModificationYear" Type="Int16" />
+          <Property Name="LastLoggedIn" Type="DateTime" />
+          <Property Name="LastLoggedInMonth" Type="Int16" />
+          <Property Name="LastLoggedInYear" Type="Int16" />
+          <Property Name="LastProfileUpdate" Type="DateTime" />
+          <Property Name="LastProfileUpdateMonth" Type="Int16" />
+          <Property Name="LastProfileUpdateYear" Type="Int16" />
+          <Property Name="UserType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Visible" Type="Boolean" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Federated" Type="Boolean" />
+          <Property Name="NameVisible" Type="Boolean" />
+          <Property Name="EmailVisible" Type="Boolean" />
+          <Property Name="OrangeEmployeeType" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Biography" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="OrangeEmployeeStatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Department" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="CVPaste_Optional" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="WorkActivities" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="OrangeCUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="MobilePhoneNumber" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="MyObjectivesAndGoals" Type="String" MaxLength="3500" FixedLength="false" Unicode="false" />
+          <Property Name="CharterSigned" Type="Boolean" />
+          <Property Name="DigitalPassport" Type="Boolean" />
+          <Property Name="AlternativePhone" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="M2AndCommunity" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CVPaste" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="ROICode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BillingCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Expertise" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="Execs" Type="Boolean" />
+          <Property Name="Company" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Interests" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="Schools" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="Birthday" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="OrangeAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="FunFact" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="Languages" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="GIRStatus" Type="Boolean" />
+          <Property Name="GIRBirthdate" Type="DateTime" />
+          <Property Name="Points" Type="Int64" />
+        </EntityType>
+        <EntityType Name="tbl_pz_profile_his">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="Month_His" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Modified" Type="Boolean" />
+          <Property Name="Logged" Type="Boolean" />
+          <Property Name="ProfileUpdated" Type="Boolean" />
+          <Property Name="Points" Type="Int64" />
+          <Property Name="Department" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Month_His" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_pz_project">
+          <Key>
+            <PropertyRef Name="ProjectID" />
+          </Key>
+          <Property Name="ProjectID" Type="Int32" Nullable="false" />
+          <Property Name="ParentTypeCode" Type="Int64" />
+          <Property Name="ParentType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ParentObjectID" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="OwnerID" Type="Int32" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+          <Property Name="StartDate" Type="DateTime" />
+          <Property Name="DueDate" Type="DateTime" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_pz_question">
+          <Key>
+            <PropertyRef Name="ThreadID" />
+          </Key>
+          <Property Name="ThreadID" Type="Int32" Nullable="false" />
+          <Property Name="ContainerTypeCode" Type="Int64" />
+          <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ContainerID" Type="Int32" />
+          <Property Name="userid" Type="Int32" />
+          <Property Name="creationdate" Type="DateTime" />
+          <Property Name="resolutiondate" Type="DateTime" />
+          <Property Name="resolutionstate" Type="Int16" />
+        </EntityType>
+        <EntityType Name="tbl_pz_socialgroup">
+          <Key>
+            <PropertyRef Name="GroupID" />
+          </Key>
+          <Property Name="GroupID" Type="Int32" Nullable="false" />
+          <Property Name="GroupType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="10000" FixedLength="false" Unicode="false" />
+          <Property Name="OwnerID" Type="Int32" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+          <Property Name="Status" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_pz_statuslevelpoint">
+          <Key>
+            <PropertyRef Name="PointID" />
+          </Key>
+          <Property Name="PointID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="ContainerTypeCode" Type="Int64" />
+          <Property Name="ContainerType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ContainerID" Type="Int32" />
+          <Property Name="Points" Type="Int32" />
+          <Property Name="ObjectTypeCode" Type="Int64" />
+          <Property Name="ObjectType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ObjectID" Type="Int32" />
+          <Property Name="Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_pz_userrelation">
+          <Key>
+            <PropertyRef Name="RelationshipID" />
+          </Key>
+          <Property Name="RelationshipID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="RelatedUserID" Type="Int32" />
+          <Property Name="RelnshipTypeID" Type="Int32" />
+          <Property Name="State" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CreationDate" Type="DateTime" />
+          <Property Name="RetirementDate" Type="DateTime" />
+          <Property Name="ModificationDate" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tbl_od_role">
+          <Key>
+            <PropertyRef Name="CUID" />
+          </Key>
+          <Property Name="CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Profile" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="Perimeter" Type="String" MaxLength="96" FixedLength="false" Unicode="false" />
+          <Property Name="Last_Update_Date" Type="DateTime" />
+        </EntityType>
+        <EntityContainer Name="queryzoneEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_entity_comex" EntityType="Self.tbl_entity_comex" />
+          <EntitySet Name="tbl_entity_countries" EntityType="Self.tbl_entity_countries" />
+          <EntitySet Name="tbl_gir_category" EntityType="Self.tbl_gir_category" />
+          <EntitySet Name="tbl_gir_domain" EntityType="Self.tbl_gir_domain" />
+          <EntitySet Name="tbl_gir_identity" EntityType="Self.tbl_gir_identity" />
+          <EntitySet Name="tbl_gir_identity_his" EntityType="Self.tbl_gir_identity_his" />
+          <EntitySet Name="tbl_gir_log" EntityType="Self.tbl_gir_log" />
+          <EntitySet Name="tbl_gir_partner" EntityType="Self.tbl_gir_partner" />
+          <EntitySet Name="tbl_gir_purge" EntityType="Self.tbl_gir_purge" />
+          <EntitySet Name="tbl_gir_subsidiary" EntityType="Self.tbl_gir_subsidiary" />
+          <EntitySet Name="tbl_manager" EntityType="Self.tbl_manager" />
+          <EntitySet Name="tbl_od_entity" EntityType="Self.tbl_od_entity" />
+          <EntitySet Name="tbl_od_identity" EntityType="Self.tbl_od_identity" />
+          <EntitySet Name="tbl_od_identity_his" EntityType="Self.tbl_od_identity_his" />
+          <EntitySet Name="tbl_od_location" EntityType="Self.tbl_od_location" />
+          <EntitySet Name="tbl_pz_acclaim" EntityType="Self.tbl_pz_acclaim" />
+          <EntitySet Name="tbl_pz_activity" EntityType="Self.tbl_pz_activity" />
+          <EntitySet Name="tbl_pz_announce" EntityType="Self.tbl_pz_announce" />
+          <EntitySet Name="tbl_pz_answer" EntityType="Self.tbl_pz_answer" />
+          <EntitySet Name="tbl_pz_blog" EntityType="Self.tbl_pz_blog" />
+          <EntitySet Name="tbl_pz_blogpost" EntityType="Self.tbl_pz_blogpost" />
+          <EntitySet Name="tbl_pz_comment" EntityType="Self.tbl_pz_comment" />
+          <EntitySet Name="tbl_pz_community" EntityType="Self.tbl_pz_community" />
+          <EntitySet Name="tbl_pz_content" EntityType="Self.tbl_pz_content" />
+          <EntitySet Name="tbl_pz_document" EntityType="Self.tbl_pz_document" />
+          <EntitySet Name="tbl_pz_groupmember" EntityType="Self.tbl_pz_groupmember" />
+          <EntitySet Name="tbl_pz_message" EntityType="Self.tbl_pz_message" />
+          <EntitySet Name="tbl_pz_poll" EntityType="Self.tbl_pz_poll" />
+          <EntitySet Name="tbl_pz_profile" EntityType="Self.tbl_pz_profile" />
+          <EntitySet Name="tbl_pz_profile_his" EntityType="Self.tbl_pz_profile_his" />
+          <EntitySet Name="tbl_pz_project" EntityType="Self.tbl_pz_project" />
+          <EntitySet Name="tbl_pz_question" EntityType="Self.tbl_pz_question" />
+          <EntitySet Name="tbl_pz_socialgroup" EntityType="Self.tbl_pz_socialgroup" />
+          <EntitySet Name="tbl_pz_statuslevelpoint" EntityType="Self.tbl_pz_statuslevelpoint" />
+          <EntitySet Name="tbl_pz_userrelation" EntityType="Self.tbl_pz_userrelation" />
+          <EntitySet Name="tbl_od_role" EntityType="Self.tbl_od_role" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="queryzoneModelStoreContainer" CdmEntityContainer="queryzoneEntities">
+          <EntitySetMapping Name="tbl_entity_comex">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_entity_comex">
+              <MappingFragment StoreEntitySet="tbl_entity_comex">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Comex_Name" ColumnName="Comex_Name" />
+                <ScalarProperty Name="Comex_Description" ColumnName="Comex_Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_entity_countries">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_entity_countries">
+              <MappingFragment StoreEntitySet="tbl_entity_countries">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Country_Name" ColumnName="Country_Name" />
+                <ScalarProperty Name="Entity" ColumnName="Entity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_gir_category">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_category">
+              <MappingFragment StoreEntitySet="tbl_gir_category">
+                <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="Mask" ColumnName="Mask" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_gir_domain">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_domain">
+              <MappingFragment StoreEntitySet="tbl_gir_domain">
+                <ScalarProperty Name="Domain_Code" ColumnName="Domain_Code" />
+                <ScalarProperty Name="Domain_Name" ColumnName="Domain_Name" />
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_gir_identity">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_identity">
+              <MappingFragment StoreEntitySet="tbl_gir_identity">
+                <ScalarProperty Name="CUID" ColumnName="CUID" />
+                <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+                <ScalarProperty Name="Update_Date" ColumnName="Update_Date" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Domain_Code" ColumnName="Domain_Code" />
+                <ScalarProperty Name="Directory_Sync" ColumnName="Directory_Sync" />
+                <ScalarProperty Name="Entry_Date" ColumnName="Entry_Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Reporting_Global" ColumnName="Reporting_Global" />
+                <ScalarProperty Name="GASSI" ColumnName="GASSI" />
+                <ScalarProperty Name="Lock_Identity" ColumnName="Lock_Identity" />
+                <ScalarProperty Name="First_Entry_Date" ColumnName="First_Entry_Date" />
+                <ScalarProperty Name="VIP" ColumnName="VIP" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+                <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Local_Id" ColumnName="Local_Id" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+                <ScalarProperty Name="Birth_Date" ColumnName="Birth_Date" />
+                <ScalarProperty Name="Departure_Date" ColumnName="Departure_Date" />
+                <ScalarProperty Name="Last_Departure_Date" ColumnName="Last_Departure_Date" />
+                <ScalarProperty Name="Preferred_First_Name" ColumnName="Preferred_First_Name" />
+                <ScalarProperty Name="Preferred_Last_Name" ColumnName="Preferred_Last_Name" />
+                <ScalarProperty Name="Middle_Name" ColumnName="Middle_Name" />
+                <ScalarProperty Name="Alternate_Notification_Mail" ColumnName="Alternate_Notification_Mail" />
+                <ScalarProperty Name="Partner_Code" ColumnName="Partner_Code" />
+                <ScalarProperty Name="Sub_Employee_Type" ColumnName="Sub_Employee_Type" />
+                <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_gir_identity_his">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_identity_his">
+              <MappingFragment StoreEntitySet="tbl_gir_identity_his">
+                <ScalarProperty Name="CUID" ColumnName="CUID" />
+                <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+                <ScalarProperty Name="Update_Date" ColumnName="Update_Date" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Domain_Code" ColumnName="Domain_Code" />
+                <ScalarProperty Name="Directory_Sync" ColumnName="Directory_Sync" />
+                <ScalarProperty Name="Entry_Date" ColumnName="Entry_Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Reporting_Global" ColumnName="Reporting_Global" />
+                <ScalarProperty Name="GASSI" ColumnName="GASSI" />
+                <ScalarProperty Name="Lock_Identity" ColumnName="Lock_Identity" />
+                <ScalarProperty Name="First_Entry_Date" ColumnName="First_Entry_Date" />
+                <ScalarProperty Name="VIP" ColumnName="VIP" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+                <ScalarProperty Name="IsEnable" ColumnName="IsEnable" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Local_Id" ColumnName="Local_Id" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+                <ScalarProperty Name="Birth_Date" ColumnName="Birth_Date" />
+                <ScalarProperty Name="Departure_Date" ColumnName="Departure_Date" />
+                <ScalarProperty Name="Last_Departure_Date" ColumnName="Last_Departure_Date" />
+                <ScalarProperty Name="Preferred_First_Name" ColumnName="Preferred_First_Name" />
+                <ScalarProperty Name="Preferred_Last_Name" ColumnName="Preferred_Last_Name" />
+                <ScalarProperty Name="Middle_Name" ColumnName="Middle_Name" />
+                <ScalarProperty Name="Alternate_Notification_Mail" ColumnName="Alternate_Notification_Mail" />
+                <ScalarProperty Name="Partner_Code" ColumnName="Partner_Code" />
+                <ScalarProperty Name="Sub_Employee_Type" ColumnName="Sub_Employee_Type" />
+                <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+                <ScalarProperty Name="MONTH_HIS" ColumnName="MONTH_HIS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_gir_log">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_log">
+              <MappingFragment StoreEntitySet="tbl_gir_log">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LOG_ID" ColumnName="LOG_ID" />
+                <ScalarProperty Name="LOG_AUTHOR" ColumnName="LOG_AUTHOR" />
+                <ScalarProperty Name="LOG_DATE" ColumnName="LOG_DATE" />
+                <ScalarProperty Name="ACTION_TYPE" ColumnName="ACTION_TYPE" />
+                <ScalarProperty Name="Field" ColumnName="Field" />
+                <ScalarProperty Name="INITIAL_VALUE" ColumnName="INITIAL_VALUE" />
+                <ScalarProperty Name="TARGET_VALUE" ColumnName="TARGET_VALUE" />
+                <ScalarProperty Name="LOG_ENTITY" ColumnName="LOG_ENTITY" />
+                <ScalarProperty Name="MODIFIED_CUID" ColumnName="MODIFIED_CUID" />
+                <ScalarProperty Name="LOG_ORIGIN" ColumnName="LOG_ORIGIN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_gir_partner">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_partner">
+              <MappingFragment StoreEntitySet="tbl_gir_partner">
+                <ScalarProperty Name="Partner_Code" ColumnName="Partner_Code" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="Admin" ColumnName="Admin" />
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_gir_purge">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_purge">
+              <MappingFragment StoreEntitySet="tbl_gir_purge">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CUID" ColumnName="CUID" />
+                <ScalarProperty Name="Departure_Date" ColumnName="Departure_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_gir_subsidiary">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_gir_subsidiary">
+              <MappingFragment StoreEntitySet="tbl_gir_subsidiary">
+                <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_manager">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_manager">
+              <MappingFragment StoreEntitySet="tbl_manager">
+                <ScalarProperty Name="CUID" ColumnName="CUID" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+                <ScalarProperty Name="Subsidiary_Label" ColumnName="Subsidiary_Label" />
+                <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Entity" ColumnName="Entity" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Is_Manager_Of_Persons" ColumnName="Is_Manager_Of_Persons" />
+                <ScalarProperty Name="Is_Manager_Of_Internal" ColumnName="Is_Manager_Of_Internal" />
+                <ScalarProperty Name="Is_Manager_Of_Manager" ColumnName="Is_Manager_Of_Manager" />
+                <ScalarProperty Name="Manager_Level" ColumnName="Manager_Level" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_od_entity">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_od_entity">
+              <MappingFragment StoreEntitySet="tbl_od_entity">
+                <ScalarProperty Name="Entity" ColumnName="Entity" />
+                <ScalarProperty Name="Sigle" ColumnName="Sigle" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Other_Name" ColumnName="Other_Name" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="Mission" ColumnName="Mission" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Manager" ColumnName="Manager" />
+                <ScalarProperty Name="Secondary_Manager" ColumnName="Secondary_Manager" />
+                <ScalarProperty Name="Secretary" ColumnName="Secretary" />
+                <ScalarProperty Name="RANK" ColumnName="RANK" />
+                <ScalarProperty Name="Email_Alias" ColumnName="Email_Alias" />
+                <ScalarProperty Name="Postal_Address" ColumnName="Postal_Address" />
+                <ScalarProperty Name="Location_Code" ColumnName="Location_Code" />
+                <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+                <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+                <ScalarProperty Name="Subsidiary_Code" ColumnName="Subsidiary_Code" />
+                <ScalarProperty Name="Entity_Comex" ColumnName="Entity_Comex" />
+                <ScalarProperty Name="Entity_Country" ColumnName="Entity_Country" />
+                <ScalarProperty Name="Entity_Display_Name" ColumnName="Entity_Display_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_od_identity">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_od_identity">
+              <MappingFragment StoreEntitySet="tbl_od_identity">
+                <ScalarProperty Name="CUID" ColumnName="CUID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="Type_OD" ColumnName="Type_OD" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Secretary_CUID" ColumnName="Secretary_CUID" />
+                <ScalarProperty Name="Postal_Address" ColumnName="Postal_Address" />
+                <ScalarProperty Name="Location_Code" ColumnName="Location_Code" />
+                <ScalarProperty Name="Entity" ColumnName="Entity" />
+                <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+                <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+                <ScalarProperty Name="Mission" ColumnName="Mission" />
+                <ScalarProperty Name="Function" ColumnName="Function" />
+                <ScalarProperty Name="Activity1" ColumnName="Activity1" />
+                <ScalarProperty Name="Activity2" ColumnName="Activity2" />
+                <ScalarProperty Name="Skill" ColumnName="Skill" />
+                <ScalarProperty Name="Secondary_Entity" ColumnName="Secondary_Entity" />
+                <ScalarProperty Name="Secondary_Manager_CUID" ColumnName="Secondary_Manager_CUID" />
+                <ScalarProperty Name="Secondary_Secretary_CUID" ColumnName="Secondary_Secretary_CUID" />
+                <ScalarProperty Name="Local_ID" ColumnName="Local_ID" />
+                <ScalarProperty Name="Preferred_Language" ColumnName="Preferred_Language" />
+                <ScalarProperty Name="Country_GIR" ColumnName="Country_GIR" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+                <ScalarProperty Name="Room_Number" ColumnName="Room_Number" />
+                <ScalarProperty Name="Visiting_Card" ColumnName="Visiting_Card" />
+                <ScalarProperty Name="Visiting_Card_FR" ColumnName="Visiting_Card_FR" />
+                <ScalarProperty Name="Visiting_Card_EN" ColumnName="Visiting_Card_EN" />
+                <ScalarProperty Name="Photo_Name" ColumnName="Photo_Name" />
+                <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+                <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+                <ScalarProperty Name="Other_Phone_Number" ColumnName="Other_Phone_Number" />
+                <ScalarProperty Name="Email_Secondary" ColumnName="Email_Secondary" />
+                <ScalarProperty Name="Display_Name" ColumnName="Display_Name" />
+                <ScalarProperty Name="PKI" ColumnName="PKI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_od_identity_his">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_od_identity_his">
+              <MappingFragment StoreEntitySet="tbl_od_identity_his">
+                <ScalarProperty Name="CUID" ColumnName="CUID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="Type_OD" ColumnName="Type_OD" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Secretary_CUID" ColumnName="Secretary_CUID" />
+                <ScalarProperty Name="Postal_Address" ColumnName="Postal_Address" />
+                <ScalarProperty Name="Location_Code" ColumnName="Location_Code" />
+                <ScalarProperty Name="Entity" ColumnName="Entity" />
+                <ScalarProperty Name="Manager_CUID" ColumnName="Manager_CUID" />
+                <ScalarProperty Name="Category_Code" ColumnName="Category_Code" />
+                <ScalarProperty Name="Mission" ColumnName="Mission" />
+                <ScalarProperty Name="Function" ColumnName="Function" />
+                <ScalarProperty Name="Activity1" ColumnName="Activity1" />
+                <ScalarProperty Name="Activity2" ColumnName="Activity2" />
+                <ScalarProperty Name="Skill" ColumnName="Skill" />
+                <ScalarProperty Name="Secondary_Entity" ColumnName="Secondary_Entity" />
+                <ScalarProperty Name="Secondary_Manager_CUID" ColumnName="Secondary_Manager_CUID" />
+                <ScalarProperty Name="Secondary_Secretary_CUID" ColumnName="Secondary_Secretary_CUID" />
+                <ScalarProperty Name="Local_ID" ColumnName="Local_ID" />
+                <ScalarProperty Name="Preferred_Language" ColumnName="Preferred_Language" />
+                <ScalarProperty Name="Country_GIR" ColumnName="Country_GIR" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+                <ScalarProperty Name="Room_Number" ColumnName="Room_Number" />
+                <ScalarProperty Name="Visiting_Card" ColumnName="Visiting_Card" />
+                <ScalarProperty Name="Visiting_Card_FR" ColumnName="Visiting_Card_FR" />
+                <ScalarProperty Name="Visiting_Card_EN" ColumnName="Visiting_Card_EN" />
+                <ScalarProperty Name="Photo_Name" ColumnName="Photo_Name" />
+                <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+                <ScalarProperty Name="PKI" ColumnName="PKI" />
+                <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+                <ScalarProperty Name="Other_Phone_Number" ColumnName="Other_Phone_Number" />
+                <ScalarProperty Name="Email_Secondary" ColumnName="Email_Secondary" />
+                <ScalarProperty Name="Display_Name" ColumnName="Display_Name" />
+                <ScalarProperty Name="Entity_Comex" ColumnName="Entity_Comex" />
+                <ScalarProperty Name="Entity_Country" ColumnName="Entity_Country" />
+                <ScalarProperty Name="MONTH_HIS" ColumnName="MONTH_HIS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_od_location">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_od_location">
+              <MappingFragment StoreEntitySet="tbl_od_location">
+                <ScalarProperty Name="Location_Code" ColumnName="Location_Code" />
+                <ScalarProperty Name="Country_Code" ColumnName="Country_Code" />
+                <ScalarProperty Name="Building_Name" ColumnName="Building_Name" />
+                <ScalarProperty Name="Complementary_Address" ColumnName="Complementary_Address" />
+                <ScalarProperty Name="Postal_Code" ColumnName="Postal_Code" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Expiration_Date" ColumnName="Expiration_Date" />
+                <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_acclaim">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_acclaim">
+              <MappingFragment StoreEntitySet="tbl_pz_acclaim">
+                <ScalarProperty Name="AcclaimID" ColumnName="AcclaimID" />
+                <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+                <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="AcclaimType" ColumnName="AcclaimType" />
+                <ScalarProperty Name="Score" ColumnName="Score" />
+                <ScalarProperty Name="ScoreDisplay" ColumnName="ScoreDisplay" />
+                <ScalarProperty Name="Visibility" ColumnName="Visibility" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_activity">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_activity">
+              <MappingFragment StoreEntitySet="tbl_pz_activity">
+                <ScalarProperty Name="ActivityID" ColumnName="ActivityID" />
+                <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+                <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+                <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+                <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreationMonth" ColumnName="CreationMonth" />
+                <ScalarProperty Name="CreationYear" ColumnName="CreationYear" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_announce">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_announce">
+              <MappingFragment StoreEntitySet="tbl_pz_announce">
+                <ScalarProperty Name="AnnouncementID" ColumnName="AnnouncementID" />
+                <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+                <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_answer">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_answer">
+              <MappingFragment StoreEntitySet="tbl_pz_answer">
+                <ScalarProperty Name="ThreadID" ColumnName="ThreadID" />
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+                <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="HelpfulAnswer" ColumnName="HelpfulAnswer" />
+                <ScalarProperty Name="CorrectAnswer" ColumnName="CorrectAnswer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_blog">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_blog">
+              <MappingFragment StoreEntitySet="tbl_pz_blog">
+                <ScalarProperty Name="BlogID" ColumnName="BlogID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="CMAuthentication" ColumnName="CMAuthentication" />
+                <ScalarProperty Name="FeedEnabled" ColumnName="FeedEnabled" />
+                <ScalarProperty Name="FeedFullContent" ColumnName="FeedFullContent" />
+                <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+                <ScalarProperty Name="ContainerCode" ColumnName="ContainerCode" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_blogpost">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_blogpost">
+              <MappingFragment StoreEntitySet="tbl_pz_blogpost">
+                <ScalarProperty Name="BlogPostID" ColumnName="BlogPostID" />
+                <ScalarProperty Name="BlogID" ColumnName="BlogID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="PermaLink" ColumnName="PermaLink" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="CommentStatus" ColumnName="CommentStatus" />
+                <ScalarProperty Name="PublishedDate" ColumnName="PublishedDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="MinorEdit" ColumnName="MinorEdit" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_comment">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_comment">
+              <MappingFragment StoreEntitySet="tbl_pz_comment">
+                <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+                <ScalarProperty Name="ParentCommentID" ColumnName="ParentCommentID" />
+                <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+                <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="ParentObjectTypeCode" ColumnName="ParentObjectTypeCode" />
+                <ScalarProperty Name="ParentObjectType" ColumnName="ParentObjectType" />
+                <ScalarProperty Name="ParentObjectID" ColumnName="ParentObjectID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_community">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_community">
+              <MappingFragment StoreEntitySet="tbl_pz_community">
+                <ScalarProperty Name="CommunityID" ColumnName="CommunityID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_content">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_content">
+              <MappingFragment StoreEntitySet="tbl_pz_content">
+                <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+                <ScalarProperty Name="ContentTypeCode" ColumnName="ContentTypeCode" />
+                <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+                <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_document">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_document">
+              <MappingFragment StoreEntitySet="tbl_pz_document">
+                <ScalarProperty Name="InternalDocID" ColumnName="InternalDocID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="DocumentID" ColumnName="DocumentID" />
+                <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+                <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="EditPolicy" ColumnName="EditPolicy" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+                <ScalarProperty Name="Recommended" ColumnName="Recommended" />
+                <ScalarProperty Name="MeanRating" ColumnName="MeanRating" />
+                <ScalarProperty Name="ReadCount" ColumnName="ReadCount" />
+                <ScalarProperty Name="CommentStatus" ColumnName="CommentStatus" />
+                <ScalarProperty Name="WorkflowID" ColumnName="WorkflowID" />
+                <ScalarProperty Name="VersionID" ColumnName="VersionID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_groupmember">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_groupmember">
+              <MappingFragment StoreEntitySet="tbl_pz_groupmember">
+                <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+                <ScalarProperty Name="MemberDate" ColumnName="MemberDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_message">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_message">
+              <MappingFragment StoreEntitySet="tbl_pz_message">
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="ParentMessageID" ColumnName="ParentMessageID" />
+                <ScalarProperty Name="ThreadID" ColumnName="ThreadID" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+                <ScalarProperty Name="ContainerCode" ColumnName="ContainerCode" />
+                <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_poll">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_poll">
+              <MappingFragment StoreEntitySet="tbl_pz_poll">
+                <ScalarProperty Name="PollID" ColumnName="PollID" />
+                <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+                <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+                <ScalarProperty Name="PollVoteNb" ColumnName="PollVoteNb" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_profile">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_profile">
+              <MappingFragment StoreEntitySet="tbl_pz_profile">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UserEnabled" ColumnName="UserEnabled" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="CreationMonth" ColumnName="CreationMonth" />
+                <ScalarProperty Name="CreationYear" ColumnName="CreationYear" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="ModificationMonth" ColumnName="ModificationMonth" />
+                <ScalarProperty Name="ModificationYear" ColumnName="ModificationYear" />
+                <ScalarProperty Name="LastLoggedIn" ColumnName="LastLoggedIn" />
+                <ScalarProperty Name="LastLoggedInMonth" ColumnName="LastLoggedInMonth" />
+                <ScalarProperty Name="LastLoggedInYear" ColumnName="LastLoggedInYear" />
+                <ScalarProperty Name="LastProfileUpdate" ColumnName="LastProfileUpdate" />
+                <ScalarProperty Name="LastProfileUpdateMonth" ColumnName="LastProfileUpdateMonth" />
+                <ScalarProperty Name="LastProfileUpdateYear" ColumnName="LastProfileUpdateYear" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+                <ScalarProperty Name="Visible" ColumnName="Visible" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Federated" ColumnName="Federated" />
+                <ScalarProperty Name="NameVisible" ColumnName="NameVisible" />
+                <ScalarProperty Name="EmailVisible" ColumnName="EmailVisible" />
+                <ScalarProperty Name="OrangeEmployeeType" ColumnName="OrangeEmployeeType" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Biography" ColumnName="Biography" />
+                <ScalarProperty Name="OrangeEmployeeStatus" ColumnName="OrangeEmployeeStatus" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="CVPaste_Optional" ColumnName="CVPaste_Optional" />
+                <ScalarProperty Name="WorkActivities" ColumnName="WorkActivities" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="OrangeCUID" ColumnName="OrangeCUID" />
+                <ScalarProperty Name="MobilePhoneNumber" ColumnName="MobilePhoneNumber" />
+                <ScalarProperty Name="MyObjectivesAndGoals" ColumnName="MyObjectivesAndGoals" />
+                <ScalarProperty Name="CharterSigned" ColumnName="CharterSigned" />
+                <ScalarProperty Name="DigitalPassport" ColumnName="DigitalPassport" />
+                <ScalarProperty Name="AlternativePhone" ColumnName="AlternativePhone" />
+                <ScalarProperty Name="M2AndCommunity" ColumnName="M2AndCommunity" />
+                <ScalarProperty Name="CVPaste" ColumnName="CVPaste" />
+                <ScalarProperty Name="ROICode" ColumnName="ROICode" />
+                <ScalarProperty Name="BillingCode" ColumnName="BillingCode" />
+                <ScalarProperty Name="Expertise" ColumnName="Expertise" />
+                <ScalarProperty Name="Execs" ColumnName="Execs" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Interests" ColumnName="Interests" />
+                <ScalarProperty Name="Schools" ColumnName="Schools" />
+                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+                <ScalarProperty Name="OrangeAddress" ColumnName="OrangeAddress" />
+                <ScalarProperty Name="FunFact" ColumnName="FunFact" />
+                <ScalarProperty Name="Languages" ColumnName="Languages" />
+                <ScalarProperty Name="GIRStatus" ColumnName="GIRStatus" />
+                <ScalarProperty Name="GIRBirthdate" ColumnName="GIRBirthdate" />
+                <ScalarProperty Name="Points" ColumnName="Points" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_profile_his">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_profile_his">
+              <MappingFragment StoreEntitySet="tbl_pz_profile_his">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="Logged" ColumnName="Logged" />
+                <ScalarProperty Name="ProfileUpdated" ColumnName="ProfileUpdated" />
+                <ScalarProperty Name="Points" ColumnName="Points" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="Month_His" ColumnName="Month_His" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_project">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_project">
+              <MappingFragment StoreEntitySet="tbl_pz_project">
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="ParentTypeCode" ColumnName="ParentTypeCode" />
+                <ScalarProperty Name="ParentType" ColumnName="ParentType" />
+                <ScalarProperty Name="ParentObjectID" ColumnName="ParentObjectID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_question">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_question">
+              <MappingFragment StoreEntitySet="tbl_pz_question">
+                <ScalarProperty Name="ThreadID" ColumnName="ThreadID" />
+                <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+                <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="creationdate" ColumnName="creationdate" />
+                <ScalarProperty Name="resolutiondate" ColumnName="resolutiondate" />
+                <ScalarProperty Name="resolutionstate" ColumnName="resolutionstate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_socialgroup">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_socialgroup">
+              <MappingFragment StoreEntitySet="tbl_pz_socialgroup">
+                <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+                <ScalarProperty Name="GroupType" ColumnName="GroupType" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_statuslevelpoint">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_statuslevelpoint">
+              <MappingFragment StoreEntitySet="tbl_pz_statuslevelpoint">
+                <ScalarProperty Name="PointID" ColumnName="PointID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ContainerTypeCode" ColumnName="ContainerTypeCode" />
+                <ScalarProperty Name="ContainerType" ColumnName="ContainerType" />
+                <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+                <ScalarProperty Name="Points" ColumnName="Points" />
+                <ScalarProperty Name="ObjectTypeCode" ColumnName="ObjectTypeCode" />
+                <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_pz_userrelation">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_pz_userrelation">
+              <MappingFragment StoreEntitySet="tbl_pz_userrelation">
+                <ScalarProperty Name="RelationshipID" ColumnName="RelationshipID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="RelatedUserID" ColumnName="RelatedUserID" />
+                <ScalarProperty Name="RelnshipTypeID" ColumnName="RelnshipTypeID" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="RetirementDate" ColumnName="RetirementDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_od_role">
+            <EntityTypeMapping TypeName="queryzoneModel.tbl_od_role">
+              <MappingFragment StoreEntitySet="tbl_od_role">
+                <ScalarProperty Name="CUID" ColumnName="CUID" />
+                <ScalarProperty Name="Profile" ColumnName="Profile" />
+                <ScalarProperty Name="Perimeter" ColumnName="Perimeter" />
+                <ScalarProperty Name="Last_Update_Date" ColumnName="Last_Update_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

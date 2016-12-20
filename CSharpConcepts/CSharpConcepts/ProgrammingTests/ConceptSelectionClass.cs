@@ -23,6 +23,9 @@ namespace CSharpConcepts.ProgrammingTests
                 case ProgrammingTestConceptList.ProducerConsumerProblem:
                     conceptExecutionClass = new ProducerConsumerProblemExample();
                     break;
+                case ProgrammingTestConceptList.CSharp70_483:
+                    conceptExecutionClass = new CSharp_70_483();
+                    break;
             }
         }
     }
@@ -31,6 +34,7 @@ namespace CSharpConcepts.ProgrammingTests
     {
         HankerRankTest1,
         LargestNumberFromArray,
-        ProducerConsumerProblem
+        ProducerConsumerProblem,
+        CSharp70_483
     }
 }

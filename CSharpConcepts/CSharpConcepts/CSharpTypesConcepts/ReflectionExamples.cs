@@ -21,9 +21,139 @@ namespace CSharpConcepts.CSharpTypesConcepts
         {
             //Console.WriteLine("Not implemented");
             SimpleReflectionExample();
+            Console.WriteLine("\n---------------------------------------------------------------------------\n");
+            GetPrimitiveTypeAssembly();
+            Console.WriteLine("\n---------------------------------------------------------------------------\n");
             InspectingAssemblyExample();
+            Console.WriteLine("\n---------------------------------------------------------------------------\n");
             IteratingFieldsExample();
+            Console.WriteLine("\n---------------------------------------------------------------------------\n");
             ExecutingMethodExample();
+            Console.WriteLine("\n---------------------------------------------------------------------------\n");
+            GettingConstructorInformation();
+            GettingTypeAccessModifier();
+            GettingMemberInformation();
+            GettingMembersSeperately();
+        }
+
+        private void GettingConstructorInformation()
+        {
+            Console.WriteLine("Getting Constructor Information");
+            Type type = typeof(System.String);
+            ConstructorInfo[] staticConstructorInfo = type.GetConstructors(BindingFlags.Static);
+            ConstructorInfo[] instanceConstructorInfo = type.GetConstructors(BindingFlags.Instance);
+            ConstructorInfo[] publicConstructorInfo = type.GetConstructors(BindingFlags.Public);
+            ConstructorInfo[] nonPublicConstrutorInfo = type.GetConstructors(BindingFlags.NonPublic);
+
+            if(staticConstructorInfo != null && staticConstructorInfo.Count()>0)
+            {
+                Console.WriteLine("Static constructors present");
+                foreach(ConstructorInfo constructorInfo in staticConstructorInfo)
+                {
+                    PrintMemberInfo(constructorInfo);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Static constructor not present");
+            }
+
+            if (instanceConstructorInfo != null && instanceConstructorInfo.Count() > 0)
+            {
+                Console.WriteLine("Instance constructors present");
+                foreach (ConstructorInfo constructorInfo in instanceConstructorInfo)
+                {
+                    PrintMemberInfo(constructorInfo);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Instance constructor not present");
+            }
+
+            if (publicConstructorInfo != null && publicConstructorInfo.Count() > 0)
+            {
+                Console.WriteLine("Public constructors present");
+                foreach (ConstructorInfo constructorInfo in publicConstructorInfo)
+                {
+                    PrintMemberInfo(constructorInfo);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Public constructor not present");
+            }
+
+            if (nonPublicConstrutorInfo != null && nonPublicConstrutorInfo.Count() > 0)
+            {
+                Console.WriteLine("Non public constructors present");
+                foreach (ConstructorInfo constructorInfo in nonPublicConstrutorInfo)
+                {
+                    PrintMemberInfo(constructorInfo);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Non Public constructor not present");
+            }
+        }
+
+        private void GettingTypeAccessModifier()
+        {
+            Console.WriteLine("Getting Type access modifier");
+            Type type = Type.GetType("System.IO.File");
+            MemberInfo[] members = type.GetMembers();
+            foreach (MemberInfo memberInfo in members)
+                PrintMemberInfo(memberInfo);
+            if (type.IsPublic)
+                Console.WriteLine("Type is public");
+
+        }
+
+        private void GettingMemberInformation()
+        {
+            Console.WriteLine("Getting member information and execute it");
+            Type type = Type.GetType("System.Reflection.FieldInfo");
+            MemberInfo[] memberInformation = type.GetMembers();
+           
+        }
+
+        private void GettingMembersSeperately()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void PrintMemberInfo(MemberInfo memberInfo)
+        {
+            switch (memberInfo.MemberType)
+            {
+                case MemberTypes.Constructor:
+                    ConstructorInfo constructorInfo = memberInfo as ConstructorInfo;
+                    if (constructorInfo != null)
+                    {
+                        Console.WriteLine("Member Name:{0},\t Declaring type:{1},\t Member Type:{2},\t Module:{3},\t Member:{4}"
+                        , constructorInfo.Name, constructorInfo.DeclaringType.Name, constructorInfo.MemberType, constructorInfo.Module
+                        , constructorInfo);
+                        foreach (ParameterInfo parameterInfo in constructorInfo.GetParameters())
+                        {
+                            PrintParameterInfo(parameterInfo);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Failed to typecase to constructor info");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Member Name:{0},\t Declaring type:{1},\t Member Type:{2},\t Module:{3},\t Member:{4}"
+                        , memberInfo.Name, memberInfo.DeclaringType.Name, memberInfo.MemberType, memberInfo.Module, memberInfo);
+                    break;
+            }
+        }
+
+        private void PrintParameterInfo(ParameterInfo parameterInfo)
+        {
+            Console.WriteLine("Paramter:{0},\t Name:{1},\t Default value:{2}", parameterInfo, parameterInfo.Name, parameterInfo.ParameterType.Name, parameterInfo.DefaultValue);
         }
 
         private void SimpleReflectionExample()
@@ -32,6 +162,14 @@ namespace CSharpConcepts.CSharpTypesConcepts
             int i = 42;
             System.Type type = i.GetType();
             Console.WriteLine("The type of variable is :{0}", type.Name);
+        }
+
+
+        private void GetPrimitiveTypeAssembly()
+        {
+            Console.WriteLine("Get assembly of int");
+            System.Reflection.Assembly info = typeof(Int32).Assembly;
+            Console.WriteLine(info);
         }
 
         private void InspectingAssemblyExample()

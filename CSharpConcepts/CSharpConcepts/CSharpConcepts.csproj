@@ -86,8 +86,11 @@
     <Compile Include="ImplementingProgramFlow\ConceptSelectionClass.cs" />
     <Compile Include="ImplementingProgramFlow\ForeachImpConcept.cs" />
     <Compile Include="Interfaces\ConceptSelections.cs" />
+    <Compile Include="OOPSConcepts\ByRefEamples.cs" />
+    <Compile Include="OOPSConcepts\ConceptSelectionClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgrammingTests\ConceptSelectionClass.cs" />
+    <Compile Include="ProgrammingTests\CSharp_70_483.cs" />
     <Compile Include="ProgrammingTests\HackerRankTest1.cs" />
     <Compile Include="ProgrammingTests\LargestNumberFromArray.cs" />
     <Compile Include="ProgrammingTests\ProducerConsumerProblemExample.cs" />

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode title="Home" controller="Home" action="Index">
+    <mvcSiteMapNode title="All Operas" visibility="*" controller="Opera" action="Index" key="AllOperas">
+      <mvcSiteMapNode title="Display" visibility="SiteMappathHelper,!*" controller="Opera" action="Details" dynamicNodeProvider="OperaWebSites.Models.OperaDynamicNodeProvider,OperaWebSites"></mvcSiteMapNode>
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="About" controller="Home" action="About"/>
+  </mvcSiteMapNode>
+
+</mvcSiteMap>
