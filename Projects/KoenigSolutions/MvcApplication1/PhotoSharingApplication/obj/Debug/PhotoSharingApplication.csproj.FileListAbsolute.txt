@@ -23,3 +23,4 @@ C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\Pho
 C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingApplication\bin\WebActivatorEx.dll
 C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingApplication\bin\MvcSiteMapProvider.xml
 C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingApplication\bin\MvcSiteMapProvider.WebActivator.xml
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.csprojResolveAssemblyReference.cache

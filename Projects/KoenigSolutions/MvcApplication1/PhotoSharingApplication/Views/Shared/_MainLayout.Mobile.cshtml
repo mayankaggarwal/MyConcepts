@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link type="text/css" rel="stylesheet" href="~/Content/PhotoSharingStyles.css" />
+</head>
+<body>
+    <div>
+        <h1 class="site-page-title">Adventure Works<br />
+         Photo Sharing</h1>
+        <h2>Mobile Site</h2>
+        <div class="clear-floats"></div>
+        <div id="topmenu">
+            @Html.MvcSiteMap().Menu(false, true, true)
+        </div>
+        <div id="breadcrumb">
+            @Html.MvcSiteMap().SiteMapPath()
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

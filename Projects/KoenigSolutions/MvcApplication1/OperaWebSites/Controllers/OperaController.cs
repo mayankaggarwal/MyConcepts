@@ -12,7 +12,7 @@ namespace OperaWebSites.Controllers
         //
         // GET: /Opera/
         private OperaDB contextDB = new OperaDB();
-        //[OutputCache(Duration=600,Location=System.Web.UI.OutputCacheLocation.Server,VaryByParam="none")]
+        [OutputCache(Duration=600,Location=System.Web.UI.OutputCacheLocation.Server,VaryByParam="none")]
         public ActionResult Index()
         {
             return View("Index",contextDB.Operas.ToList());

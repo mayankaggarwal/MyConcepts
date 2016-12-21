@@ -30,6 +30,6 @@ C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\Ope
 C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\OperaWebSites\bin\System.Web.WebPages.xml
 C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\OperaWebSites\bin\System.Web.WebPages.Deployment.xml
 C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\OperaWebSites\bin\System.Web.WebPages.Razor.xml
+C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\OperaWebSites\obj\Debug\OperaWebSites.csprojResolveAssemblyReference.cache
 C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\OperaWebSites\obj\Debug\OperaWebSites.dll
 C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\OperaWebSites\obj\Debug\OperaWebSites.pdb
-C:\D\Learning\Repository\MyConcepts\Projects\KoenigSolutions\MvcApplication1\OperaWebSites\obj\Debug\OperaWebSites.csprojResolveAssemblyReference.cache
