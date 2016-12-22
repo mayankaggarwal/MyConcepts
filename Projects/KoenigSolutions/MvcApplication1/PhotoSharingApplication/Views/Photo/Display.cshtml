@@ -19,4 +19,5 @@
     @Html.DisplayNameFor(model => model.CreatedDate)
     @Html.DisplayFor(model => model.CreatedDate)
 </p>
+@Html.Action("_CommentsForPhoto", "Comment", new { PhotoID=Model.PhotoID})
 @Html.ActionLink("Back to List", "Index", "Photo")

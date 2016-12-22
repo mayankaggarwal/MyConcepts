@@ -1,2 +1,25 @@
 ﻿@model IEnumerable<PhotoSharingApplication.Models.Comment>
 
+<h3>Comments</h3>
+<div id="comments-tool">
+    <div id="all-comments">
+        @foreach(var comment in Model)
+        {
+            <div id="photo-comment">
+                <div id="photo-comment-from">
+                    From:
+                    @Html.DisplayFor(model=>comment.UserName)
+                </div>
+                <div id="photo-comment-subject">
+                    @Html.DisplayNameFor(model=>model.Subject)
+                    @Html.DisplayFor(model=>comment.Subject)
+                </div>
+                <div id="photo-comment-body">
+                    @Html.DisplayFor(model=>comment.Body)
+                </div>
+                @Html.ActionLink("Delete", "Delete", new { id=comment.CommentID})
+            </div>
+        }
+    </div>
+</div>
+

@@ -20,6 +20,7 @@ namespace PhotoSharingApplication.Controllers
 		{
 			this.context = context;
 		}
+
 		//
 		// GET: /Comment/
 		public ActionResult Index()
@@ -27,11 +28,19 @@ namespace PhotoSharingApplication.Controllers
 			return View();
 		}
 
+		public PartialViewResult _Create(int PhotoID)
+		{
+			Comment comment = new Comment();
+			comment.PhotoID = PhotoID;
+			ViewBag.PhotoId = PhotoID;
+			return PartialView("_CreateAComment", comment);
+		}
+
 		public PartialViewResult _CommentsForPhoto(int PhotoID)
 		{
 			var comments = context.Comments.Where(x => x.PhotoID == PhotoID);
 			ViewBag.PhotoId = PhotoID;
-			return PartialView(comments.ToList());
+			return PartialView("_CommentsForPhoto",comments.ToList());
 		}
 	}
 }

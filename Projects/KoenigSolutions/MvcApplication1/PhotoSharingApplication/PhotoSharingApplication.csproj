@@ -160,6 +160,7 @@
     <Content Include="Views\Photo\Delete1.cshtml" />
     <Content Include="Views\Comment\Delete.cshtml" />
     <Content Include="Views\Shared\_CommentsForPhoto.cshtml" />
+    <Content Include="Views\Shared\_CreateAComment.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
