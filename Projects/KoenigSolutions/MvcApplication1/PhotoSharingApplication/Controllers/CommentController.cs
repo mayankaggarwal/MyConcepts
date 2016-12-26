@@ -33,14 +33,55 @@ namespace PhotoSharingApplication.Controllers
 			Comment comment = new Comment();
 			comment.PhotoID = PhotoID;
 			ViewBag.PhotoId = PhotoID;
-			return PartialView("_CreateAComment", comment);
+			return PartialView("_CreateAComment");
 		}
 
+		[ChildActionOnly]
 		public PartialViewResult _CommentsForPhoto(int PhotoID)
 		{
 			var comments = context.Comments.Where(x => x.PhotoID == PhotoID);
 			ViewBag.PhotoId = PhotoID;
-			return PartialView("_CommentsForPhoto",comments.ToList());
+			return PartialView(comments.ToList());
+		}
+
+		[HttpPost]
+		public PartialViewResult _CommentsForPhoto(Comment comment, int PhotoID)
+		{
+
+			//Save the new comment
+			context.Add<Comment>(comment);
+			context.SaveChanges();
+
+			//Get the updated list of comments
+			var comments = from c in context.Comments
+						   where c.PhotoID == PhotoID
+						   select c;
+			//Save the PhotoID in the ViewBag because we'll need it in the view
+			ViewBag.PhotoId = PhotoID;
+			//Return the view with the new list of comments
+			return PartialView("_CommentsForPhoto", comments.ToList());
+		}
+
+		public ActionResult Delete(int id = 0)
+		{
+			Comment comment = context.FindByCommentID(id);
+			ViewBag.PhotoID = comment.PhotoID;
+			if (comment == null)
+			{
+				return HttpNotFound();
+			}
+			return View(comment);
+		}
+
+		//
+		// POST: /Comment/Delete/5
+		[HttpPost, ActionName("Delete")]
+		public ActionResult DeleteConfirmed(int id)
+		{
+			Comment comment = context.FindByCommentID(id);
+			context.Delete<Comment>(comment);
+			context.SaveChanges();
+			return RedirectToAction("Display", "Photo", new { id = comment.PhotoID });
 		}
 	}
 }

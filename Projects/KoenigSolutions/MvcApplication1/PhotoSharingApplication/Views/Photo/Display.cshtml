@@ -20,4 +20,7 @@
     @Html.DisplayFor(model => model.CreatedDate)
 </p>
 @Html.Action("_CommentsForPhoto", "Comment", new { PhotoID=Model.PhotoID})
-@Html.ActionLink("Back to List", "Index", "Photo")
+<p>
+    @Html.ActionLink("Back to List", "Index", "Photo")
+    @Html.ActionLink("Delete This Photo", "Delete", new { id = Model.PhotoID })
+</p>

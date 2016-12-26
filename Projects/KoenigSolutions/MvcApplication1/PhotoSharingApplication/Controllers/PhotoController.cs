@@ -25,6 +25,7 @@ namespace PhotoSharingApplication.Controllers
         }
         //
         // GET: /Photo/
+        [OutputCache(Duration=600)]
         public ActionResult Index()
         {
             return View();
@@ -117,6 +118,7 @@ namespace PhotoSharingApplication.Controllers
             return RedirectToAction("Index");
         }
 
+        [OutputCache(Duration=600,VaryByParam="id")]
         public FileContentResult GetImage(int id)
         {
             Photo photo = context.FindByPhotoID(id);
@@ -152,11 +154,6 @@ namespace PhotoSharingApplication.Controllers
         //    base.Dispose(disposing);
         //}
 
-        public ActionResult SlideShow()
-        {
-            throw new NotImplementedException("The slide show is not implemented");
-        }
-
         public ActionResult DisplayByTitle(string title)
         {
             var photo = context.Photos.Where(x => x.Title.Equals(title)).FirstOrDefault();
@@ -164,6 +161,11 @@ namespace PhotoSharingApplication.Controllers
                 return HttpNotFound();
 
             return View("Display", photo);
+        }
+
+        public ActionResult SlideShow()
+        {
+            return View(context.Photos.ToList());
         }
     }
 }

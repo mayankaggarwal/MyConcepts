@@ -1,25 +1,33 @@
 ﻿@model IEnumerable<PhotoSharingApplication.Models.Comment>
 
 <h3>Comments</h3>
-<div id="comments-tool">
-    <div id="all-comments">
-        @foreach(var comment in Model)
-        {
-            <div id="photo-comment">
-                <div id="photo-comment-from">
-                    From:
-                    @Html.DisplayFor(model=>comment.UserName)
+@using (@Ajax.BeginForm("_CommentsForPhoto", "Comment",
+    new { PhotoID = ViewBag.PhotoId },
+    new AjaxOptions { UpdateTargetId = "comments-tool" }))
+{
+    <div id="comments-tool">
+        <div id="all-comments">
+            @foreach (var comment in Model)
+            {
+                <div id="photo-comment">
+                    <div id="photo-comment-from">
+                        From:
+                        @Html.DisplayFor(model => comment.UserName)
+                    </div>
+                    <div id="photo-comment-subject">
+                        @Html.DisplayNameFor(model => model.Subject)
+                        @Html.DisplayFor(model => comment.Subject)
+                    </div>
+                    <div id="photo-comment-body">
+                        @Html.DisplayFor(model => comment.Body)
+                    </div>
+                    @Html.ActionLink("Delete This Comment", "Delete", new { id = comment.CommentID })
                 </div>
-                <div id="photo-comment-subject">
-                    @Html.DisplayNameFor(model=>model.Subject)
-                    @Html.DisplayFor(model=>comment.Subject)
-                </div>
-                <div id="photo-comment-body">
-                    @Html.DisplayFor(model=>comment.Body)
-                </div>
-                @Html.ActionLink("Delete", "Delete", new { id=comment.CommentID})
-            </div>
-        }
+            }
+        </div>
+        <div class="add-comment-box" id="add-comment">
+            @Html.Action("_Create", "Comment", new { PhotoID = ViewBag.PhotoId })
+        </div>
     </div>
-</div>
+}
 
