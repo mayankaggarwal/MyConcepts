@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
 
         <!-- load bootstrap and fontawesome via CDN -->
-        <link rel="stylesheet" href="Styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="/Styles/bootstrap.min.css" />
         <style>
             html, body
             {
@@ -15,7 +15,7 @@
         </style>
         
         <!-- load angular via CDN -->
-        <script src="Scripts/ThirdParty/angular.min.js"></script>
+        <script src="/Scripts/ThirdParty/angular.min.js"></script>
     </head>
     <body>
 
@@ -23,7 +23,7 @@
 			<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="index.htm">AngularJS</a>
+					<a class="navbar-brand" href="/index.htm">AngularJS</a>
 				</div>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -32,11 +32,15 @@
 			</div>
 			</nav>
 		</header>
-        <div>
-            <ul>
-                <li><a href="Views/AngularBasics.html">Angular Basics</a></li>
-                <li><a href="Views/EventLoopExample.html">Event Loop example</a></li>
-                <li><a href="Views/DigestLoopExample.html">Digest Loop Example</a></li>
-            </ul>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="text" id="name"/>
+                </div>
+            </div>
         </div>
+
+    </body>
+    <script src="/Scripts/Custom/EventLoopExample.js"></script>
 </html>
