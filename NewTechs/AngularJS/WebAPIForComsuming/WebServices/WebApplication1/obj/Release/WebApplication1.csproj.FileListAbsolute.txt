@@ -1,0 +1,17 @@
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\WebApplication1.dll.config
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\WebApplication1.dll
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\WebApplication1.pdb
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\Newtonsoft.Json.dll
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Net.Http.Formatting.dll
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Web.Cors.dll
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Web.Http.Cors.dll
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Web.Http.dll
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Web.Http.WebHost.dll
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Web.Http.Cors.xml
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\Newtonsoft.Json.xml
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Net.Http.Formatting.xml
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Web.Http.xml
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Web.Http.WebHost.xml
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\obj\Release\WebApplication1.csprojResolveAssemblyReference.cache
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\obj\Release\WebApplication1.dll
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\obj\Release\WebApplication1.pdb

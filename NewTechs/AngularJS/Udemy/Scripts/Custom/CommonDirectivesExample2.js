@@ -4,6 +4,4 @@ angularApp.controller('mainController', ['$scope', '$filter', function ($scope, 
     $scope.alertClick = function () {
         alert('Clicked');
     };
-    
-    $scope.name = 'Mayank Aggarwal';
 }]);

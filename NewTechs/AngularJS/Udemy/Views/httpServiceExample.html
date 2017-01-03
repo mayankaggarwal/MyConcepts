@@ -18,7 +18,7 @@
         <script src="/Scripts/ThirdParty/angular.min.js"></script>
         <script src="/Scripts/ThirdParty/angular-messages.min.js"></script>
         <script src="/Scripts/ThirdParty/angular-resource.min.js"></script>
-        <script src="/Scripts/Custom/CommonDirectivesExample.js"></script>
+        <script src="/Scripts/Custom/httpServiceExample.js"></script>
     </head>
     <body>
 
@@ -38,25 +38,12 @@
         <div class="container">
 
 			<div ng-controller="mainController">
-                
                 <div>
                     <label>What is your twitter handle?</label>
-                    <input type="text" ng-model="handle"/>
+                    <input type='text' ng-model="handle"/>
                 </div>
                 
-                <div class="alert" ng-if="handle.length !== character">
-                    Must be 5 characters    
-                </div>
-                
-                <div class="alert" ng-class="{'alert-warning':handle.length < character}" ng-show="handle.length !== character">
-                    Must be 5 characters from ng show
-                </div>
-                
-                <div class="alert" ng-hide="handle.length !== character">
-                    Must be 5 characters from ng hide
-                </div>
-                
-                <h1>twitter.com/{{ lowercasehandle()}}</h1>
+                <h1>twitter.com/{{lowercasehandle()}}</h1>
                 
                 <h3>Rules</h3>
                 <ul>
@@ -64,6 +51,8 @@
                         {{rule.RuleName}}
                     </li>
                 </ul>
+                
+                Add rule: <input type="text" ng-model="newRule"/><a href="#" class="btn btn-default" ng-click="addRule()">Add  </a>
             </div>
 
 		</div>
