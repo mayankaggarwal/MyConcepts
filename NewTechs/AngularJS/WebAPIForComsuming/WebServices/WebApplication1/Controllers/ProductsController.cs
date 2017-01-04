@@ -9,7 +9,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    [EnableCors(origins:"*",headers:"*",methods:"*")]
+    [EnableCors(origins: "*", headers: "*", methods: "GET, POST, OPTIONS")]
     public class ProductsController : ApiController
     {
         List<TextRules> rules = new List<TextRules>{
@@ -34,7 +34,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public IEnumerable<TextRules> PostRule(string newRule)
+        public IEnumerable<TextRules> PostRule([FromBody]string newRule)
         {
             int id = rules.Max(x => x.ID);
             rules.Add(new TextRules

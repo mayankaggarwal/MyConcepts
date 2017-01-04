@@ -14,3 +14,4 @@ C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebAppli
 C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\bin\System.Web.Http.WebHost.xml
 C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\obj\Debug\WebApplication1.dll
 C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\MyDrive\MyConcepts\NewTechs\AngularJS\WebAPIForComsuming\WebServices\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache

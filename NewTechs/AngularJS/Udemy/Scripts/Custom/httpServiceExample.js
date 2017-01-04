@@ -20,8 +20,10 @@ function ($scope, $filter, $http) {
         })
     
     $scope.newRule = '';
+    
+    
     $scope.addRule = function(){
-        $http.post('http://localhost:49294/api/products/PostRule',{newRule:$scope.newRule})
+        $http.post('http://localhost:10001/api/products/PostRule','"' + $scope.newRule + '"')
         .success(function (result){
             $scope.rules = result;
             $scope.newRule = '';
@@ -30,4 +32,22 @@ function ($scope, $filter, $http) {
             console.log(data);
         })
     }
+    
+    /*
+    $scope.addRule = function(){
+      var req = {
+        method: 'POST',
+        url: 'http://localhost:10001/api/products/PostRule',
+        data: {newRule:'Mayank'}
+    };
+    $http(req)
+    .success(function (result){
+            $scope.rules = result;
+            $scope.newRule = '';
+        })
+        .error(function (data,status) {
+            console.log(data);
+        })
+    }
+    */
 }]);
