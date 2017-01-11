@@ -31,12 +31,12 @@ angularApp.controller('mainController', ['$scope','$log','$filter','$resource','
     }
     
 }]);
-
+/*
 var searchable = function(firstName,lastName,height,age,occupation){
     return "Mayank Aggarwal";
 }
 
 console.log(angular.injector().annotate(searchable));
-
+*/
 
 

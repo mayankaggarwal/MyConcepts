@@ -1,0 +1,9 @@
+<label>Search</label>
+<input type="text" value="Mayank"/>
+
+<h3>Search Results</h3>
+<div class="list-group">
+    <search-result person-name-var="{{person.name}}" person-address="{{person.address}}"></search-result>
+    <search-result person-object-variable="person" ></search-result>
+    <search-result person-object-variable="person" formated-name-fn-def="formatedName(personObjectParam)"></search-result>
+</div>
