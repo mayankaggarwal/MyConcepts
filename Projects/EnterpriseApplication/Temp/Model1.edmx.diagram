@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a646a4cf66384a299a3c8becb1e202d7" Name="Diagram1">
+        <EntityTypeShape EntityType="GIRModel.TBL_Basket" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_BasketItem" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_BlackList" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Category" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Certificate" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Error" Width="1.5" PointX="5.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_ErrorAdditionalInfo" Width="1.5" PointX="8" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.tbl_ExportDetails" Width="1.5" PointX="8" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.tbl_FileExportConfigDetails" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_GroupSubsidiary" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Log" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_MailSentInformation" Width="1.5" PointX="9.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_News" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Partner" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Rank" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Rank_GroupSubsidiary" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Rank_Partner" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_RedList" Width="1.5" PointX="11.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_User" Width="1.5" PointX="11.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_WebServicesLog" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Domain" Width="1.5" PointX="13.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_Notification" Width="1.5" PointX="13.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_NotificationDetails" Width="1.5" PointX="13.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GIRModel.TBL_OwnManagerList" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="GIRModel.FK_TBL_BasketItem_TBL_Basket" ManuallyRouted="false" />
+        <AssociationConnector Association="GIRModel.FK_TBL_ErrorAdditionalInfo_TBL_Error" ManuallyRouted="false" />
+        <AssociationConnector Association="GIRModel.FileIDReferenceConstraint" ManuallyRouted="false" />
+        <AssociationConnector Association="GIRModel.FK_TBL_GroupSubsidiary_TBL_Rank_GroupSubsidiary" ManuallyRouted="false" />
+        <AssociationConnector Association="GIRModel.FK_TBL_Partner_TBL_Rank_Partner" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

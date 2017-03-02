@@ -1,0 +1,4 @@
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Domain\bin\Debug\EnterpriseApp.Domain.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Domain\bin\Debug\EnterpriseApp.Domain.pdb
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Domain\obj\Debug\EnterpriseApp.Domain.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Domain\obj\Debug\EnterpriseApp.Domain.pdb

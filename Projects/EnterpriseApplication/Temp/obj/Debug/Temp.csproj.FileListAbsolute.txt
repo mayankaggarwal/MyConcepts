@@ -1,0 +1,9 @@
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\Temp\bin\Debug\Temp.dll.config
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\Temp\bin\Debug\Temp.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\Temp\bin\Debug\Temp.pdb
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\Temp\bin\Debug\EntityFramework.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\Temp\bin\Debug\EntityFramework.SqlServer.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\Temp\bin\Debug\EntityFramework.xml
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\Temp\bin\Debug\EntityFramework.SqlServer.xml
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\Temp\obj\Debug\Temp.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\Temp\obj\Debug\Temp.pdb

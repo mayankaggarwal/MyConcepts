@@ -34,3 +34,6 @@ C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Client\obj\Debug
 C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Client\obj\Debug\GeoLib.Client.Properties.Resources.resources
 C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Client\obj\Debug\GeoLib.Client.csproj.GenerateResource.Cache
 C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.Client\obj\Debug\GeoLib.Client.pdb
+C:\MyDrive\MyConcepts\PluralSightCourceWCF\GeoLib.Client\bin\Debug\GeoLib.Client.exe.config
+C:\MyDrive\MyConcepts\PluralSightCourceWCF\GeoLib.Client\obj\Debug\GeoLib.Client.exe
+C:\MyDrive\MyConcepts\PluralSightCourceWCF\GeoLib.Client\obj\Debug\GeoLib.Client.pdb

@@ -1,0 +1,42 @@
+﻿<div id="cognosPackageUpload">
+    <hr>
+    <div class="row">
+        <!-- left column -->
+        <div class="col-xs-3">
+            <div class="text-center">
+                <h4>Upload Package</h4>
+                <input type="file" ng-file-select="prepareFiles($files)">
+            </div>
+        </div>
+
+        <div class="col-xs-9 personal-info">
+            <div class="alert alert-info alert-dismissable">
+                <a class="panel-close close" data-dismiss="alert">×</a> <i class="fa fa-plus"></i> Upload <strong>Cognos</strong> Package. Make sure you fill all required fields.
+            </div>
+
+            <div class="col-xs-9 personal-info">
+                <form class="form-horizontal" role="form" novalidate angular-validator name="uploadCognosPackageForm"
+                      angular-validator-submit="UploadPackage()">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-4">
+                                <label class="control-label">Cognos Package Version</label>
+                                <input class="form-control" name="title" type="text"
+                                       ng-model="cognospackage.Version" validate-on="blur" required
+                                       required-message="'Cognos Package Version is required'">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-4">
+                        <label class="control-label"></label>
+                        <div class="">
+                            <input type="submit" class="btn btn-primary" value="Update" /> <span></span>
+                            <a class="btn btn-default" ng-href="#/cognospackage/{{cognospackage.ID}}">Cancel</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <hr>
+</div>

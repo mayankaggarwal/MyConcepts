@@ -13,7 +13,7 @@ namespace IDW.WebApp.App_Start
         {
             AutofacWebAPIConfig.Initialize(GlobalConfiguration.Configuration);
             //Configure AutoMapper 
-            //AutoMapperConfiguration.Configure(); 
+            AutoMapperConfiguration.Configure(); 
         }
     }
 }

@@ -1,0 +1,7 @@
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Repository\bin\Debug\EnterpriseApp.Repository.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Repository\bin\Debug\EnterpriseApp.Repository.pdb
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Repository\bin\Debug\EnterpriseApp.Domain.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Repository\bin\Debug\EnterpriseApp.Domain.pdb
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Repository\obj\Debug\EnterpriseApp.Repository.csprojResolveAssemblyReference.cache
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Repository\obj\Debug\EnterpriseApp.Repository.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Repository\obj\Debug\EnterpriseApp.Repository.pdb

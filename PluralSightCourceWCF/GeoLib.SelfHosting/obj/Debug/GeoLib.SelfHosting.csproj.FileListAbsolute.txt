@@ -34,3 +34,6 @@ C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.SelfHosting\bin\
 C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.SelfHosting\obj\Debug\GeoLib.SelfHosting.csprojResolveAssemblyReference.cache
 C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.SelfHosting\obj\Debug\GeoLib.SelfHosting.exe
 C:\D\Learning\Repository\MyConcepts\PluralSightCourceWCF\GeoLib.SelfHosting\obj\Debug\GeoLib.SelfHosting.pdb
+C:\MyDrive\MyConcepts\PluralSightCourceWCF\GeoLib.SelfHosting\bin\Debug\GeoLib.SelfHosting.exe.config
+C:\MyDrive\MyConcepts\PluralSightCourceWCF\GeoLib.SelfHosting\obj\Debug\GeoLib.SelfHosting.exe
+C:\MyDrive\MyConcepts\PluralSightCourceWCF\GeoLib.SelfHosting\obj\Debug\GeoLib.SelfHosting.pdb

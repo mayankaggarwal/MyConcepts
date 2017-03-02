@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0-*",
+  "dependencies": {
+    "AutoMapper": "5.2.0",
+    "NETStandard.Library": "1.6.0",
+    "Orange.IAM.ITE.IDW.Entities": "1.0.0-*"
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50",
+      "dependencies": {
+        "System.ServiceModel.Duplex": "4.0.1",
+        "System.ServiceModel.Http": "4.1.0",
+        "System.ServiceModel.NetTcp": "4.1.0",
+        "System.ServiceModel.Security": "4.0.1",
+        "System.Xml.XmlSerializer": "4.0.11"
+      }
+    }
+  }
+}

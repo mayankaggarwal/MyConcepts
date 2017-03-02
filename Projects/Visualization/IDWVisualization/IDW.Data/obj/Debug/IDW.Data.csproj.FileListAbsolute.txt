@@ -14,3 +14,15 @@ C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.
 C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.csproj.GenerateResource.Cache
 C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.dll
 C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.pdb
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Data.dll.config
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Data.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Data.pdb
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\EntityFramework.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Entities.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\IDW.Entities.pdb
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\bin\Debug\EntityFramework.xml
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.csprojResolveAssemblyReference.cache
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.Migrations.initial_migration.resources
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.csproj.GenerateResource.Cache
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Data\obj\Debug\IDW.Data.pdb

@@ -1,0 +1,14 @@
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EnterpriseApp.Data.dll.config
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EnterpriseApp.Data.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EnterpriseApp.Data.pdb
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EnterpriseApp.Domain.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EntityFramework.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EnterpriseApp.Domain.pdb
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EntityFramework.xml
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\obj\Debug\EnterpriseApp.Data.csprojResolveAssemblyReference.cache
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\obj\Debug\EnterpriseApp.Data.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\obj\Debug\EnterpriseApp.Data.pdb
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EnterpriseApp.Repository.dll
+C:\MyDrive\MyConcepts\Projects\EnterpriseApplication\EnterpriseApp.Data\bin\Debug\EnterpriseApp.Repository.pdb

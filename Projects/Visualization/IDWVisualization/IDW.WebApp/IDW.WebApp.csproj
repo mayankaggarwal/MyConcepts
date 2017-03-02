@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
       <Private>True</Private>
@@ -50,12 +54,8 @@
       <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -71,6 +71,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
@@ -99,6 +100,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -142,7 +147,15 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\images\background.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\spa\account\login.html" />
+    <Content Include="Scripts\spa\account\loginCtrl.js" />
+    <Content Include="Scripts\spa\account\register.html" />
+    <Content Include="Scripts\spa\account\registerCtrl.js" />
     <Content Include="Scripts\spa\app.js" />
+    <Content Include="Scripts\spa\cognospackage\cognosPackageCtrl.js" />
+    <Content Include="Scripts\spa\cognospackage\index.html" />
+    <Content Include="Scripts\spa\home\index.html" />
+    <Content Include="Scripts\spa\home\indexCtrl.js" />
     <Content Include="Scripts\spa\home\rootCtrl.js" />
     <Content Include="Scripts\spa\layout\sideBar.directive.js" />
     <Content Include="Scripts\spa\layout\sidebar.html" />
@@ -150,6 +163,8 @@
     <Content Include="Scripts\spa\layout\topBar.html" />
     <Content Include="Scripts\spa\modules\common.core.js" />
     <Content Include="Scripts\spa\services\apiService.js" />
+    <Content Include="Scripts\spa\services\fileUploadService.js" />
+    <Content Include="Scripts\spa\services\membershipService.js" />
     <Content Include="Scripts\spa\services\notificationService.js" />
     <Content Include="Scripts\vendors\angucomplete-alt.min.js" />
     <Content Include="Scripts\vendors\angular-base64.js" />
@@ -175,16 +190,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\AutofacWebAPIConfig.cs" />
+    <Compile Include="App_Start\AutoMapperConfiguration.cs" />
     <Compile Include="App_Start\Bootstrapper.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CognosPackageController.cs" />
+    <Compile Include="Controllers\GIRController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\Core\ApiControllerBase.cs" />
+    <Compile Include="Infrastructure\Core\FileUploadResult.cs" />
+    <Compile Include="Infrastructure\Core\MimeMultipart.cs" />
+    <Compile Include="Infrastructure\Core\UploadMultipartFormProvider.cs" />
     <Compile Include="Infrastructure\Extensions\RequestMessageExtensions.cs" />
     <Compile Include="Infrastructure\MessageHandlers\IDWAuthHandler.cs" />
+    <Compile Include="Infrastructure\Validator\LoginViewModelValidator.cs" />
+    <Compile Include="Infrastructure\Validator\RegistrationViewModelValidator.cs" />
+    <Compile Include="Models\IDWWebAppContext.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\RegistrationViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +231,11 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\spa\modules\common.ui.js" />
+    <Content Include="Views\GIR\Create.cshtml" />
+    <Content Include="Views\GIR\Delete.cshtml" />
+    <Content Include="Views\GIR\Details.cshtml" />
+    <Content Include="Views\GIR\Edit.cshtml" />
+    <Content Include="Views\GIR\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -212,7 +245,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Infrastructure\Mappings\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IDW.Data\IDW.Data.csproj">

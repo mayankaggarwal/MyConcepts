@@ -1,0 +1,112 @@
+﻿@model WebApplication1.Models.IdentityViewModel
+
+@{
+    ViewData["Title"] = "Identity Create";
+}
+
+<h2>Add New Identity</h2>
+
+<form asp-action="Add">
+    <div class="form-horizontal">
+        <h4>Identity</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="FirstName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="StartDate" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input type="date" asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="EndDate" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input type="date" asp-for="EndDate" class="form-control" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Organization" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Organization" class="form-control" />
+                <span asp-validation-for="Organization" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="GirDomain" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="GirDomain" class="form-control" asp-items="ViewBag.GirDomain">
+                    <option value="">-- Select GIR Domain --</option>
+                </select>
+                <span asp-validation-for="GirDomain" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ManagerCUID" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="ManagerCUID" class="form-control" />
+                <span asp-validation-for="ManagerCUID" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="EmployeeType" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="EmployeeType" class="form-control" asp-items="ViewBag.EmployeeType">
+                    <option value="">-- Select Employee Type --</option>
+                </select>
+                <span asp-validation-for="EmployeeType" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="MainEmailAddress" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="MainEmailAddress" class="form-control" />
+                <span asp-validation-for="MainEmailAddress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="title" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="title" asp-items="Html.GetEnumSelectList<Orange.IAM.ITE.IDW.Entities.TitleValues>()"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="PreferredFirstName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="PreferredFirstName" class="form-control" />
+                <span asp-validation-for="PreferredFirstName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="MiddleName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="MiddleName" class="form-control" />
+                <span asp-validation-for="MiddleName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

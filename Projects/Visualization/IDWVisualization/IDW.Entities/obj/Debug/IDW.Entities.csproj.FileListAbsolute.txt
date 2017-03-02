@@ -3,3 +3,7 @@ C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.
 C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Entities\obj\Debug\IDW.Entities.dll
 C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Entities\obj\Debug\IDW.Entities.pdb
 C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Entities\obj\Debug\IDW.Entities.csprojResolveAssemblyReference.cache
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Entities\bin\Debug\IDW.Entities.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Entities\bin\Debug\IDW.Entities.pdb
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Entities\obj\Debug\IDW.Entities.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDW.Entities\obj\Debug\IDW.Entities.pdb

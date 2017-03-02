@@ -6,3 +6,12 @@ C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWV
 C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Debug\EntityFramework.SqlServer.xml
 C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\obj\Debug\IDWVisualization.Core.dll
 C:\D\Learning\Repository\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\obj\Debug\IDWVisualization.Core.pdb
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Debug\IDWVisualization.Core.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Debug\IDWVisualization.Core.pdb
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Debug\EntityFramework.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Debug\EntityFramework.xml
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\obj\Debug\IDWVisualization.Core.csprojResolveAssemblyReference.cache
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\obj\Debug\IDWVisualization.Core.dll
+C:\MyDrive\MyConcepts\Projects\Visualization\IDWVisualization\IDWVisualization.Core\obj\Debug\IDWVisualization.Core.pdb

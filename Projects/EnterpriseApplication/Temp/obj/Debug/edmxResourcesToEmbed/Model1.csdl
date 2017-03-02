@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GIRModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBL_Basket">
+    <Key>
+      <PropertyRef Name="IDE_BAS_Id" />
+    </Key>
+    <Property Name="IDE_BAS_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_BAS_Author" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_BAS_Applicant" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DAT_BAS_DemandDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DAT_BAS_EndDate" Type="DateTime" Precision="3" />
+    <Property Name="VCH_BAS_FilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BOL_BAS_InUse" Type="Boolean" Nullable="false" />
+    <Property Name="NUM_BAS_NbDemand" Type="Int32" />
+    <Property Name="NUM_BAS_NbError" Type="Int32" />
+    <Property Name="NUM_BAS_NbSuccess" Type="Int32" />
+    <Property Name="NUM_BAS_NbToValidate" Type="Int32" />
+    <Property Name="NUM_BAS_TypeAction" Type="Int32" Nullable="false" />
+    <Property Name="NUM_BAS_NbErrorInitial" Type="Int32" />
+    <Property Name="NUM_BAS_NbSuccessInitial" Type="Int32" />
+    <Property Name="NUM_BAS_NbToValidateInitial" Type="Int32" />
+    <NavigationProperty Name="TBL_BasketItem" Relationship="Self.FK_TBL_BasketItem_TBL_Basket" FromRole="TBL_Basket" ToRole="TBL_BasketItem" />
+  </EntityType>
+  <EntityType Name="TBL_BasketItem">
+    <Key>
+      <PropertyRef Name="IDE_BAI_Id" />
+    </Key>
+    <Property Name="IDE_BAI_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_BAI_Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VCH_BAI_CuID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NUM_BAI_IdBasket" Type="Int64" Nullable="false" />
+    <Property Name="DAT_BAI_TraitementDate" Type="DateTime" Precision="3" />
+    <Property Name="NUM_BAI_TypeAction" Type="Int32" Nullable="false" />
+    <Property Name="NUM_BAI_Result" Type="Int32" Nullable="false" />
+    <Property Name="VCH_BAI_XML" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_BAI_CSVRow" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TBL_Basket" Relationship="Self.FK_TBL_BasketItem_TBL_Basket" FromRole="TBL_BasketItem" ToRole="TBL_Basket" />
+  </EntityType>
+  <EntityType Name="TBL_BlackList">
+    <Key>
+      <PropertyRef Name="IDE_BLL_ID" />
+    </Key>
+    <Property Name="IDE_BLL_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_BLL_Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_Category">
+    <Key>
+      <PropertyRef Name="IDE_CAT_ID" />
+    </Key>
+    <Property Name="IDE_CAT_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_CAT_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_CAT_Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_CAT_Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="VCH_CAT_Mask" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NUM_CAT_ParentID" Type="Int64" />
+    <Property Name="BIT_CAT_Obsolete" Type="Boolean" Nullable="false" />
+    <Property Name="BIT_CAT_GASSI" Type="Boolean" Nullable="false" />
+    <Property Name="BIT_CAT_Directory" Type="Boolean" Nullable="false" />
+    <Property Name="BIT_CAT_ForGUI" Type="Boolean" Nullable="false" />
+    <Property Name="NUM_CAT_LifeTime" Type="Int32" Nullable="false" />
+    <Property Name="BIT_CAT_BirthDateMandatory" Type="Boolean" Nullable="false" />
+    <Property Name="BIT_CAT_Replaceable" Type="Boolean" Nullable="false" />
+    <Property Name="NUM_CAT_DURATION" Type="Int32" Nullable="false" />
+    <Property Name="BIT_CAT_Linked" Type="Boolean" Nullable="false" />
+    <Property Name="BIT_CAT_GroupSubsidiary" Type="Boolean" Nullable="false" />
+    <Property Name="BIT_CAT_Partner" Type="Boolean" Nullable="false" />
+    <Property Name="BIT_CAT_Prefix" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TBL_Certificate">
+    <Key>
+      <PropertyRef Name="IDE_CERT_ID" />
+    </Key>
+    <Property Name="IDE_CERT_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DAT_CERT_CREATIONDATE" Type="DateTime" Precision="3" />
+    <Property Name="VCH_CERT_APPLICATION" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_CERT_TITLE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_CERT_DATA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="VCH_CERT_FNAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VCH_CERT_LNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VCH_CERT_EMAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VCH_CERT_PHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_CERT_LASTAUTHOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DAT_CERT_MODIFICATIONDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="VCH_CERT_LOG" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_CERT_DOMAIN" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="BIT_CERT_EXTRADOMAIN" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_Error">
+    <Key>
+      <PropertyRef Name="IDE_ERR_ID" />
+    </Key>
+    <Property Name="IDE_ERR_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_ERR_APPLICATION" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="INT_ERR_CATEGORY" Type="Int32" />
+    <Property Name="VCH_ERR_TITLE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_ERR_DESCRIPTION" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="DAT_ERR_DATE" Type="DateTime" Precision="3" />
+    <Property Name="VCH_ERR_USER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TBL_ErrorAdditionalInfo" Relationship="Self.FK_TBL_ErrorAdditionalInfo_TBL_Error" FromRole="TBL_Error" ToRole="TBL_ErrorAdditionalInfo" />
+  </EntityType>
+  <EntityType Name="TBL_ErrorAdditionalInfo">
+    <Key>
+      <PropertyRef Name="IDE_EAI_ID" />
+    </Key>
+    <Property Name="IDE_EAI_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDE_ERR_ID" Type="Int64" />
+    <Property Name="VCH_EAI_KEY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_EAI_VALUE" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TBL_Error" Relationship="Self.FK_TBL_ErrorAdditionalInfo_TBL_Error" FromRole="TBL_ErrorAdditionalInfo" ToRole="TBL_Error" />
+  </EntityType>
+  <EntityType Name="tbl_ExportDetails">
+    <Key>
+      <PropertyRef Name="IDE_ID" />
+    </Key>
+    <Property Name="IDE_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDE_File_ID" Type="Int32" />
+    <Property Name="VCH_Operation" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Output_File_Name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="VCH_Status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DAT_Execution_DateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="tbl_FileExportConfigDetails" Relationship="Self.FileIDReferenceConstraint" FromRole="tbl_ExportDetails" ToRole="tbl_FileExportConfigDetails" />
+  </EntityType>
+  <EntityType Name="tbl_FileExportConfigDetails">
+    <Key>
+      <PropertyRef Name="IDE_ID" />
+    </Key>
+    <Property Name="IDE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_File_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Output_File_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Data_Source" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Output_File_Format" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Output_File_Encoding" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Output_File_Column_Seperator" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Export_Frequency" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Upload_Frequency" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_Operation" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BOL_Delete_Existing_File" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_Export_FileWithDate" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_Upload_FileWithDate" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_File_Compress" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="tbl_ExportDetails" Relationship="Self.FileIDReferenceConstraint" FromRole="tbl_FileExportConfigDetails" ToRole="tbl_ExportDetails" />
+  </EntityType>
+  <EntityType Name="TBL_GroupSubsidiary">
+    <Key>
+      <PropertyRef Name="VCH_COMP_Code" />
+    </Key>
+    <Property Name="VCH_COMP_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_COMP_Label" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDE_RAN_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TBL_Rank_GroupSubsidiary" Relationship="Self.FK_TBL_GroupSubsidiary_TBL_Rank_GroupSubsidiary" FromRole="TBL_GroupSubsidiary" ToRole="TBL_Rank_GroupSubsidiary" />
+  </EntityType>
+  <EntityType Name="TBL_Log">
+    <Key>
+      <PropertyRef Name="IDE_LOG_Id" />
+    </Key>
+    <Property Name="IDE_LOG_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_LOG_Author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DAT_LOG_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NUM_LOG_TypeAction" Type="Int32" Nullable="false" />
+    <Property Name="VCH_LOG_DataModified" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_LOG_Entity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VCH_LOG_IdEntity" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="NUM_LOG_Origin" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBL_MailSentInformation">
+    <Key>
+      <PropertyRef Name="IDE_ID" />
+    </Key>
+    <Property Name="IDE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CH_CUID" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="VCH_Email" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_TypeOfMail" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DAT_LogDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="VCH_Status" Type="Int32" Nullable="false" />
+    <Property Name="VCH_Description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_News">
+    <Key>
+      <PropertyRef Name="IDE_NEW_ID" />
+    </Key>
+    <Property Name="IDE_NEW_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_NEW_TITLE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VCH_NEW_ABSTRACT" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VCH_NEW_CONTENT" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DAT_NEW_BEGINDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DAT_NEW_ENDDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="INT_NEW_STATE" Type="Int32" Nullable="false" />
+    <Property Name="VCH_NEW_AUTHOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DAT_NEW_CREATIONDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="VCH_NEW_LASTAUTHOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DAT_NEW_MODIFICATIONDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="VCH_NEW_LANG" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_Partner">
+    <Key>
+      <PropertyRef Name="VCH_PART_Code" />
+    </Key>
+    <Property Name="VCH_PART_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_PART_Label" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_PART_AdminParameter" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDE_RAN_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TBL_Rank_Partner" Relationship="Self.FK_TBL_Partner_TBL_Rank_Partner" FromRole="TBL_Partner" ToRole="TBL_Rank_Partner" />
+  </EntityType>
+  <EntityType Name="TBL_Rank">
+    <Key>
+      <PropertyRef Name="IDE_RAN_ID" />
+    </Key>
+    <Property Name="IDE_RAN_ID" Type="Int32" Nullable="false" />
+    <Property Name="VCH_RAN_ShortName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_Rank_GroupSubsidiary">
+    <Key>
+      <PropertyRef Name="IDE_RAN_ID" />
+    </Key>
+    <Property Name="IDE_RAN_ID" Type="Int32" Nullable="false" />
+    <Property Name="VCH_RAN_ShortName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="TBL_GroupSubsidiary" Relationship="Self.FK_TBL_GroupSubsidiary_TBL_Rank_GroupSubsidiary" FromRole="TBL_Rank_GroupSubsidiary" ToRole="TBL_GroupSubsidiary" />
+  </EntityType>
+  <EntityType Name="TBL_Rank_Partner">
+    <Key>
+      <PropertyRef Name="IDE_RAN_ID" />
+    </Key>
+    <Property Name="IDE_RAN_ID" Type="Int32" Nullable="false" />
+    <Property Name="VCH_RAN_ShortName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="TBL_Partner" Relationship="Self.FK_TBL_Partner_TBL_Rank_Partner" FromRole="TBL_Rank_Partner" ToRole="TBL_Partner" />
+  </EntityType>
+  <EntityType Name="TBL_RedList">
+    <Key>
+      <PropertyRef Name="IDE_RLL_ID" />
+    </Key>
+    <Property Name="VCH_RLL_CUID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DAT_RLL_EndDate" Type="DateTime" Precision="3" />
+    <Property Name="IDE_RLL_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BIT_Deleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TBL_User">
+    <Key>
+      <PropertyRef Name="IDE_USR_ID" />
+    </Key>
+    <Property Name="IDE_USR_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_USR_FNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_USR_LNAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_USR_EMAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="BIT_USR_ISADMIN" Type="Boolean" />
+    <Property Name="VCH_USR_LANG" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_WebServicesLog">
+    <Key>
+      <PropertyRef Name="IDE_WSL_Id" />
+    </Key>
+    <Property Name="IDE_WSL_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_WSL_Cuid" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DAT_WSL_DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="VCH_WSL_Application" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_WSL_MethodName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_WSL_Xml" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="VCH_WSL_Result" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_WSL_Comment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="VCH_WSL_DateModified" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NUM_WSL_ActionType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_Domain">
+    <Key>
+      <PropertyRef Name="VCH_DOM_Code" />
+      <PropertyRef Name="VCH_DOM_ShortName" />
+      <PropertyRef Name="IDE_RAN_ID" />
+      <PropertyRef Name="BOL_DOM_ReportingGlobal" />
+      <PropertyRef Name="BOL_DOM_Notif1" />
+      <PropertyRef Name="BOL_DOM_Notif2" />
+      <PropertyRef Name="BOL_DOM_Notif3" />
+      <PropertyRef Name="BOL_DOM_Notif4" />
+      <PropertyRef Name="BOL_DOM_Notif5" />
+      <PropertyRef Name="BOL_DOM_Notif6" />
+      <PropertyRef Name="BOL_DOM_Notif7" />
+    </Key>
+    <Property Name="VCH_DOM_Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_DOM_ShortName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDE_RAN_ID" Type="Int32" Nullable="false" />
+    <Property Name="BOL_DOM_ReportingGlobal" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_DOM_Notif1" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_DOM_Notif2" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_DOM_Notif3" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_DOM_Notif4" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_DOM_Notif5" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_DOM_Notif6" Type="Boolean" Nullable="false" />
+    <Property Name="BOL_DOM_Notif7" Type="Boolean" Nullable="false" />
+    <Property Name="VCH_DOM_Mail" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="VCH_DOM_Header" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="BOL_DOM_NotifLocal1" Type="Boolean" />
+    <Property Name="BOL_DOM_NotifLocal2" Type="Boolean" />
+    <Property Name="BOL_DOM_NotifLocal3" Type="Boolean" />
+    <Property Name="BOL_DOM_NotifLocal4" Type="Boolean" />
+    <Property Name="BOL_DOM_NotifLocal5" Type="Boolean" />
+    <Property Name="BOL_DOM_NotifLocal6" Type="Boolean" />
+    <Property Name="BOL_DOM_NotifLocal7" Type="Boolean" />
+    <Property Name="SupportHomonymyRule1" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TBL_Notification">
+    <Key>
+      <PropertyRef Name="NUM_NOTIF_Id" />
+      <PropertyRef Name="VCH_NOTIF_Type" />
+      <PropertyRef Name="VCH_NOTIF_Name" />
+      <PropertyRef Name="VCH_NOTIF_MailBody" />
+      <PropertyRef Name="VCH_NOTIF_MailSub" />
+    </Key>
+    <Property Name="NUM_NOTIF_Id" Type="Int32" Nullable="false" />
+    <Property Name="VCH_NOTIF_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VCH_NOTIF_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VCH_NOTIF_MailBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VCH_NOTIF_MailSub" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_NotificationDetails">
+    <Key>
+      <PropertyRef Name="VCH_NOTIFD_DomCode" />
+      <PropertyRef Name="NUM_NOTIFD_Id" />
+      <PropertyRef Name="VCH_NOTIFD_MailSub" />
+      <PropertyRef Name="VCH_NOTIFD_MailBody" />
+    </Key>
+    <Property Name="VCH_NOTIFD_DomCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NUM_NOTIFD_Id" Type="Int32" Nullable="false" />
+    <Property Name="VCH_NOTIFD_MailSub" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VCH_NOTIFD_MailBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_OwnManagerList">
+    <Key>
+      <PropertyRef Name="IDE_OML_ID" />
+      <PropertyRef Name="VCH_OML_CUID" />
+    </Key>
+    <Property Name="IDE_OML_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VCH_OML_CUID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_TBL_BasketItem_TBL_Basket">
+    <End Role="TBL_Basket" Type="Self.TBL_Basket" Multiplicity="1" />
+    <End Role="TBL_BasketItem" Type="Self.TBL_BasketItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Basket">
+        <PropertyRef Name="IDE_BAS_Id" />
+      </Principal>
+      <Dependent Role="TBL_BasketItem">
+        <PropertyRef Name="NUM_BAI_IdBasket" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_ErrorAdditionalInfo_TBL_Error">
+    <End Role="TBL_Error" Type="Self.TBL_Error" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TBL_ErrorAdditionalInfo" Type="Self.TBL_ErrorAdditionalInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Error">
+        <PropertyRef Name="IDE_ERR_ID" />
+      </Principal>
+      <Dependent Role="TBL_ErrorAdditionalInfo">
+        <PropertyRef Name="IDE_ERR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FileIDReferenceConstraint">
+    <End Role="tbl_FileExportConfigDetails" Type="Self.tbl_FileExportConfigDetails" Multiplicity="0..1" />
+    <End Role="tbl_ExportDetails" Type="Self.tbl_ExportDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_FileExportConfigDetails">
+        <PropertyRef Name="IDE_ID" />
+      </Principal>
+      <Dependent Role="tbl_ExportDetails">
+        <PropertyRef Name="IDE_File_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_GroupSubsidiary_TBL_Rank_GroupSubsidiary">
+    <End Role="TBL_Rank_GroupSubsidiary" Type="Self.TBL_Rank_GroupSubsidiary" Multiplicity="1" />
+    <End Role="TBL_GroupSubsidiary" Type="Self.TBL_GroupSubsidiary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Rank_GroupSubsidiary">
+        <PropertyRef Name="IDE_RAN_ID" />
+      </Principal>
+      <Dependent Role="TBL_GroupSubsidiary">
+        <PropertyRef Name="IDE_RAN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Partner_TBL_Rank_Partner">
+    <End Role="TBL_Rank_Partner" Type="Self.TBL_Rank_Partner" Multiplicity="1" />
+    <End Role="TBL_Partner" Type="Self.TBL_Partner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Rank_Partner">
+        <PropertyRef Name="IDE_RAN_ID" />
+      </Principal>
+      <Dependent Role="TBL_Partner">
+        <PropertyRef Name="IDE_RAN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GIREntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBL_Basket" EntityType="Self.TBL_Basket" />
+    <EntitySet Name="TBL_BasketItem" EntityType="Self.TBL_BasketItem" />
+    <EntitySet Name="TBL_BlackList" EntityType="Self.TBL_BlackList" />
+    <EntitySet Name="TBL_Category" EntityType="Self.TBL_Category" />
+    <EntitySet Name="TBL_Certificate" EntityType="Self.TBL_Certificate" />
+    <EntitySet Name="TBL_Error" EntityType="Self.TBL_Error" />
+    <EntitySet Name="TBL_ErrorAdditionalInfo" EntityType="Self.TBL_ErrorAdditionalInfo" />
+    <EntitySet Name="tbl_ExportDetails" EntityType="Self.tbl_ExportDetails" />
+    <EntitySet Name="tbl_FileExportConfigDetails" EntityType="Self.tbl_FileExportConfigDetails" />
+    <EntitySet Name="TBL_GroupSubsidiary" EntityType="Self.TBL_GroupSubsidiary" />
+    <EntitySet Name="TBL_Log" EntityType="Self.TBL_Log" />
+    <EntitySet Name="TBL_MailSentInformation" EntityType="Self.TBL_MailSentInformation" />
+    <EntitySet Name="TBL_News" EntityType="Self.TBL_News" />
+    <EntitySet Name="TBL_Partner" EntityType="Self.TBL_Partner" />
+    <EntitySet Name="TBL_Rank" EntityType="Self.TBL_Rank" />
+    <EntitySet Name="TBL_Rank_GroupSubsidiary" EntityType="Self.TBL_Rank_GroupSubsidiary" />
+    <EntitySet Name="TBL_Rank_Partner" EntityType="Self.TBL_Rank_Partner" />
+    <EntitySet Name="TBL_RedList" EntityType="Self.TBL_RedList" />
+    <EntitySet Name="TBL_User" EntityType="Self.TBL_User" />
+    <EntitySet Name="TBL_WebServicesLog" EntityType="Self.TBL_WebServicesLog" />
+    <EntitySet Name="TBL_Domain" EntityType="Self.TBL_Domain" />
+    <EntitySet Name="TBL_Notification" EntityType="Self.TBL_Notification" />
+    <EntitySet Name="TBL_NotificationDetails" EntityType="Self.TBL_NotificationDetails" />
+    <EntitySet Name="TBL_OwnManagerList" EntityType="Self.TBL_OwnManagerList" />
+    <AssociationSet Name="FK_TBL_BasketItem_TBL_Basket" Association="Self.FK_TBL_BasketItem_TBL_Basket">
+      <End Role="TBL_Basket" EntitySet="TBL_Basket" />
+      <End Role="TBL_BasketItem" EntitySet="TBL_BasketItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_ErrorAdditionalInfo_TBL_Error" Association="Self.FK_TBL_ErrorAdditionalInfo_TBL_Error">
+      <End Role="TBL_Error" EntitySet="TBL_Error" />
+      <End Role="TBL_ErrorAdditionalInfo" EntitySet="TBL_ErrorAdditionalInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FileIDReferenceConstraint" Association="Self.FileIDReferenceConstraint">
+      <End Role="tbl_FileExportConfigDetails" EntitySet="tbl_FileExportConfigDetails" />
+      <End Role="tbl_ExportDetails" EntitySet="tbl_ExportDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_GroupSubsidiary_TBL_Rank_GroupSubsidiary" Association="Self.FK_TBL_GroupSubsidiary_TBL_Rank_GroupSubsidiary">
+      <End Role="TBL_Rank_GroupSubsidiary" EntitySet="TBL_Rank_GroupSubsidiary" />
+      <End Role="TBL_GroupSubsidiary" EntitySet="TBL_GroupSubsidiary" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Partner_TBL_Rank_Partner" Association="Self.FK_TBL_Partner_TBL_Rank_Partner">
+      <End Role="TBL_Rank_Partner" EntitySet="TBL_Rank_Partner" />
+      <End Role="TBL_Partner" EntitySet="TBL_Partner" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

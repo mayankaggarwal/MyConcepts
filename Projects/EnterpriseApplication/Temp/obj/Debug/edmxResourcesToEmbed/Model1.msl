@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GIRModelStoreContainer" CdmEntityContainer="GIREntities">
+    <EntitySetMapping Name="TBL_Basket">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Basket">
+        <MappingFragment StoreEntitySet="TBL_Basket">
+          <ScalarProperty Name="IDE_BAS_Id" ColumnName="IDE_BAS_Id" />
+          <ScalarProperty Name="VCH_BAS_Author" ColumnName="VCH_BAS_Author" />
+          <ScalarProperty Name="VCH_BAS_Applicant" ColumnName="VCH_BAS_Applicant" />
+          <ScalarProperty Name="DAT_BAS_DemandDate" ColumnName="DAT_BAS_DemandDate" />
+          <ScalarProperty Name="DAT_BAS_EndDate" ColumnName="DAT_BAS_EndDate" />
+          <ScalarProperty Name="VCH_BAS_FilePath" ColumnName="VCH_BAS_FilePath" />
+          <ScalarProperty Name="BOL_BAS_InUse" ColumnName="BOL_BAS_InUse" />
+          <ScalarProperty Name="NUM_BAS_NbDemand" ColumnName="NUM_BAS_NbDemand" />
+          <ScalarProperty Name="NUM_BAS_NbError" ColumnName="NUM_BAS_NbError" />
+          <ScalarProperty Name="NUM_BAS_NbSuccess" ColumnName="NUM_BAS_NbSuccess" />
+          <ScalarProperty Name="NUM_BAS_NbToValidate" ColumnName="NUM_BAS_NbToValidate" />
+          <ScalarProperty Name="NUM_BAS_TypeAction" ColumnName="NUM_BAS_TypeAction" />
+          <ScalarProperty Name="NUM_BAS_NbErrorInitial" ColumnName="NUM_BAS_NbErrorInitial" />
+          <ScalarProperty Name="NUM_BAS_NbSuccessInitial" ColumnName="NUM_BAS_NbSuccessInitial" />
+          <ScalarProperty Name="NUM_BAS_NbToValidateInitial" ColumnName="NUM_BAS_NbToValidateInitial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_BasketItem">
+      <EntityTypeMapping TypeName="GIRModel.TBL_BasketItem">
+        <MappingFragment StoreEntitySet="TBL_BasketItem">
+          <ScalarProperty Name="IDE_BAI_Id" ColumnName="IDE_BAI_Id" />
+          <ScalarProperty Name="VCH_BAI_Comment" ColumnName="VCH_BAI_Comment" />
+          <ScalarProperty Name="VCH_BAI_CuID" ColumnName="VCH_BAI_CuID" />
+          <ScalarProperty Name="NUM_BAI_IdBasket" ColumnName="NUM_BAI_IdBasket" />
+          <ScalarProperty Name="DAT_BAI_TraitementDate" ColumnName="DAT_BAI_TraitementDate" />
+          <ScalarProperty Name="NUM_BAI_TypeAction" ColumnName="NUM_BAI_TypeAction" />
+          <ScalarProperty Name="NUM_BAI_Result" ColumnName="NUM_BAI_Result" />
+          <ScalarProperty Name="VCH_BAI_XML" ColumnName="VCH_BAI_XML" />
+          <ScalarProperty Name="VCH_BAI_CSVRow" ColumnName="VCH_BAI_CSVRow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_BlackList">
+      <EntityTypeMapping TypeName="GIRModel.TBL_BlackList">
+        <MappingFragment StoreEntitySet="TBL_BlackList">
+          <ScalarProperty Name="IDE_BLL_ID" ColumnName="IDE_BLL_ID" />
+          <ScalarProperty Name="VCH_BLL_Value" ColumnName="VCH_BLL_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Category">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Category">
+        <MappingFragment StoreEntitySet="TBL_Category">
+          <ScalarProperty Name="IDE_CAT_ID" ColumnName="IDE_CAT_ID" />
+          <ScalarProperty Name="VCH_CAT_Name" ColumnName="VCH_CAT_Name" />
+          <ScalarProperty Name="VCH_CAT_Value" ColumnName="VCH_CAT_Value" />
+          <ScalarProperty Name="VCH_CAT_Description" ColumnName="VCH_CAT_Description" />
+          <ScalarProperty Name="VCH_CAT_Mask" ColumnName="VCH_CAT_Mask" />
+          <ScalarProperty Name="NUM_CAT_ParentID" ColumnName="NUM_CAT_ParentID" />
+          <ScalarProperty Name="BIT_CAT_Obsolete" ColumnName="BIT_CAT_Obsolete" />
+          <ScalarProperty Name="BIT_CAT_GASSI" ColumnName="BIT_CAT_GASSI" />
+          <ScalarProperty Name="BIT_CAT_Directory" ColumnName="BIT_CAT_Directory" />
+          <ScalarProperty Name="BIT_CAT_ForGUI" ColumnName="BIT_CAT_ForGUI" />
+          <ScalarProperty Name="NUM_CAT_LifeTime" ColumnName="NUM_CAT_LifeTime" />
+          <ScalarProperty Name="BIT_CAT_BirthDateMandatory" ColumnName="BIT_CAT_BirthDateMandatory" />
+          <ScalarProperty Name="BIT_CAT_Replaceable" ColumnName="BIT_CAT_Replaceable" />
+          <ScalarProperty Name="NUM_CAT_DURATION" ColumnName="NUM_CAT_DURATION" />
+          <ScalarProperty Name="BIT_CAT_Linked" ColumnName="BIT_CAT_Linked" />
+          <ScalarProperty Name="BIT_CAT_GroupSubsidiary" ColumnName="BIT_CAT_GroupSubsidiary" />
+          <ScalarProperty Name="BIT_CAT_Partner" ColumnName="BIT_CAT_Partner" />
+          <ScalarProperty Name="BIT_CAT_Prefix" ColumnName="BIT_CAT_Prefix" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Certificate">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Certificate">
+        <MappingFragment StoreEntitySet="TBL_Certificate">
+          <ScalarProperty Name="IDE_CERT_ID" ColumnName="IDE_CERT_ID" />
+          <ScalarProperty Name="DAT_CERT_CREATIONDATE" ColumnName="DAT_CERT_CREATIONDATE" />
+          <ScalarProperty Name="VCH_CERT_APPLICATION" ColumnName="VCH_CERT_APPLICATION" />
+          <ScalarProperty Name="VCH_CERT_TITLE" ColumnName="VCH_CERT_TITLE" />
+          <ScalarProperty Name="VCH_CERT_DATA" ColumnName="VCH_CERT_DATA" />
+          <ScalarProperty Name="VCH_CERT_FNAME" ColumnName="VCH_CERT_FNAME" />
+          <ScalarProperty Name="VCH_CERT_LNAME" ColumnName="VCH_CERT_LNAME" />
+          <ScalarProperty Name="VCH_CERT_EMAIL" ColumnName="VCH_CERT_EMAIL" />
+          <ScalarProperty Name="VCH_CERT_PHONE" ColumnName="VCH_CERT_PHONE" />
+          <ScalarProperty Name="VCH_CERT_LASTAUTHOR" ColumnName="VCH_CERT_LASTAUTHOR" />
+          <ScalarProperty Name="DAT_CERT_MODIFICATIONDATE" ColumnName="DAT_CERT_MODIFICATIONDATE" />
+          <ScalarProperty Name="VCH_CERT_LOG" ColumnName="VCH_CERT_LOG" />
+          <ScalarProperty Name="VCH_CERT_DOMAIN" ColumnName="VCH_CERT_DOMAIN" />
+          <ScalarProperty Name="BIT_CERT_EXTRADOMAIN" ColumnName="BIT_CERT_EXTRADOMAIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Error">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Error">
+        <MappingFragment StoreEntitySet="TBL_Error">
+          <ScalarProperty Name="IDE_ERR_ID" ColumnName="IDE_ERR_ID" />
+          <ScalarProperty Name="VCH_ERR_APPLICATION" ColumnName="VCH_ERR_APPLICATION" />
+          <ScalarProperty Name="INT_ERR_CATEGORY" ColumnName="INT_ERR_CATEGORY" />
+          <ScalarProperty Name="VCH_ERR_TITLE" ColumnName="VCH_ERR_TITLE" />
+          <ScalarProperty Name="VCH_ERR_DESCRIPTION" ColumnName="VCH_ERR_DESCRIPTION" />
+          <ScalarProperty Name="DAT_ERR_DATE" ColumnName="DAT_ERR_DATE" />
+          <ScalarProperty Name="VCH_ERR_USER" ColumnName="VCH_ERR_USER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_ErrorAdditionalInfo">
+      <EntityTypeMapping TypeName="GIRModel.TBL_ErrorAdditionalInfo">
+        <MappingFragment StoreEntitySet="TBL_ErrorAdditionalInfo">
+          <ScalarProperty Name="IDE_EAI_ID" ColumnName="IDE_EAI_ID" />
+          <ScalarProperty Name="IDE_ERR_ID" ColumnName="IDE_ERR_ID" />
+          <ScalarProperty Name="VCH_EAI_KEY" ColumnName="VCH_EAI_KEY" />
+          <ScalarProperty Name="VCH_EAI_VALUE" ColumnName="VCH_EAI_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ExportDetails">
+      <EntityTypeMapping TypeName="GIRModel.tbl_ExportDetails">
+        <MappingFragment StoreEntitySet="tbl_ExportDetails">
+          <ScalarProperty Name="IDE_ID" ColumnName="IDE_ID" />
+          <ScalarProperty Name="IDE_File_ID" ColumnName="IDE_File_ID" />
+          <ScalarProperty Name="VCH_Operation" ColumnName="VCH_Operation" />
+          <ScalarProperty Name="VCH_Output_File_Name" ColumnName="VCH_Output_File_Name" />
+          <ScalarProperty Name="VCH_Status" ColumnName="VCH_Status" />
+          <ScalarProperty Name="VCH_Comment" ColumnName="VCH_Comment" />
+          <ScalarProperty Name="DAT_Execution_DateTime" ColumnName="DAT_Execution_DateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_FileExportConfigDetails">
+      <EntityTypeMapping TypeName="GIRModel.tbl_FileExportConfigDetails">
+        <MappingFragment StoreEntitySet="tbl_FileExportConfigDetails">
+          <ScalarProperty Name="IDE_ID" ColumnName="IDE_ID" />
+          <ScalarProperty Name="VCH_File_Name" ColumnName="VCH_File_Name" />
+          <ScalarProperty Name="VCH_Output_File_Name" ColumnName="VCH_Output_File_Name" />
+          <ScalarProperty Name="VCH_Data_Source" ColumnName="VCH_Data_Source" />
+          <ScalarProperty Name="VCH_Output_File_Format" ColumnName="VCH_Output_File_Format" />
+          <ScalarProperty Name="VCH_Output_File_Encoding" ColumnName="VCH_Output_File_Encoding" />
+          <ScalarProperty Name="VCH_Output_File_Column_Seperator" ColumnName="VCH_Output_File_Column_Seperator" />
+          <ScalarProperty Name="VCH_Export_Frequency" ColumnName="VCH_Export_Frequency" />
+          <ScalarProperty Name="VCH_Upload_Frequency" ColumnName="VCH_Upload_Frequency" />
+          <ScalarProperty Name="VCH_Operation" ColumnName="VCH_Operation" />
+          <ScalarProperty Name="BOL_Delete_Existing_File" ColumnName="BOL_Delete_Existing_File" />
+          <ScalarProperty Name="BOL_Export_FileWithDate" ColumnName="BOL_Export_FileWithDate" />
+          <ScalarProperty Name="BOL_Upload_FileWithDate" ColumnName="BOL_Upload_FileWithDate" />
+          <ScalarProperty Name="BOL_File_Compress" ColumnName="BOL_File_Compress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_GroupSubsidiary">
+      <EntityTypeMapping TypeName="GIRModel.TBL_GroupSubsidiary">
+        <MappingFragment StoreEntitySet="TBL_GroupSubsidiary">
+          <ScalarProperty Name="VCH_COMP_Code" ColumnName="VCH_COMP_Code" />
+          <ScalarProperty Name="VCH_COMP_Label" ColumnName="VCH_COMP_Label" />
+          <ScalarProperty Name="IDE_RAN_ID" ColumnName="IDE_RAN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Log">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Log">
+        <MappingFragment StoreEntitySet="TBL_Log">
+          <ScalarProperty Name="IDE_LOG_Id" ColumnName="IDE_LOG_Id" />
+          <ScalarProperty Name="VCH_LOG_Author" ColumnName="VCH_LOG_Author" />
+          <ScalarProperty Name="DAT_LOG_Date" ColumnName="DAT_LOG_Date" />
+          <ScalarProperty Name="NUM_LOG_TypeAction" ColumnName="NUM_LOG_TypeAction" />
+          <ScalarProperty Name="VCH_LOG_DataModified" ColumnName="VCH_LOG_DataModified" />
+          <ScalarProperty Name="VCH_LOG_Entity" ColumnName="VCH_LOG_Entity" />
+          <ScalarProperty Name="VCH_LOG_IdEntity" ColumnName="VCH_LOG_IdEntity" />
+          <ScalarProperty Name="NUM_LOG_Origin" ColumnName="NUM_LOG_Origin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_MailSentInformation">
+      <EntityTypeMapping TypeName="GIRModel.TBL_MailSentInformation">
+        <MappingFragment StoreEntitySet="TBL_MailSentInformation">
+          <ScalarProperty Name="IDE_ID" ColumnName="IDE_ID" />
+          <ScalarProperty Name="CH_CUID" ColumnName="CH_CUID" />
+          <ScalarProperty Name="VCH_Email" ColumnName="VCH_Email" />
+          <ScalarProperty Name="VCH_TypeOfMail" ColumnName="VCH_TypeOfMail" />
+          <ScalarProperty Name="DAT_LogDateTime" ColumnName="DAT_LogDateTime" />
+          <ScalarProperty Name="VCH_Status" ColumnName="VCH_Status" />
+          <ScalarProperty Name="VCH_Description" ColumnName="VCH_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_News">
+      <EntityTypeMapping TypeName="GIRModel.TBL_News">
+        <MappingFragment StoreEntitySet="TBL_News">
+          <ScalarProperty Name="IDE_NEW_ID" ColumnName="IDE_NEW_ID" />
+          <ScalarProperty Name="VCH_NEW_TITLE" ColumnName="VCH_NEW_TITLE" />
+          <ScalarProperty Name="VCH_NEW_ABSTRACT" ColumnName="VCH_NEW_ABSTRACT" />
+          <ScalarProperty Name="VCH_NEW_CONTENT" ColumnName="VCH_NEW_CONTENT" />
+          <ScalarProperty Name="DAT_NEW_BEGINDATE" ColumnName="DAT_NEW_BEGINDATE" />
+          <ScalarProperty Name="DAT_NEW_ENDDATE" ColumnName="DAT_NEW_ENDDATE" />
+          <ScalarProperty Name="INT_NEW_STATE" ColumnName="INT_NEW_STATE" />
+          <ScalarProperty Name="VCH_NEW_AUTHOR" ColumnName="VCH_NEW_AUTHOR" />
+          <ScalarProperty Name="DAT_NEW_CREATIONDATE" ColumnName="DAT_NEW_CREATIONDATE" />
+          <ScalarProperty Name="VCH_NEW_LASTAUTHOR" ColumnName="VCH_NEW_LASTAUTHOR" />
+          <ScalarProperty Name="DAT_NEW_MODIFICATIONDATE" ColumnName="DAT_NEW_MODIFICATIONDATE" />
+          <ScalarProperty Name="VCH_NEW_LANG" ColumnName="VCH_NEW_LANG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Partner">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Partner">
+        <MappingFragment StoreEntitySet="TBL_Partner">
+          <ScalarProperty Name="VCH_PART_Code" ColumnName="VCH_PART_Code" />
+          <ScalarProperty Name="VCH_PART_Label" ColumnName="VCH_PART_Label" />
+          <ScalarProperty Name="VCH_PART_AdminParameter" ColumnName="VCH_PART_AdminParameter" />
+          <ScalarProperty Name="IDE_RAN_ID" ColumnName="IDE_RAN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Rank">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Rank">
+        <MappingFragment StoreEntitySet="TBL_Rank">
+          <ScalarProperty Name="IDE_RAN_ID" ColumnName="IDE_RAN_ID" />
+          <ScalarProperty Name="VCH_RAN_ShortName" ColumnName="VCH_RAN_ShortName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Rank_GroupSubsidiary">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Rank_GroupSubsidiary">
+        <MappingFragment StoreEntitySet="TBL_Rank_GroupSubsidiary">
+          <ScalarProperty Name="IDE_RAN_ID" ColumnName="IDE_RAN_ID" />
+          <ScalarProperty Name="VCH_RAN_ShortName" ColumnName="VCH_RAN_ShortName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Rank_Partner">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Rank_Partner">
+        <MappingFragment StoreEntitySet="TBL_Rank_Partner">
+          <ScalarProperty Name="IDE_RAN_ID" ColumnName="IDE_RAN_ID" />
+          <ScalarProperty Name="VCH_RAN_ShortName" ColumnName="VCH_RAN_ShortName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_RedList">
+      <EntityTypeMapping TypeName="GIRModel.TBL_RedList">
+        <MappingFragment StoreEntitySet="TBL_RedList">
+          <ScalarProperty Name="VCH_RLL_CUID" ColumnName="VCH_RLL_CUID" />
+          <ScalarProperty Name="DAT_RLL_EndDate" ColumnName="DAT_RLL_EndDate" />
+          <ScalarProperty Name="IDE_RLL_ID" ColumnName="IDE_RLL_ID" />
+          <ScalarProperty Name="BIT_Deleted" ColumnName="BIT_Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_User">
+      <EntityTypeMapping TypeName="GIRModel.TBL_User">
+        <MappingFragment StoreEntitySet="TBL_User">
+          <ScalarProperty Name="IDE_USR_ID" ColumnName="IDE_USR_ID" />
+          <ScalarProperty Name="VCH_USR_FNAME" ColumnName="VCH_USR_FNAME" />
+          <ScalarProperty Name="VCH_USR_LNAME" ColumnName="VCH_USR_LNAME" />
+          <ScalarProperty Name="VCH_USR_EMAIL" ColumnName="VCH_USR_EMAIL" />
+          <ScalarProperty Name="BIT_USR_ISADMIN" ColumnName="BIT_USR_ISADMIN" />
+          <ScalarProperty Name="VCH_USR_LANG" ColumnName="VCH_USR_LANG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_WebServicesLog">
+      <EntityTypeMapping TypeName="GIRModel.TBL_WebServicesLog">
+        <MappingFragment StoreEntitySet="TBL_WebServicesLog">
+          <ScalarProperty Name="IDE_WSL_Id" ColumnName="IDE_WSL_Id" />
+          <ScalarProperty Name="VCH_WSL_Cuid" ColumnName="VCH_WSL_Cuid" />
+          <ScalarProperty Name="DAT_WSL_DateCreated" ColumnName="DAT_WSL_DateCreated" />
+          <ScalarProperty Name="VCH_WSL_Application" ColumnName="VCH_WSL_Application" />
+          <ScalarProperty Name="VCH_WSL_MethodName" ColumnName="VCH_WSL_MethodName" />
+          <ScalarProperty Name="VCH_WSL_Xml" ColumnName="VCH_WSL_Xml" />
+          <ScalarProperty Name="VCH_WSL_Result" ColumnName="VCH_WSL_Result" />
+          <ScalarProperty Name="VCH_WSL_Comment" ColumnName="VCH_WSL_Comment" />
+          <ScalarProperty Name="VCH_WSL_DateModified" ColumnName="VCH_WSL_DateModified" />
+          <ScalarProperty Name="NUM_WSL_ActionType" ColumnName="NUM_WSL_ActionType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Domain">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Domain">
+        <MappingFragment StoreEntitySet="TBL_Domain">
+          <ScalarProperty Name="VCH_DOM_Code" ColumnName="VCH_DOM_Code" />
+          <ScalarProperty Name="VCH_DOM_ShortName" ColumnName="VCH_DOM_ShortName" />
+          <ScalarProperty Name="IDE_RAN_ID" ColumnName="IDE_RAN_ID" />
+          <ScalarProperty Name="BOL_DOM_ReportingGlobal" ColumnName="BOL_DOM_ReportingGlobal" />
+          <ScalarProperty Name="BOL_DOM_Notif1" ColumnName="BOL_DOM_Notif1" />
+          <ScalarProperty Name="BOL_DOM_Notif2" ColumnName="BOL_DOM_Notif2" />
+          <ScalarProperty Name="BOL_DOM_Notif3" ColumnName="BOL_DOM_Notif3" />
+          <ScalarProperty Name="BOL_DOM_Notif4" ColumnName="BOL_DOM_Notif4" />
+          <ScalarProperty Name="BOL_DOM_Notif5" ColumnName="BOL_DOM_Notif5" />
+          <ScalarProperty Name="BOL_DOM_Notif6" ColumnName="BOL_DOM_Notif6" />
+          <ScalarProperty Name="BOL_DOM_Notif7" ColumnName="BOL_DOM_Notif7" />
+          <ScalarProperty Name="VCH_DOM_Mail" ColumnName="VCH_DOM_Mail" />
+          <ScalarProperty Name="VCH_DOM_Header" ColumnName="VCH_DOM_Header" />
+          <ScalarProperty Name="BOL_DOM_NotifLocal1" ColumnName="BOL_DOM_NotifLocal1" />
+          <ScalarProperty Name="BOL_DOM_NotifLocal2" ColumnName="BOL_DOM_NotifLocal2" />
+          <ScalarProperty Name="BOL_DOM_NotifLocal3" ColumnName="BOL_DOM_NotifLocal3" />
+          <ScalarProperty Name="BOL_DOM_NotifLocal4" ColumnName="BOL_DOM_NotifLocal4" />
+          <ScalarProperty Name="BOL_DOM_NotifLocal5" ColumnName="BOL_DOM_NotifLocal5" />
+          <ScalarProperty Name="BOL_DOM_NotifLocal6" ColumnName="BOL_DOM_NotifLocal6" />
+          <ScalarProperty Name="BOL_DOM_NotifLocal7" ColumnName="BOL_DOM_NotifLocal7" />
+          <ScalarProperty Name="SupportHomonymyRule1" ColumnName="SupportHomonymyRule1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Notification">
+      <EntityTypeMapping TypeName="GIRModel.TBL_Notification">
+        <MappingFragment StoreEntitySet="TBL_Notification">
+          <ScalarProperty Name="NUM_NOTIF_Id" ColumnName="NUM_NOTIF_Id" />
+          <ScalarProperty Name="VCH_NOTIF_Type" ColumnName="VCH_NOTIF_Type" />
+          <ScalarProperty Name="VCH_NOTIF_Name" ColumnName="VCH_NOTIF_Name" />
+          <ScalarProperty Name="VCH_NOTIF_MailBody" ColumnName="VCH_NOTIF_MailBody" />
+          <ScalarProperty Name="VCH_NOTIF_MailSub" ColumnName="VCH_NOTIF_MailSub" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_NotificationDetails">
+      <EntityTypeMapping TypeName="GIRModel.TBL_NotificationDetails">
+        <MappingFragment StoreEntitySet="TBL_NotificationDetails">
+          <ScalarProperty Name="VCH_NOTIFD_DomCode" ColumnName="VCH_NOTIFD_DomCode" />
+          <ScalarProperty Name="NUM_NOTIFD_Id" ColumnName="NUM_NOTIFD_Id" />
+          <ScalarProperty Name="VCH_NOTIFD_MailSub" ColumnName="VCH_NOTIFD_MailSub" />
+          <ScalarProperty Name="VCH_NOTIFD_MailBody" ColumnName="VCH_NOTIFD_MailBody" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_OwnManagerList">
+      <EntityTypeMapping TypeName="GIRModel.TBL_OwnManagerList">
+        <MappingFragment StoreEntitySet="TBL_OwnManagerList">
+          <ScalarProperty Name="IDE_OML_ID" ColumnName="IDE_OML_ID" />
+          <ScalarProperty Name="VCH_OML_CUID" ColumnName="VCH_OML_CUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
