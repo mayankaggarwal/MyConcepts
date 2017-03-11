@@ -13,6 +13,7 @@ namespace ReadingCards.Entities
         public CardBlob CardBlob { get; private set; }
         public Rank rank { get; set; }
         public Suit suit { get; set; }
+        public short confidence { get; set; }
 
         public CardItem(CardBlob cardBlob)
         {

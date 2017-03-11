@@ -1,0 +1,4 @@
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing\bin\Debug\ReadingCards.ImageProcessing.dll
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing\bin\Debug\ReadingCards.ImageProcessing.pdb
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing\obj\Debug\ReadingCards.ImageProcessing.dll
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing\obj\Debug\ReadingCards.ImageProcessing.pdb

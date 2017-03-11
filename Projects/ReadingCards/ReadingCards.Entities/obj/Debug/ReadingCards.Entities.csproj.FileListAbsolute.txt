@@ -2,3 +2,4 @@ C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Entities\bin\Debug\Read
 C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Entities\bin\Debug\ReadingCards.Entities.pdb
 C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Entities\obj\Debug\ReadingCards.Entities.dll
 C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Entities\obj\Debug\ReadingCards.Entities.pdb
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Entities\obj\Debug\ReadingCards.Entities.csprojResolveAssemblyReference.cache

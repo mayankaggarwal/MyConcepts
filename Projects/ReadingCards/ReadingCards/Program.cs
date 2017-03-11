@@ -27,8 +27,8 @@ namespace ReadingCards
         {
             ImageSource imageSource = new ImageSource();
             ImageFormatter imageFormatter = new ImageFormatter();
-            CardDetector cardDetector = new CardDetector(BlobDetectionAlgorithmType.CCL, 50, 205, 100, 205);
-            CardIdentifier cardIdentifier = new CardIdentifier();
+            
+            
 
             string fileFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string filePath = Path.Combine(fileFolder, "Resources\\draw-card.png");
@@ -40,6 +40,8 @@ namespace ReadingCards
             if (imageSource.imageSources[ImageType.BinaryImage] == null)
                 return;
 
+            #region "Card detection"
+            CardDetector cardDetector = new CardDetector(BlobDetectionAlgorithmType.CCL, 50, 205, 100, 205);
             List<CardBlob> cardBlobs = new List<CardBlob>();
             cardBlobs.AddRange(cardDetector.GetBlobs(imageSource.imageSources[ImageType.BinaryImage]));
             Console.WriteLine(cardBlobs.Count());
@@ -48,9 +50,11 @@ namespace ReadingCards
             {
                 imageSource.AddCardItem(new CardItem(cardBlob, imageFormatter.SubsetImage(imageSource.imageSources[ImageType.SourceImage], cardBlob)));
             }
+            #endregion
 
-
-            foreach(CardItem cardItem in imageSource.cardItems)
+            #region "Card Recognition"
+            CardIdentifier cardIdentifier = new CardIdentifier();
+            foreach (CardItem cardItem in imageSource.cardItems)
             {
                 char color = cardIdentifier.ScanColor(cardItem.CardImage);
                 bool isFaceCard = cardIdentifier.IsFaceCard(cardItem.CardImage);
@@ -61,7 +65,7 @@ namespace ReadingCards
                 }
                 Console.WriteLine(color + " " + isFaceCard + " " + cardItem.suit + " "  + cardItem.rank);
             }
-           
+            #endregion
 
             Console.WriteLine(imageSource.cardItems.Count());
             //Bitmap formattedImage = ReadingCards.ImageProcessing.ImageFormatter.ConvertImage(image);

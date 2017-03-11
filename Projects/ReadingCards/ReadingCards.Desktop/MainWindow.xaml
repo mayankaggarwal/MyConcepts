@@ -1,0 +1,26 @@
+﻿<Window x:Class="ReadingCards.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="720" Width="1080">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <Button Name="btnSelectImage" Content="Select Image" Width="100" HorizontalAlignment="Left" Click="btnSelectImage_Click"></Button>
+            <Image Stretch="Fill" Name="imgPhoto">
+                <Image.Source>
+                    <BitmapImage UriSource="Images/download.png"></BitmapImage>
+                </Image.Source>
+            </Image>
+        </StackPanel>
+    </Grid>
+    
+</Window>

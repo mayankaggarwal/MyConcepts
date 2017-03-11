@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingCards.Entities", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingCards.AForgeImplementation", "ReadingCards.AForgeImplementation\ReadingCards.AForgeImplementation.csproj", "{5F460B1B-850B-4596-A5EA-F9F3545F1CD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingCards.Desktop", "ReadingCards.Desktop\ReadingCards.Desktop.csproj", "{E6AAB522-BA6B-42DD-BB75-3C453B54BAC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingCards.ImageProcessing", "ReadingCards.ImageProcessing\ReadingCards.ImageProcessing.csproj", "{42996285-F857-4EE2-AEA0-F19731F5D0A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{5F460B1B-850B-4596-A5EA-F9F3545F1CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F460B1B-850B-4596-A5EA-F9F3545F1CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F460B1B-850B-4596-A5EA-F9F3545F1CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6AAB522-BA6B-42DD-BB75-3C453B54BAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6AAB522-BA6B-42DD-BB75-3C453B54BAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6AAB522-BA6B-42DD-BB75-3C453B54BAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6AAB522-BA6B-42DD-BB75-3C453B54BAC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42996285-F857-4EE2-AEA0-F19731F5D0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42996285-F857-4EE2-AEA0-F19731F5D0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42996285-F857-4EE2-AEA0-F19731F5D0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42996285-F857-4EE2-AEA0-F19731F5D0A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

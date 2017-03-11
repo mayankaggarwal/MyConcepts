@@ -1,0 +1,13 @@
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\bin\Debug\ReadingCards.Desktop.exe.config
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\bin\Debug\ReadingCards.Desktop.exe
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\bin\Debug\ReadingCards.Desktop.pdb
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\ReadingCards.Desktop.csprojResolveAssemblyReference.cache
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\MainWindow.baml
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\MainWindow.g.cs
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\App.g.cs
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\ReadingCards.Desktop_MarkupCompile.cache
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\ReadingCards.Desktop.g.resources
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\ReadingCards.Desktop.Properties.Resources.resources
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\ReadingCards.Desktop.csproj.GenerateResource.Cache
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\ReadingCards.Desktop.exe
+C:\MyDrive\MyConcepts\Projects\ReadingCards\ReadingCards.Desktop\obj\Debug\ReadingCards.Desktop.pdb
