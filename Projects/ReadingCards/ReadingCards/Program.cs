@@ -1,5 +1,6 @@
 ﻿using ReadingCards.AForgeImplementation;
 using ReadingCards.Entities;
+using ReadingCards.IOOperations;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -19,7 +20,20 @@ namespace ReadingCards
             //https://www.codeproject.com/script/Articles/ArticleVersion.aspx?aid=265354&av=443428
             //https://channel9.msdn.com/coding4fun/blog/Forging-Player-Card-Detection-and-Recognition-program-with-AForgeNet
             //http://mikhail.io/2016/02/building-a-poker-bot-card-recognition/
-            ReadCardValue();
+            //ReadCardValue();
+            int i = 1;
+            string folderPath =@"D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards\Resources";
+            string[] fileNames = { "cards1.png", "cards2.jpg", "cards3.jpg", "cards4.png", "cards5.jpg" };
+            string filePath = "";
+            string outPutFilePath = "";
+
+            for (i = 1; i <= 4; i++)
+            {
+                filePath = Path.Combine(folderPath, fileNames[i]);
+                outPutFilePath = Path.Combine(folderPath, Path.GetFileNameWithoutExtension(fileNames[i]) + "_output2" + Path.GetExtension(fileNames[i]));
+                ReadCard(filePath, outPutFilePath);
+            }
+            Console.WriteLine("Press enter to stop");
             Console.ReadLine();
         }
 
@@ -27,12 +41,12 @@ namespace ReadingCards
         {
             ImageSource imageSource = new ImageSource();
             ImageFormatter imageFormatter = new ImageFormatter();
-            
-            
+            FileIOOperations fileIOOperations = new FileIOOperations();
+
 
             string fileFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string filePath = Path.Combine(fileFolder, "Resources\\draw-card.png");
-            imageSource.AddImage(ImageType.SourceImage,ReadingCards.ImageProcessing.FileIOOperations.ReadImage(filePath));
+            imageSource.AddImage(ImageType.SourceImage, fileIOOperations.ReadImage(filePath));
             if (imageSource.imageSources[ImageType.SourceImage] == null)
                 return;
 
@@ -82,6 +96,29 @@ namespace ReadingCards
             Console.WriteLine("true");
         }
 
+        private static string ReadCard(string filePath,string outputFilePath)
+        {
+            string fileOutputPath = string.Empty;
+            ImageSource imageSource = new ImageSource();
+            FileIOOperations fileIOOperations = new FileIOOperations();
+
+            imageSource.AddImage(ImageType.SourceImage, fileIOOperations.ReadImage(filePath));
+            if (imageSource.imageSources[ImageType.SourceImage] == null)
+                return null;
+
+            IImageProcessing.ImageProcessingOps imageProcessingOps = new ImageProcessing.AForgeImplementation.ImageProcessingAForgeOps();
+            imageSource.AddImage(ImageType.BinaryImage,imageProcessingOps.ConvertImage(imageSource.imageSources[ImageType.SourceImage]));
+            if (imageSource.imageSources[ImageType.BinaryImage] == null)
+                return null;
+
+            ImageProcessing.OpenVCImplementation.ImageProcessingOpenCVOps imageProcessingOps1 = new ImageProcessing.OpenVCImplementation.ImageProcessingOpenCVOps();
+            //imageProcessingOps1.GetCannyEdge(imageProcessingOps1.BitmapToMat(imageSource.imageSources[ImageType.SourceImage]));
+            //fileIOOperations.WriteImage(test.Clone() as Bitmap, outputFilePath);
+            imageProcessingOps1.GetCannyEdge(imageSource.imageSources[ImageType.SourceImage]);
+
+            fileOutputPath = outputFilePath;
+            return fileOutputPath;
+        }
 
     }
 }

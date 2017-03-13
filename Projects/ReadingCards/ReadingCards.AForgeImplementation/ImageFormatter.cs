@@ -40,9 +40,9 @@ namespace ReadingCards.AForgeImplementation
             FiltersSequence seq = new FiltersSequence();
             seq.Add(Grayscale.CommonAlgorithms.BT709);  //First add  GrayScaling filter
             seq.Add(new OtsuThreshold()); //Then add binarization(thresholding) filter
-
-            GrayscaleBT709 gsb = new GrayscaleBT709();
-            gsb.AssertCanApply(temp.PixelFormat);
+    
+            //GrayscaleBT709 gsb = new GrayscaleBT709();
+            //gsb.AssertCanApply(temp.PixelFormat);
             Bitmap temp1 = seq.Apply(temp); // Apply filters on source image
             return temp1;
         }

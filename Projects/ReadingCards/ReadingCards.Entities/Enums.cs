@@ -44,4 +44,11 @@ namespace ReadingCards.Entities
         Spades,
         Clubs
     }
+
+    public enum ProcessingEngine
+    {
+        DotNet,
+        OpenCV,
+        Aforge
+    }
 }
