@@ -35,7 +35,9 @@ namespace ReadingCards.Desktop
               "Portable Network Graphic (*.png)|*.png";
             if (op.ShowDialog() == true)
             {
-                imgPhoto.Source = new BitmapImage(new Uri(op.FileName));
+                //imgPhoto.Source = new BitmapImage(new Uri(op.FileName));
+
+                string fileName = op.FileName;
             }
         }
     }

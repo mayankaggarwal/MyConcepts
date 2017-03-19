@@ -10,6 +10,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ReadingCards
 {
@@ -17,27 +18,26 @@ namespace ReadingCards
     {
         static void Main(string[] args)
         {
-            //https://www.codeproject.com/script/Articles/ArticleVersion.aspx?aid=265354&av=443428
-            //https://channel9.msdn.com/coding4fun/blog/Forging-Player-Card-Detection-and-Recognition-program-with-AForgeNet
-            //http://mikhail.io/2016/02/building-a-poker-bot-card-recognition/
-            //ReadCardValue();
-            int i = 1;
-            string folderPath =@"D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards\Resources";
-            string[] fileNames = { "cards1.png", "cards2.jpg", "cards3.jpg", "cards4.png", "cards5.jpg" };
-            string filePath = "";
-            string outPutFilePath = "";
+            string fileFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string filePath = Path.Combine(fileFolder, "Resources\\cards4.png");
+            ReadCardValue(filePath);
+            //int i = 1;
+            //string folderPath =@"D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards\Resources";
+            //string[] fileNames = { "cards1.png", "cards2.jpg", "cards3.jpg", "cards4.png", "cards5.jpg" };
+            //string filePath = "";
+            //string outPutFilePath = "";
 
-            for (i = 1; i <= 4; i++)
-            {
-                filePath = Path.Combine(folderPath, fileNames[i]);
-                outPutFilePath = Path.Combine(folderPath, Path.GetFileNameWithoutExtension(fileNames[i]) + "_output2" + Path.GetExtension(fileNames[i]));
-                ReadCard(filePath, outPutFilePath);
-            }
+            //for (i = 1; i <= 4; i++)
+            //{
+            //    filePath = Path.Combine(folderPath, fileNames[i]);
+            //    outPutFilePath = Path.Combine(folderPath, Path.GetFileNameWithoutExtension(fileNames[i]) + "_output2" + Path.GetExtension(fileNames[i]));
+            //    ReadCard(filePath, outPutFilePath);
+            //}
             Console.WriteLine("Press enter to stop");
             Console.ReadLine();
         }
 
-        private static void ReadCardValue()
+        private static void ReadCardValue(string filePath)
         {
             ImageSource imageSource = new ImageSource();
             ImageFormatter imageFormatter = new ImageFormatter();
@@ -45,7 +45,7 @@ namespace ReadingCards
 
 
             string fileFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string filePath = Path.Combine(fileFolder, "Resources\\draw-card.png");
+            //string filePath = Path.Combine(fileFolder, "Resources\\cards4.png");
             imageSource.AddImage(ImageType.SourceImage, fileIOOperations.ReadImage(filePath));
             if (imageSource.imageSources[ImageType.SourceImage] == null)
                 return;
@@ -55,7 +55,7 @@ namespace ReadingCards
                 return;
 
             #region "Card detection"
-            CardDetector cardDetector = new CardDetector(BlobDetectionAlgorithmType.CCL, 50, 205, 100, 205);
+            CardDetector cardDetector = new CardDetector(BlobDetectionAlgorithmType.CCL, 50, 2050, 100, 2050);
             List<CardBlob> cardBlobs = new List<CardBlob>();
             cardBlobs.AddRange(cardDetector.GetBlobs(imageSource.imageSources[ImageType.BinaryImage]));
             Console.WriteLine(cardBlobs.Count());
@@ -70,7 +70,8 @@ namespace ReadingCards
             CardIdentifier cardIdentifier = new CardIdentifier();
             foreach (CardItem cardItem in imageSource.cardItems)
             {
-                char color = cardIdentifier.ScanColor(cardItem.CardImage);
+                char color = 'A';
+                color = cardIdentifier.ScanColor(cardItem.CardImage);
                 bool isFaceCard = cardIdentifier.IsFaceCard(cardItem.CardImage);
                 if (!isFaceCard)
                 {
@@ -79,6 +80,11 @@ namespace ReadingCards
                 }
                 Console.WriteLine(color + " " + isFaceCard + " " + cardItem.suit + " "  + cardItem.rank);
             }
+
+            IImageProcessing.ImageProcessingOps img = new ImageProcessing.AForgeImplementation.ImageProcessingAForgeOps();
+            Bitmap result = img.DrawRectangle(imageSource.imageSources[ImageType.SourceImage], imageSource);
+
+            result.Save("temp.png");
             #endregion
 
             Console.WriteLine(imageSource.cardItems.Count());

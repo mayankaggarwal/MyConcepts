@@ -77,7 +77,7 @@ namespace ReadingCards.AForgeImplementation
                     }
                     else
                     {
-                        throw new Exception();
+                        //throw new Exception();
                     }
                 }
             }
