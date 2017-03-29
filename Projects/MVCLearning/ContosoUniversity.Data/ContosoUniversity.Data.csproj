@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1931F2F0-7B68-4BF0-AFC1-8D5D8AC6FC8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContosoUniversity.Data</RootNamespace>
+    <AssemblyName>ContosoUniversity.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContosoAppInitializer.cs" />
+    <Compile Include="ContosoUniversityDbContext.cs" />
+    <Compile Include="DAO\Course.cs" />
+    <Compile Include="DAO\Department.cs" />
+    <Compile Include="DAO\Enrollment.cs" />
+    <Compile Include="DAO\EnrollmentDateGroup.cs" />
+    <Compile Include="DAO\Instructor.cs" />
+    <Compile Include="DAO\OfficeAssignment.cs" />
+    <Compile Include="DAO\Student.cs" />
+    <Compile Include="DataRepository.cs" />
+    <Compile Include="IDbContext.cs" />
+    <Compile Include="Migrations\201702140505422_EnterpriseApp.cs" />
+    <Compile Include="Migrations\201702140505422_EnterpriseApp.Designer.cs">
+      <DependentUpon>201702140505422_EnterpriseApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702140511597_changedmodel.cs" />
+    <Compile Include="Migrations\201702140511597_changedmodel.Designer.cs">
+      <DependentUpon>201702140511597_changedmodel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702140624095_changedmodel1.cs" />
+    <Compile Include="Migrations\201702140624095_changedmodel1.Designer.cs">
+      <DependentUpon>201702140624095_changedmodel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702140625526_changedmodel2.cs" />
+    <Compile Include="Migrations\201702140625526_changedmodel2.Designer.cs">
+      <DependentUpon>201702140625526_changedmodel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702140645323_changedmodel3.cs" />
+    <Compile Include="Migrations\201702140645323_changedmodel3.Designer.cs">
+      <DependentUpon>201702140645323_changedmodel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702140647021_changedmodel4.cs" />
+    <Compile Include="Migrations\201702140647021_changedmodel4.Designer.cs">
+      <DependentUpon>201702140647021_changedmodel4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702140649310_changedmodel5.cs" />
+    <Compile Include="Migrations\201702140649310_changedmodel5.Designer.cs">
+      <DependentUpon>201702140649310_changedmodel5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContosoUniversity.Domain\ContosoUniversity.Domain.csproj">
+      <Project>{12eee50a-c1c6-4488-868e-74e358558956}</Project>
+      <Name>ContosoUniversity.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContosoUniversity.Repository\ContosoUniversity.Repository.csproj">
+      <Project>{76779c82-5ca5-4c07-81e4-7d1c07d60f9d}</Project>
+      <Name>ContosoUniversity.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702140505422_EnterpriseApp.resx">
+      <DependentUpon>201702140505422_EnterpriseApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702140511597_changedmodel.resx">
+      <DependentUpon>201702140511597_changedmodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702140624095_changedmodel1.resx">
+      <DependentUpon>201702140624095_changedmodel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702140625526_changedmodel2.resx">
+      <DependentUpon>201702140625526_changedmodel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702140645323_changedmodel3.resx">
+      <DependentUpon>201702140645323_changedmodel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702140647021_changedmodel4.resx">
+      <DependentUpon>201702140647021_changedmodel4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702140649310_changedmodel5.resx">
+      <DependentUpon>201702140649310_changedmodel5.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

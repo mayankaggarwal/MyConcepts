@@ -1,0 +1,43 @@
+﻿@model ContosoUniversityApp.Models.Enrollment
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Enrollment</h2>
+
+@using(@Html.BeginForm())
+{
+    <div class="form-horizontal">
+        <h4>New Enrollment</h4>
+        @Html.ValidationSummary()
+        <div class="form-group">
+            @Html.LabelFor(m => m.CourseID, new { @class = "col-md-2 form-label" })
+            <div class="col-md-10">
+                @Html.DropDownList("CourseID", "All")
+                @*@Html.EditorFor(m => m.CourseID, new { @class="form-control" })*@
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.StudentID, new { @class = "col-md-2 form-label" })
+            <div class="col-md-10">
+                @Html.DropDownList("StudentID", "All")
+                @*@Html.EditorFor(m => m.StudentID, new { @class = "form-control" })*@
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Grade, new { @class = "col-md-2 form-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Grade, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Register" class="btn btn-default" />
+                @Html.ActionLink("Back To List", "Index")
+            </div> 
+        </div>
+    </div>
+}
+
+

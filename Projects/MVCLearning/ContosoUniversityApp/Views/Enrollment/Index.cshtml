@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ContosoUniversityApp.Models.Enrollment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Enrollment List</h2>
+<p>
+    @Html.ActionLink("Register New","Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m=>m.EnrollmentID)
+        </th>
+        <th>
+            Student
+        </th>
+        <th>
+            @Html.DisplayNameFor(m=>m.Course.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m=>m.Grade)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach(var modelItem in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m=>modelItem.EnrollmentID)
+            </td>
+            <td>
+                @Html.DisplayFor(m =>modelItem.Student.FirstMidName)
+                @Html.DisplayFor(m=>modelItem.Student.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(m => modelItem.Course.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(m => modelItem.Grade)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { enrollmentID=modelItem.EnrollmentID})
+                @Html.ActionLink("Details", "Details", new { enrollmentID = modelItem.EnrollmentID })
+                @Html.ActionLink("Delete", "Delete", new { enrollmentID = modelItem.EnrollmentID })
+            </td>
+        </tr>
+    }
+</table>
+

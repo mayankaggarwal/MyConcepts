@@ -1,0 +1,68 @@
+﻿@model PagedList.IPagedList<ContosoUniversityApp.Models.Student>
+@using PagedList.Mvc
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "List Students";
+}
+
+<h2>Students</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (@Html.BeginForm())
+{
+    <p>
+        Find by name: @Html.TextBox("searchString", ViewBag.CurrentFilter as String)
+        <input type="submit" value="Search" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            Student ID
+        </th>
+        <th>
+            First Name
+        </th>
+        <th>
+            @Html.ActionLink("Last Name", "Index", new { sortOrder = ViewBag.NameSortParam, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+            @Html.ActionLink("Enrollment Date", "Index", new { sortOrder = ViewBag.DateSortParam, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var modelItem in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m => modelItem.StudentID)
+            </td>
+            <td>
+                @Html.DisplayFor(m => modelItem.FirstMidName)
+            </td>
+            <td>
+                @Html.DisplayFor(m => modelItem.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(m => modelItem.EnrollmentDate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { studentID = modelItem.StudentID }) |
+                @Html.ActionLink("Details", "Details", new { studentID = modelItem.StudentID }) |
+                @Html.ActionLink("Delete", "Delete", new { studentID = modelItem.StudentID })
+            </td>
+        </tr>
+    }
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new
+{
+    page,
+    sortOrder =
+        ViewBag.CurrentSort,
+    currentFilter = ViewBag.CurrentFilter
+}))

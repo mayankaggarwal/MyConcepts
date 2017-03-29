@@ -1,0 +1,44 @@
+﻿@model ContosoUniversityApp.Models.Student
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+<p class="error">@ViewBag.ErrorMessage</p>
+<h3>Are you sure you want to delete?</h3>
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(m=>m.StudentID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(m=>m.StudentID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(m => m.FirstMidName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(m => m.FirstMidName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(m => m.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(m => m.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(m => m.EnrollmentDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(m => m.EnrollmentDate)
+        </dd>
+    </dl>
+    @using(@Html.BeginForm())
+    {
+        <input type="submit" value="Delete" class="btn btn-default" />
+    }
+</div>
+

@@ -1,0 +1,39 @@
+﻿@model ContosoUniversityApp.Models.Enrollment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<div class="form-horizontal">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(m=>m.EnrollmentID)
+        </dt>
+        <dd>
+            @Html.DisplayNameFor(m=>m.EnrollmentID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(m => m.Course.Title)
+        </dt>
+        <dd>
+            @Html.DisplayNameFor(m => m.Course.Title)
+        </dd>
+        <dt>
+            Student
+        </dt>
+        <dd>
+            @Html.DisplayNameFor(m => m.Student.FirstMidName)
+            @Html.DisplayNameFor(m => m.Student.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(m => m.Grade)
+        </dt>
+        <dd>
+            @Html.DisplayNameFor(m => m.Grade)
+        </dd>
+        @Html.ActionLink("Edit", "Edit", new { enrollmentID = Model.EnrollmentID })
+        @Html.ActionLink("Back To List","Index")
+    </dl>
+</div>
+

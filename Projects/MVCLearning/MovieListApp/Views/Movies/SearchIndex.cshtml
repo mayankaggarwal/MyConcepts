@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MovieListApp.Models.Movie>
+
+@{
+    ViewBag.Title = "SearchIndex";
+}
+
+<h2>SearchIndex</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@using (@Html.BeginForm("SearchIndex","Movies",FormMethod.Get))
+{
+    <p>Genre : @Html.DropDownList("movieGenre","All")
+    Title : @Html.TextBox("searchString")
+    <input type="submit" value="Filter"/></p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m => m.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.ReleaseDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.Genre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m=>m.Rating)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var modelItem in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m => modelItem.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(m => modelItem.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(m => modelItem.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(m => modelItem.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(m=>modelItem.Rating)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { movieID = modelItem.ID }) |
+                @Html.ActionLink("Details", "Details", new { movieID = modelItem.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { movieID = modelItem.ID })
+            </td>
+        </tr>
+    }
+</table>

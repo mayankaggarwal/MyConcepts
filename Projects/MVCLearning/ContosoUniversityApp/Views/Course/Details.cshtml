@@ -1,0 +1,36 @@
+﻿@model ContosoUniversityApp.Models.Course
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(m=>m.CourseID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(m=>m.CourseID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(m => m.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(m => m.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(m => m.Credits)
+        </dt>
+        <dd>
+            @Html.DisplayFor(m => m.Credits)
+        </dd>
+    </dl>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { courseID = Model.CourseID })
+        @Html.ActionLink("Back to list", "Index")
+    </p>
+</div>
+

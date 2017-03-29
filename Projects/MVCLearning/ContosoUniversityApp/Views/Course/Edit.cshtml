@@ -1,0 +1,42 @@
+﻿@model ContosoUniversityApp.Models.Course
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using(@Html.BeginForm())
+{
+    <div class="form-horizontal">
+        @Html.ValidationSummary()
+        @Html.HiddenFor(m=>m.CourseID)
+        <fieldset>
+            <legend>Edit the course</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Title)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(m => m.Title)
+                @Html.ValidationMessageFor(m => m.Title)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Credits)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(m => m.Credits)
+                @Html.ValidationMessageFor(m => m.Credits)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(m=>m.DepartmentID,"Department")
+            </div>
+            <div class="editor-field">
+                @Html.DropDownList("DepartmentID","None")
+                @Html.ValidationMessageFor(m=>m.DepartmentID)
+            </div>
+            <input type="submit" value="Save" />
+        </fieldset>
+        @Html.ActionLink("Back To List","Index")
+    </div>
+}
+

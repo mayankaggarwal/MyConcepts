@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ContosoUniversityApp.Models.EnrollmentDateGroup>
+            
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>Student Statistics</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(x => x.EnrollmentDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(x => x.StudentCount)
+        </th>
+    </tr>
+    @foreach(var modelItem in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m=>modelItem.EnrollmentDate)
+            </td>
+            <td>
+                @Html.DisplayFor(m=>modelItem.StudentCount)
+            </td>
+        </tr>
+    }
+</table>
+

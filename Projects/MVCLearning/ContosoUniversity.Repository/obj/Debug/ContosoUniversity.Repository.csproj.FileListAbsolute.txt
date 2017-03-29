@@ -1,0 +1,9 @@
+C:\MyDrive\Learning\Practice\MovieListApp\ContosoUniversity.Repository\bin\Debug\ContosoUniversity.Repository.dll
+C:\MyDrive\Learning\Practice\MovieListApp\ContosoUniversity.Repository\bin\Debug\ContosoUniversity.Repository.pdb
+C:\MyDrive\Learning\Practice\MovieListApp\ContosoUniversity.Repository\bin\Debug\ContosoUniversity.Domain.dll
+C:\MyDrive\Learning\Practice\MovieListApp\ContosoUniversity.Repository\bin\Debug\ContosoUniversity.Domain.pdb
+C:\MyDrive\Learning\Practice\MovieListApp\ContosoUniversity.Repository\obj\Debug\ContosoUniversity.Repository.csprojResolveAssemblyReference.cache
+C:\MyDrive\Learning\Practice\MovieListApp\ContosoUniversity.Repository\obj\Debug\ContosoUniversity.Repository.dll
+C:\MyDrive\Learning\Practice\MovieListApp\ContosoUniversity.Repository\obj\Debug\ContosoUniversity.Repository.pdb
+C:\MyDrive\Learning\Practice\MovieListApp\ContosoUniversity.Repository\bin\Debug\ContosoUniversity.Repository.dll.CodeAnalysisLog.xml
+C:\MyDrive\Learning\Practice\MovieListApp\ContosoUniversity.Repository\bin\Debug\ContosoUniversity.Repository.dll.lastcodeanalysissucceeded

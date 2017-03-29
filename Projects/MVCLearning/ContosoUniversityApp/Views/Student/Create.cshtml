@@ -1,0 +1,41 @@
+﻿@model ContosoUniversityApp.Models.Student
+
+@{
+    ViewBag.Title = "Add Student";
+}
+
+<h2>Add New Student</h2>
+
+@using(@Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <fieldset>
+        <legend>Add New Student</legend>
+        <div class="editor-label">
+            @Html.LabelFor(m=>m.FirstMidName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(m=>m.FirstMidName)
+            @Html.ValidationMessageFor(m=>m.FirstMidName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.LastName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(m => m.LastName)
+            @Html.ValidationMessageFor(m => m.LastName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(m => m.EnrollmentDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(m => m.EnrollmentDate)
+            @Html.ValidationMessageFor(m => m.EnrollmentDate)
+        </div>
+        <input type="submit" value="Add" />
+    </fieldset>
+    <div>
+        @Html.ActionLink("Back To List","Index")
+    </div>
+}
+

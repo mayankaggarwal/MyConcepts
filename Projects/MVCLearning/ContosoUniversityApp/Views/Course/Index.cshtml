@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ContosoUniversityApp.Models.Course>
+
+@{
+    ViewBag.Title = "Courses";
+}
+
+<h2>Courses</h2>
+<p>
+    @Html.ActionLink("Create New Course", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.CourseID)</th>
+        <th>@Html.DisplayNameFor(m => m.Title)</th>
+        <th>@Html.DisplayNameFor(m => m.Credits)</th>
+        <th>Department</th>
+        <th></th>
+    </tr>
+
+    @foreach (var modelItem in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m => modelItem.CourseID)
+            </td>
+            <td>
+                @Html.DisplayFor(m => modelItem.Title)
+            </td>
+
+            <td>
+                @Html.DisplayFor(m => modelItem.Credits)
+            </td>
+            <td>
+                @Html.DisplayFor(m=>modelItem.Department.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { courseID = modelItem.CourseID })
+                @Html.ActionLink("Details", "Details", new { courseID = modelItem.CourseID })
+                @Html.ActionLink("Delete", "Delete", new { courseID = modelItem.CourseID })
+            </td>
+        </tr>
+    }
+</table>

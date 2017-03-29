@@ -1,0 +1,47 @@
+﻿@model ContosoUniversityApp.Models.Course
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (@Html.BeginForm())
+{
+    <div class="form-horizontal">
+        <h4>Add new Course</h4>
+        @Html.ValidationSummary()
+        <div class="form-group">
+            @Html.LabelFor(m => m.CourseID, new { @class = "col-md-2 form-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.CourseID, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.CourseID)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Title, new { @class = "col-md-2 form-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Title, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Title)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Credits, new { @class = "col-md-2 form-label" })
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Credits, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Credits)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.DepartmentID, "Department", new { @class="col-md-2 form-label" })
+            <div class="col-md-10">
+                @Html.DropDownList("DepartmentID","None")
+                @Html.ValidationMessageFor(m=>m.DepartmentID)
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Add" class="btn btn-default"/>
+            @Html.ActionLink("Back To List","Index")
+        </div>
+    </div>
+}
+
