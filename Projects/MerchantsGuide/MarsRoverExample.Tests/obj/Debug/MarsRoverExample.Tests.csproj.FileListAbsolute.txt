@@ -1,0 +1,8 @@
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample.Tests\bin\Debug\MarsRoverExample.Tests.dll
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample.Tests\bin\Debug\MarsRoverExample.Tests.pdb
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample.Tests\bin\Debug\MarsRoverExample.dll
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample.Tests\bin\Debug\MarsRoverExample.pdb
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample.Tests\obj\Debug\MarsRoverExample.Tests.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample.Tests\obj\Debug\MarsRoverExample.Tests.dll
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample.Tests\obj\Debug\MarsRoverExample.Tests.pdb

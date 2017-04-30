@@ -10,6 +10,12 @@ namespace OdeToFood.Controllers
     {
         public ActionResult Index()
         {
+            var controller = RouteData.Values["controller"];
+            var action = RouteData.Values["action"];
+            var id = RouteData.Values["id"];
+
+            var msg = String.Format("{0}::{1}::{2}", controller, action, id);
+            ViewBag.Message = msg;
             return View();
         }
 

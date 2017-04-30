@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingCards.ServiceProvide
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingCards.ImageProcessing.AForgeImplementation", "ReadingCards.ImageProcessing.AForgeImplementation\ReadingCards.ImageProcessing.AForgeImplementation.csproj", "{31ACAD0F-50E0-416B-A562-9CFDDA34113E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{E590DEF2-3289-42F0-89D4-16A8A66371DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingBarCodes", "ReadingBarCodes\ReadingBarCodes.csproj", "{6DCCB881-7F03-43CF-AF3B-7BB3F3ACF873}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +87,10 @@ Global
 		{31ACAD0F-50E0-416B-A562-9CFDDA34113E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31ACAD0F-50E0-416B-A562-9CFDDA34113E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31ACAD0F-50E0-416B-A562-9CFDDA34113E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DCCB881-7F03-43CF-AF3B-7BB3F3ACF873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCCB881-7F03-43CF-AF3B-7BB3F3ACF873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCCB881-7F03-43CF-AF3B-7BB3F3ACF873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCCB881-7F03-43CF-AF3B-7BB3F3ACF873}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +105,6 @@ Global
 		{72C96AC3-EA49-4082-AA15-64143348448C} = {B7C1EB79-D4BD-471B-82BF-4918CED61BB8}
 		{2BDBFBCC-CDFC-4CD5-AB14-5C2FF1BFA4B3} = {F6595F18-A5F2-44ED-B0FC-4FADE557BEF4}
 		{31ACAD0F-50E0-416B-A562-9CFDDA34113E} = {B10656FE-E3AF-4CFC-B143-BAA593E0F0FA}
+		{6DCCB881-7F03-43CF-AF3B-7BB3F3ACF873} = {E590DEF2-3289-42F0-89D4-16A8A66371DF}
 	EndGlobalSection
 EndGlobal

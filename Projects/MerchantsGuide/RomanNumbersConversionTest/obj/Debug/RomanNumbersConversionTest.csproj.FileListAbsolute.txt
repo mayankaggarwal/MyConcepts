@@ -1,0 +1,8 @@
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversionTest\obj\Debug\RomanNumbersConversionTest.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversionTest\bin\Debug\RomanNumbersConversionTest.dll
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversionTest\bin\Debug\RomanNumbersConversionTest.pdb
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversionTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversionTest\bin\Debug\RomanNumbersConversion.dll
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversionTest\bin\Debug\RomanNumbersConversion.pdb
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversionTest\obj\Debug\RomanNumbersConversionTest.dll
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversionTest\obj\Debug\RomanNumbersConversionTest.pdb
