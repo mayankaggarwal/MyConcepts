@@ -1,0 +1,4 @@
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IOOperations\bin\Debug\ReadingCards.IOOperations.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IOOperations\bin\Debug\ReadingCards.IOOperations.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IOOperations\obj\Debug\ReadingCards.IOOperations.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IOOperations\obj\Debug\ReadingCards.IOOperations.pdb

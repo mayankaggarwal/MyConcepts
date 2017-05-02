@@ -51,7 +51,7 @@ namespace RomanNumbersConversion.engines.Tests
             List<IntergalacticUnit> lstIntergalacticUnits = new List<IntergalacticUnit>();
             lstIntergalacticUnits.AddRange(GetIntergalacticUnits(GetDirectMappingQueries()));
 
-            Query creditItemQuery = new CreditItemMappingQuery("glob glob Silver is 34 Credits");
+            MerchantNote creditItemQuery = new CreditItemMappingQuery("glob glob Silver is 34 Credits");
             Metal metal = MapQueries.MapMetal((CreditItemMappingQuery)creditItemQuery, lstIntergalacticUnits);
             Assert.IsNotNull(metal);
             Assert.AreEqual(17, metal.MetalValue);
@@ -63,7 +63,7 @@ namespace RomanNumbersConversion.engines.Tests
             List<IntergalacticUnit> lstIntergalacticUnits = new List<IntergalacticUnit>();
             lstIntergalacticUnits.AddRange(GetIntergalacticUnits(GetDirectMappingQueries()));
 
-            Query creditItemQuery = new CreditItemMappingQuery("glob prok Gold is 57800 Credits");
+            MerchantNote creditItemQuery = new CreditItemMappingQuery("glob prok Gold is 57800 Credits");
             Metal metal = MapQueries.MapMetal((CreditItemMappingQuery)creditItemQuery, lstIntergalacticUnits);
             Assert.IsNotNull(metal);
             Assert.AreEqual(14450, metal.MetalValue, metal.MetalValue);
@@ -74,7 +74,7 @@ namespace RomanNumbersConversion.engines.Tests
         {
             List<IntergalacticUnit> lstIntergalacticUnits = new List<IntergalacticUnit>();
             lstIntergalacticUnits.AddRange(GetIntergalacticUnits(GetDirectMappingQueries()));
-            Query creditItemQuery = new CreditItemMappingQuery("pish pish Iron is 3910 Credits");
+            MerchantNote creditItemQuery = new CreditItemMappingQuery("pish pish Iron is 3910 Credits");
             Metal metal = MapQueries.MapMetal((CreditItemMappingQuery)creditItemQuery, lstIntergalacticUnits);
             Assert.IsNotNull(metal);
             Assert.AreEqual(185.5, metal.MetalValue, metal.MetalValue);
@@ -85,7 +85,7 @@ namespace RomanNumbersConversion.engines.Tests
         {
             List<Metal> lstMetals = new List<Metal>();
             lstMetals.AddRange(GetMetals(GetCreditItemMappingQueries(GetIntergalacticUnits(GetDirectMappingQueries())), GetIntergalacticUnits(GetDirectMappingQueries())));
-            Query itemCreditQuery = new ItemCreditMappingQuery("pish tegj glob glob is 42");
+            MerchantNote itemCreditQuery = new ItemCreditMappingQuery("pish tegj glob glob is 42");
             MerchandiseConversions merchandiseConversion = MapQueries.MapQueriesToCredits((ItemCreditMappingQuery)itemCreditQuery,
                 intergalacticUnits : GetIntergalacticUnits(GetDirectMappingQueries()),
                 metalItems : GetMetals(
@@ -101,7 +101,7 @@ namespace RomanNumbersConversion.engines.Tests
         {
             List<Metal> lstMetals = new List<Metal>();
             lstMetals.AddRange(GetMetals(GetCreditItemMappingQueries(GetIntergalacticUnits(GetDirectMappingQueries())), GetIntergalacticUnits(GetDirectMappingQueries())));
-            Query itemCreditQuery = new ItemCreditMappingQuery("how many Credits is glob prok Silver ?");
+            MerchantNote itemCreditQuery = new ItemCreditMappingQuery("how many Credits is glob prok Silver ?");
             MerchandiseConversions merchandiseConversion = MapQueries.MapQueriesToCredits((ItemCreditMappingQuery)itemCreditQuery,
                 intergalacticUnits: GetIntergalacticUnits(GetDirectMappingQueries()),
                 metalItems: GetMetals(
@@ -117,7 +117,7 @@ namespace RomanNumbersConversion.engines.Tests
         {
             List<Metal> lstMetals = new List<Metal>();
             lstMetals.AddRange(GetMetals(GetCreditItemMappingQueries(GetIntergalacticUnits(GetDirectMappingQueries())), GetIntergalacticUnits(GetDirectMappingQueries())));
-            Query itemCreditQuery = new ItemCreditMappingQuery("how many Credits is glob prok Gold ?");
+            MerchantNote itemCreditQuery = new ItemCreditMappingQuery("how many Credits is glob prok Gold ?");
             MerchandiseConversions merchandiseConversion = MapQueries.MapQueriesToCredits((ItemCreditMappingQuery)itemCreditQuery,
                 intergalacticUnits: GetIntergalacticUnits(GetDirectMappingQueries()),
                 metalItems: GetMetals(
@@ -133,7 +133,7 @@ namespace RomanNumbersConversion.engines.Tests
         {
             List<Metal> lstMetals = new List<Metal>();
             lstMetals.AddRange(GetMetals(GetCreditItemMappingQueries(GetIntergalacticUnits(GetDirectMappingQueries())), GetIntergalacticUnits(GetDirectMappingQueries())));
-            Query itemCreditQuery = new ItemCreditMappingQuery("how many Credits is glob prok Iron ?");
+            MerchantNote itemCreditQuery = new ItemCreditMappingQuery("how many Credits is glob prok Iron ?");
             MerchandiseConversions merchandiseConversion = MapQueries.MapQueriesToCredits((ItemCreditMappingQuery)itemCreditQuery,
                 intergalacticUnits: GetIntergalacticUnits(GetDirectMappingQueries()),
                 metalItems: GetMetals(
@@ -149,7 +149,7 @@ namespace RomanNumbersConversion.engines.Tests
         {
             List<Metal> lstMetals = new List<Metal>();
             lstMetals.AddRange(GetMetals(GetCreditItemMappingQueries(GetIntergalacticUnits(GetDirectMappingQueries())), GetIntergalacticUnits(GetDirectMappingQueries())));
-            Query itemCreditQuery = new ItemCreditMappingQuery("how much wood could a woodchuck chuck if a woodchuck could chuck wood ?");
+            MerchantNote itemCreditQuery = new ItemCreditMappingQuery("how much wood could a woodchuck chuck if a woodchuck could chuck wood ?");
             MerchandiseConversions merchandiseConversion = MapQueries.MapQueriesToCredits((ItemCreditMappingQuery)itemCreditQuery,
                 intergalacticUnits: GetIntergalacticUnits(GetDirectMappingQueries()),
                 metalItems: GetMetals(

@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace RomanNumbersConversion.UserQueriesEntities
 {
-    public class DirectMappingQuery:Query
+    public class DirectMappingQuery:MerchantNote
     {
         public DirectMappingQuery(string input)
         {
             this.Input = input;
-            WordsToRemove.Add("is");
+            WordsToRemove.Add(" is ");
             foreach(string s in this.WordsToRemove)
             {
-                input = input.Replace(s, "");
+                input = input.Replace(s, " ");
             }
 
             this.NormalizedInput = input;

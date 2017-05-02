@@ -2,4 +2,3 @@ D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversion
 D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversion\bin\Debug\RomanNumbersConversion.pdb
 D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversion\obj\Debug\RomanNumbersConversion.dll
 D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversion\obj\Debug\RomanNumbersConversion.pdb
-D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\RomanNumbersConversion\obj\Debug\RomanNumbersConversion.csprojResolveAssemblyReference.cache

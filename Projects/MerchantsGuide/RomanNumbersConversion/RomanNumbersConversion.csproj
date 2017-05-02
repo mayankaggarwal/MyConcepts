@@ -40,19 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CurrencyCalculator.cs" />
+    <Compile Include="Domain\MerchantNoteIdentificationResult.cs" />
+    <Compile Include="Domain\MerchantNotebook.cs" />
+    <Compile Include="MerchantNotebookProcessor.cs" />
     <Compile Include="Domain\Metal.cs" />
     <Compile Include="Domain\MerchandiseConversions.cs" />
     <Compile Include="Domain\RomanIntegerRepresentation.cs" />
-    <Compile Include="engines\MapQueries.cs" />
-    <Compile Include="engines\RomanConversionEngine.cs" />
-    <Compile Include="engines\UserInputRegistrar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RomanConversionEntities\HundredSymbol.cs" />
     <Compile Include="RomanConversionEntities\OnesSymbol.cs" />
     <Compile Include="RomanConversionEntities\SymbolRepresentation.cs" />
     <Compile Include="RomanConversionEntities\TensSymbol.cs" />
     <Compile Include="RomanConversionEntities\ThousandSymbol.cs" />
+    <Compile Include="Services\FileIOOperations.cs" />
+    <Compile Include="Services\MerchantNotesProcessingService.cs" />
+    <Compile Include="Services\MerchantsNotesIdentifierService.cs" />
+    <Compile Include="Services\RomanToIntegerConversionService.cs" />
     <Compile Include="UserQueriesEntities\CreditItemMappingQuery.cs" />
     <Compile Include="UserQueriesEntities\DirectMappingQuery.cs" />
     <Compile Include="Domain\IntergalacticUnit.cs" />

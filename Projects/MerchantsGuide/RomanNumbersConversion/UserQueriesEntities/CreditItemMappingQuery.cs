@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RomanNumbersConversion.UserQueriesEntities
 {
-    public class CreditItemMappingQuery:Query
+    public class CreditItemMappingQuery:MerchantNote
     {
         public CreditItemMappingQuery(string input)
         {

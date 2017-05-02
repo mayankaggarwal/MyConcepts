@@ -1,0 +1,11 @@
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\bin\Debug\ReadingCards.ServiceProvider.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\bin\Debug\ReadingCards.ServiceProvider.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\bin\Debug\ReadingCards.Entities.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\bin\Debug\ReadingCards.IDetection.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\bin\Debug\ReadingCards.IImageProcessing.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\bin\Debug\ReadingCards.Entities.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\bin\Debug\ReadingCards.IDetection.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\bin\Debug\ReadingCards.IImageProcessing.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\obj\Debug\ReadingCards.ServiceProvider.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\obj\Debug\ReadingCards.ServiceProvider.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ServiceProvider\obj\Debug\ReadingCards.ServiceProvider.pdb

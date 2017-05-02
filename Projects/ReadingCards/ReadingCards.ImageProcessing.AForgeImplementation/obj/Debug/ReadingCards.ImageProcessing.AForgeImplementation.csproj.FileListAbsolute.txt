@@ -1,0 +1,15 @@
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\ReadingCards.ImageProcessing.AForgeImplementation.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\ReadingCards.ImageProcessing.AForgeImplementation.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\AForge.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\AForge.Imaging.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\AForge.Math.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\ReadingCards.Entities.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\ReadingCards.IImageProcessing.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\ReadingCards.Entities.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\ReadingCards.IImageProcessing.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\AForge.xml
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\AForge.Imaging.xml
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\bin\Debug\AForge.Math.xml
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\obj\Debug\ReadingCards.ImageProcessing.AForgeImplementation.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\obj\Debug\ReadingCards.ImageProcessing.AForgeImplementation.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.ImageProcessing.AForgeImplementation\obj\Debug\ReadingCards.ImageProcessing.AForgeImplementation.pdb

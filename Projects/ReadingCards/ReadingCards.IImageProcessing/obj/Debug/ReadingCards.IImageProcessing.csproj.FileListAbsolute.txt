@@ -1,0 +1,7 @@
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IImageProcessing\bin\Debug\ReadingCards.IImageProcessing.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IImageProcessing\bin\Debug\ReadingCards.IImageProcessing.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IImageProcessing\bin\Debug\ReadingCards.Entities.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IImageProcessing\bin\Debug\ReadingCards.Entities.pdb
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IImageProcessing\obj\Debug\ReadingCards.IImageProcessing.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IImageProcessing\obj\Debug\ReadingCards.IImageProcessing.dll
+D:\Learning\Repository\MyConcepts\Projects\ReadingCards\ReadingCards.IImageProcessing\obj\Debug\ReadingCards.IImageProcessing.pdb

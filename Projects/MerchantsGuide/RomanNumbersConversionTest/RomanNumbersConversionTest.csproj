@@ -55,6 +55,10 @@
     <Compile Include="engines\RomanConversionEngineTests.cs" />
     <Compile Include="engines\UserInputRegistrarTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\FileIOOperationsTests.cs" />
+    <Compile Include="Services\MerchantNotesProcessingServiceTests.cs" />
+    <Compile Include="Services\MerchantsNotesIdentifierServiceTests.cs" />
+    <Compile Include="Services\RomanToIntegerConversionServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RomanNumbersConversion\RomanNumbersConversion.csproj">

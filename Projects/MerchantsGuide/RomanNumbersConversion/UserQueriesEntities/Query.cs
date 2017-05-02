@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace RomanNumbersConversion.UserQueriesEntities
 {
-    public abstract class Query
+    public abstract class MerchantNote
     {
         public string Input { get;internal set; }
         public string NormalizedInput { get; internal set; }
         public readonly List<string> WordsToRemove = new List<string>();
 
-        public static Query IdentifyQueryType(string input)
+        public static MerchantNote IdentifyQueryType(string input)
         {
             if (input.Split(' ').Length == 3)
                 return new DirectMappingQuery(input);
