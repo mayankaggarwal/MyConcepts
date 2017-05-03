@@ -1,5 +1,5 @@
 D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample\bin\Debug\MarsRoverExample.dll
 D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample\bin\Debug\MarsRoverExample.pdb
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample\obj\Debug\MarsRoverExample.csprojResolveAssemblyReference.cache
 D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample\obj\Debug\MarsRoverExample.dll
 D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample\obj\Debug\MarsRoverExample.pdb
-D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MarsRoverExample\obj\Debug\MarsRoverExample.csprojResolveAssemblyReference.cache

@@ -28,6 +28,11 @@ namespace RomanNumbersConversion.Domain
 
         private MerchantNotebook()
         {
+            Reset();
+        }
+
+        public void Reset()
+        {
             IntergalacticUnits = new List<IntergalacticUnit>();
             Metals = new List<Metal>();
             merchandiseConversions = new List<MerchandiseConversions>();

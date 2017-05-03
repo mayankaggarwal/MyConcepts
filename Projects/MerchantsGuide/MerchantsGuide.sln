@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRoverExample", "MarsRov
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRoverExample.Tests", "MarsRoverExample.Tests\MarsRoverExample.Tests.csproj", "{A9638B53-4677-4F20-A40C-E49D4763F14E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchantGuide.Execution", "MerchantGuide.Execution\MerchantGuide.Execution.csproj", "{CFC70713-2698-4879-B2C6-99D082FBE67C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A9638B53-4677-4F20-A40C-E49D4763F14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9638B53-4677-4F20-A40C-E49D4763F14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9638B53-4677-4F20-A40C-E49D4763F14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC70713-2698-4879-B2C6-99D082FBE67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC70713-2698-4879-B2C6-99D082FBE67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC70713-2698-4879-B2C6-99D082FBE67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC70713-2698-4879-B2C6-99D082FBE67C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

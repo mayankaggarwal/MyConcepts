@@ -10,7 +10,7 @@ namespace RomanNumbersConversion.Domain
     {
         public List<IntergalacticUnit> IntergalacticUnits;
         public Metal Metal { get; set; }
-        public long ItemsValue { get; set; }
+        public decimal ItemsValue { get; set; }
         public string Output { get; set; }
 
         public MerchandiseConversions()

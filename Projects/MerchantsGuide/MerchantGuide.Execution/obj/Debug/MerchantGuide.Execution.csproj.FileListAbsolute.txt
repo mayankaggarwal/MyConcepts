@@ -1,0 +1,9 @@
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MerchantGuide.Execution\bin\Debug\TempFile\TestInput.txt
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MerchantGuide.Execution\bin\Debug\MerchantGuide.Execution.exe.config
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MerchantGuide.Execution\bin\Debug\MerchantGuide.Execution.exe
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MerchantGuide.Execution\bin\Debug\MerchantGuide.Execution.pdb
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MerchantGuide.Execution\bin\Debug\RomanNumbersConversion.dll
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MerchantGuide.Execution\bin\Debug\RomanNumbersConversion.pdb
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MerchantGuide.Execution\obj\Debug\MerchantGuide.Execution.csprojResolveAssemblyReference.cache
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MerchantGuide.Execution\obj\Debug\MerchantGuide.Execution.exe
+D:\Learning\Repository\MyConcepts\Projects\MerchantsGuide\MerchantGuide.Execution\obj\Debug\MerchantGuide.Execution.pdb

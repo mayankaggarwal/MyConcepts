@@ -60,7 +60,7 @@
     <Compile Include="UserQueriesEntities\DirectMappingQuery.cs" />
     <Compile Include="Domain\IntergalacticUnit.cs" />
     <Compile Include="UserQueriesEntities\ItemCreditMappingQuery.cs" />
-    <Compile Include="UserQueriesEntities\Query.cs" />
+    <Compile Include="UserQueriesEntities\MerchantNote.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

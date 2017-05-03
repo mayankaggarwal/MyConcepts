@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RomanNumbersConversion.RomanConversion
 {
-    public class OnesSymbol:SymbolRepresentation
+    internal class OnesSymbol:SymbolRepresentation
     {
         public OnesSymbol()
         {

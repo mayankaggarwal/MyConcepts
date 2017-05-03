@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RomanNumbersConversion.RomanConversion
 {
-    public class HundredSymbol:SymbolRepresentation
+    internal class HundredSymbol:SymbolRepresentation
     {
         public HundredSymbol()
         {

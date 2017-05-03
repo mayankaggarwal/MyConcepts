@@ -13,6 +13,16 @@ namespace RomanNumbersConversion.Services
         bool IdentifyIntergalacticUnits(List<DirectMappingQuery> directMappingQueries, MerchantNotebook merchantNotebook);
         bool IdentifyMetals(List<CreditItemMappingQuery> creditItemExampleQueries, MerchantNotebook merchantNotebook);
         bool IdentifyCreditsofQueries(List<ItemCreditMappingQuery> itemCreditMappingQueries, MerchantNotebook merchantNotebook);
+        IntergalacticUnit MapUnit(DirectMappingQuery directMappingQuery);
+        Metal MapMetal(CreditItemMappingQuery creditItemMappingQuery,
+            List<IntergalacticUnit> intergalacticUnits);
+        MerchandiseConversions MapQueriesToCredits(
+            ItemCreditMappingQuery itemCreditMapping,
+            List<IntergalacticUnit> intergalacticUnits,
+            List<Metal> metalItems
+            );
+
+
     }
 
     public class MerchantNotesProcessingService : IMerchantNotesProcessingService
@@ -85,11 +95,6 @@ namespace RomanNumbersConversion.Services
                     }
                 }
 
-                if (itemCreditMappingQueries.Count != merchantNotebook.Metals.Count)
-                {
-                    return false;
-                }
-
                 return true;
             }
             else
@@ -115,7 +120,7 @@ namespace RomanNumbersConversion.Services
             List<IntergalacticUnit> intergalacticUnits)
         {
             string[] queryItems = creditItemMappingQuery.NormalizedInput.Trim().Split(' ');
-            long metalValue = -1;
+            decimal metalValue = -1;
             string metalName = string.Empty;
             IntergalacticUnit intergalacticUnit = null;
             StringBuilder romanNumeral = new StringBuilder();
@@ -127,7 +132,7 @@ namespace RomanNumbersConversion.Services
                     {
                         romanNumeral.Append(intergalacticUnit.UnitRomanEquivalent);
                     }
-                    if (Int64.TryParse(s, out metalValue))
+                    if (Decimal.TryParse(s, out metalValue))
                         continue;
 
                     metalName = s;
@@ -141,7 +146,7 @@ namespace RomanNumbersConversion.Services
                     int romanNumeralIntValue = RomanConversionService.ConvertToInt(romanNumeral.ToString());
                     if (romanNumeralIntValue != 0)
                     {
-                        metalValue = metalValue / (long)romanNumeralIntValue;
+                        metalValue = metalValue / (decimal)romanNumeralIntValue;
                     }
                     else
                         return null;
@@ -203,11 +208,11 @@ namespace RomanNumbersConversion.Services
                         1 * merchandiseConversion.Metal.MetalValue :
                         merchandiseConversion.ItemsValue * merchandiseConversion.Metal.MetalValue;
 
-                    merchandiseConversion.Output += merchandiseConversion.Output + "is " + merchandiseConversion.ItemsValue + " Credits";
+                    merchandiseConversion.Output += merchandiseConversion.Metal.MetalName + " is " + merchandiseConversion.ItemsValue.ToString("0") + " Credits";
                 }
                 else
                 {
-                    merchandiseConversion.Output += merchandiseConversion.Output + "is " + merchandiseConversion.ItemsValue;
+                    merchandiseConversion.Output += "is " + merchandiseConversion.ItemsValue.ToString("0");
                 }
 
             }

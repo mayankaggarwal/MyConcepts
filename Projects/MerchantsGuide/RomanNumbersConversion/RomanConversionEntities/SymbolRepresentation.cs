@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RomanNumbersConversion.RomanConversion
 {
-    public abstract class SymbolRepresentation
+    internal abstract class SymbolRepresentation
     {
         public readonly Dictionary<string, int> symbolValues = new Dictionary<string, int>();
 

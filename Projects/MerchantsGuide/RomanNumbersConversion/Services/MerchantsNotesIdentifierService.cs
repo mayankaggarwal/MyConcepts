@@ -12,6 +12,8 @@ namespace RomanNumbersConversion.Services
     {
         MerchantNotesIdentificationResult IdentifyMerchantNotes(List<string> initialMerchantNotes);
 
+        MerchantNote DistributeInput(string inputLines);
+
         List<DirectMappingQuery> GetIntergalacticUnitsQueries(List<MerchantNote> identitifedQueries);
 
         List<CreditItemMappingQuery> GetIntergalacticTransactionQueries(List<MerchantNote> identitifedQueries);

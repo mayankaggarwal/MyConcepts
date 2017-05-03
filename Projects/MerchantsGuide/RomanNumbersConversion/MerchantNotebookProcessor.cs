@@ -8,7 +8,13 @@ using System.Threading.Tasks;
 
 namespace RomanNumbersConversion
 {
-    public class MerchantNotebookProcessor
+    public interface IMerchantNotebookProcessor
+    {
+        bool PrepareGuide(string filePath);
+        bool ProcessOutput(string fileName);
+    }
+
+    public class MerchantNotebookProcessor:IMerchantNotebookProcessor
     {
         private readonly IFileIOOperations fileIOOperations;
         private readonly IMerchantsNotesIdentifierService merchantNotesIdentificationService;
@@ -17,18 +23,23 @@ namespace RomanNumbersConversion
         private readonly MerchantNotebook merchantNoteBook;
         private bool NotebookPrepared;
 
-        public MerchantNotebookProcessor()
+        public MerchantNotebookProcessor(IFileIOOperations fileIOOperations,
+            IMerchantsNotesIdentifierService merchantNotesIdentificationService,
+            IRomanToIntegerConversionService romanToIntegerConversionService,
+            IMerchantNotesProcessingService merchantNotesProcessingService)
         {
-            fileIOOperations = new FileIOOperations();
-            merchantNotesIdentificationService = new MerchantsNotesIdentifierService();
-            romanToIntegerConversionService = new RomanToIntegerConversionService();
-            merchantNotesProcessingService = new MerchantNotesProcessingService(romanToIntegerConversionService);
-            merchantNoteBook = MerchantNotebook.Instance;
-            NotebookPrepared = false;
+            this.fileIOOperations = fileIOOperations;
+            this.merchantNotesIdentificationService = merchantNotesIdentificationService;
+            this.romanToIntegerConversionService = romanToIntegerConversionService;
+            this.merchantNotesProcessingService = merchantNotesProcessingService;
+            this.merchantNoteBook = MerchantNotebook.Instance;
+            this.NotebookPrepared = false;
         }
 
         public bool PrepareGuide(string filePath)
         {
+            merchantNoteBook.Reset();
+
             List<string> initialMerchantsNotes = new List<string>();
             initialMerchantsNotes.AddRange(fileIOOperations.ReadGuidesNotes(filePath));
             if (initialMerchantsNotes.Count() == 0)
@@ -78,6 +89,8 @@ namespace RomanNumbersConversion
                     output.Add(merchandiseConversion.Output);
                 }
 
+                bool writeResult = fileIOOperations.WriteGuideOutput(fileName,output);
+                return writeResult;
                
             }
             else
